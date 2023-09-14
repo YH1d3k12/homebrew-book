@@ -1,3 +1,4 @@
+import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 export default function SpellPage() {
@@ -5,6 +6,24 @@ export default function SpellPage() {
     const location = useLocation();
     const { spell } = location.state;
 
+    // Função para processar as quebras de linha
+    // split('\n') divide a string text em um array de strings
+    // line representa cada linha desse array, o frangment renderiza cada linha e agrega 2 br para fazer a quebra
+    const processLineBreaks = (text) => {
+        if (text.includes('\n'))
+        {
+            return text.split('\n').map((line, index) => (
+                <React.Fragment key={index}>
+                    {line}
+                    <br/><br/>
+                </React.Fragment>
+            ));
+        }
+        else
+        {
+            return text;
+        }
+    };
 
     return (
         <div>
@@ -16,7 +35,7 @@ export default function SpellPage() {
                 <strong>Components:</strong>{spell.components}<br/>
                 <strong>Duration:</strong>{spell.duration}<br/>
             </p>
-            <p>{spell.effect}</p>
+            <p>{processLineBreaks(spell.effect)}</p>
             <p><strong>At Higher Levels.</strong>{spell.upCasting}</p>
             <p><strong>Spell List.</strong>{spell.available}</p>
 
