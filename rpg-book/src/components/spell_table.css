@@ -8,8 +8,8 @@
     margin: 25px 0px;
 
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 0.9rem;
+    font-weight: 300;
 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     overflow: hidden;
@@ -19,7 +19,8 @@
 {
     background-color: #221e22;
     color: #ee5622;
-
+    
+    font-size: 1rem;
     font-weight: 700;
     text-align: left;
 }
@@ -30,11 +31,24 @@
     padding: 12px 15px;
 }
 
+.content-table tbody tr td a:hover{
+    color: #ee5622;
+    font-size: 1.01rem;
+
+    cursor: pointer;
+}
+
+.content-table tbody tr td:nth-child(1)
+{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 .content-table tbody tr td:nth-child(2)
 {
     font-style: italic;
-    font-weight: 300;
 }
+
 
 .content-table tbody tr
 {
