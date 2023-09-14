@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import SpellTable from "../components/spell_table";
 // The spell book page will list all available spell with a description and a link to the spell's source 
 
 // Make an array of spells containing the spell level, name, description, and id.
