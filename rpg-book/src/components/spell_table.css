@@ -1,13 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root 
+{
+    --table-content-wrapper-backcground-color:#575757;
+    --table-content-wrapper-border-color:#221e22;
+
+    --table-button-background-color:#b4b4b4;
+    --table-button-border-color:#221e22;
+
+    --table-button-focus-background-color:#221e22;
+    --table-button-focus-color:#ee5622;
+    --table-button-focus-border-color:#2e2e2e;
+    
+    --table-header-background-color:#221e22;
+    --table-header-color:#ee5622;
+
+    --table-row-primary-background-color:#cdcdcd;
+    --table-row-secundary-background-color:#b4b4b4;
+
+    --spell-name-hover-effect:#ee5622;
+}
+
+* 
+{
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.table-content-wrapper
+{
+    width: 1200px;
+    padding: 15px;
+    border-radius: 8px;
+
+    background-color: var(--table-content-wrapper-backcground-color);
+    border: solid 1px var(--table-content-wrapper-border-color);
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table-button
+{
+    padding: 8px;
+    border: 1px solid var(--table-button-border-color);
+    border-radius: 4px 4px 0px 0px;
+    margin: 0px 2px;
+
+    background-color: var(--table-button-background-color);
+    color: var(--table-button-color);
+    font-size: 0.9rem;
+
+    cursor: pointer;
+}
+
+.table-button:hover,
+.table-button:focus
+{
+    scale: 1.1;
+    border-color: var(--table-button-focus-border-color);
+    background-color: var(--table-button-focus-background-color);
+    color: var(--table-button-focus-color);
+}
+
 .content-table
 {
-    min-width: 400px;
+    width: 100%;
     border-collapse: collapse;
     border-radius: 5px 5px 0px 0px;
-    margin: 25px 0px;
 
-    font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
     font-weight: 300;
 
@@ -17,8 +82,8 @@
 
 .content-table thead tr
 {
-    background-color: #221e22;
-    color: #ee5622;
+    background-color: var(--table-header-background-color);
+    color: var(--table-header-color);
     
     font-size: 1rem;
     font-weight: 700;
@@ -32,7 +97,7 @@
 }
 
 .content-table tbody tr td a:hover{
-    color: #ee5622;
+    color: var(--spell-name-hover-effect);
     font-size: 1.01rem;
 
     cursor: pointer;
@@ -52,18 +117,18 @@
 
 .content-table tbody tr
 {
-    background-color: #cdcdcd;
+    background-color: var(--table-row-primary-background-color);
     border-bottom: 1px solid #dddddd;
 }
 
 .content-table tbody tr:nth-of-type(even)
 {
-    background-color: #b4b4b4;
+    background-color: var(--table-row-secundary-background-color);
 }
 
 .content-table tbody tr:last-of-type
 {
-    border-bottom: 3px solid #221e22;
+    border-bottom: 3px solid var(--table-header-background-color);
 }
 
 .content-table tbody tr.active

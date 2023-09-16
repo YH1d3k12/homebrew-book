@@ -68,10 +68,10 @@ function SpellTable() {
     };
 
     return (
-        <div>
-            <button onClick={() => handleChangeLevel('first')}>1st Level Spell</button>
-            <button onClick={() => handleChangeLevel('second')}>2nd Level Spell</button>
-            <button onClick={() => handleChangeLevel('third')}>3rd Level Spell</button>
+        <div className='table-content-wrapper'>
+            <button className='table-button' onClick={() => handleChangeLevel('first')}>1st Level</button>
+            <button className='table-button' onClick={() => handleChangeLevel('second')}>2nd Level</button>
+            <button className='table-button' onClick={() => handleChangeLevel('third')}>3rd Level</button>
 
             {renderTableByLevel()}
         </div>
