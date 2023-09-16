@@ -1,0 +1,28 @@
+:root 
+{
+    --spell-content-wrapper-backcground-color:#575757;
+    --spell-content-wrapper-border-color:#221e22;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.spell-content-wrapper
+{
+    height: 90vh;
+    width: 70vw;
+    padding: 15px;
+    border-radius: 8px;
+
+    background-color: var(--spell-content-wrapper-backcground-color);
+    border: solid 1px var(--spell-content-wrapper-border-color);
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    overflow-y: auto;
+}
