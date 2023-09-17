@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import FirstLevelSpells from "../data/first_level_spells_data";
 import SecondLevelSpells from "../data/second_level_spells_data";
 import ThirdLevelSpells from "../data/third_level_spells_data";
-import "./spell_table.css";
+import "../styles/spell_table.css";
 
 function SpellTable() {
     const navigate = useNavigate();
