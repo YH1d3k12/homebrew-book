@@ -8,7 +8,7 @@ import SpellPage from './screens/spell_page';
 
 function App() {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename={process.env.PUBLIC_URL}>
 			<Routes>
 		  		<Route path="/" element={<MainPage />} />
 		  		<Route path="/spellbook" element={<SpellBook />} />
