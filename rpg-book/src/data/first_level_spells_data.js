@@ -46,7 +46,7 @@ const FirstLevelSpells = [
         description: "Creates a temporary force field that boosts your armor class.",
         upCasting: "The duration of the spell increases by 1 round for every two levels above 1st",
         available: "Sorcerer, Wizard"
-    },
+    }
 ];
 
 export default FirstLevelSpells;

@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root 
 {
-    --spell-content-wrapper-backcground-color:#575757;
+    --spell-content-wrapper-backcground-color:#2F2F2F;
     --spell-content-wrapper-border-color:#221e22;
+
+    --spell-title-background-color: #221e22;
+    --spell-title-color: #ee5622;
+
+    --spell-content-background-color: #cdcdcd;
 }
 
 * {
@@ -9,6 +16,7 @@
     padding: 0;
     border: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     list-style: none;
 }
@@ -24,5 +32,63 @@
     border: solid 1px var(--spell-content-wrapper-border-color);
 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.spell-content-wrapper h1
+{
+    padding: 20px;
+    border-radius: 5px 5px 0px 0px;
+
+    background-color: var(--spell-title-background-color);
+    color: var(--spell-title-color);
+    font-size: 1.8rem;
+}
+
+.spell-content
+{   
+    max-height: calc(100% - 75px);
+    padding: 20px;
+    border-radius: 0px 0px 5px 5px;
+
+    background-color: var(--spell-content-background-color);
+    font-size: 1.05rem;
+    font-weight: 400;
     overflow-y: auto;
+}
+
+/* Scrollbar background style */
+.spell-content::-webkit-scrollbar 
+{
+    width: 5px;
+
+}
+  
+/* Scrollbar thumb style */
+.spell-content::-webkit-scrollbar-thumb 
+{
+    background-color: #ee5622;
+    border-radius: 25px;
+}
+
+/* Scrollbar track style */
+.spell-content::-webkit-scrollbar-track 
+{
+    background-color: #f0f0f0;
+}
+
+/* Scrollbar buttons */
+.spell-content::-webkit-scrollbar-button 
+{
+    display: none;
+}
+
+.spell-content strong
+{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.spell-content p
+{
+    margin-bottom: 30px;
 }
