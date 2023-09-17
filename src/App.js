@@ -1,28 +1,20 @@
-import { createBrowserRouter, Route, Routes, RouterProvider } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import MainPage from './screens/main_page';
 import SpellBook from './screens/spell_book';
 import SpellPage from './screens/spell_page';
 
-const router = createBrowserRouter([
-	{ path: '*', Component: RootNavigation }
-]);
-
 
 function App() {
 	return (
-		<RouterProvider router={router} />
-	);
-};
-
-
-function RootNavigation() {
-	return (
-		<Routes>
-			<Route path="/" exact element={<MainPage/>}/>
-			<Route path="/spellbook" exact element={<SpellBook/>}/>
-			<Route path="/spellpage" exact element={<SpellPage/>}/>
-		</Routes>
+		<BrowserRouter>
+			<Routes>
+		  		<Route path="/" element={<MainPage />} />
+		  		<Route path="/spellbook" element={<SpellBook />} />
+		  		<Route path="/spellpage" element={<SpellPage />} />
+			</Routes>
+	  </BrowserRouter>
 	);
 };
 
