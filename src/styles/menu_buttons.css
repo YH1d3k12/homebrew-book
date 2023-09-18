@@ -22,10 +22,9 @@
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
 
-    height: 100vh;
+    height: 100%;
     width: 70vw;
     padding: 15px;
-    border-radius: 8px;
 
     background-color: var(--menu-buttons-content-wrapper-background-color);
 }
@@ -33,7 +32,7 @@
 .row
 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
 }
 
@@ -58,7 +57,7 @@
 .card img
 {
     height: auto;
-    width: 220px;
+    width: 50%;
     transition: transform 0.3s ease-in-out;
 }
 
