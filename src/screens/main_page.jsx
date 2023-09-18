@@ -1,3 +1,4 @@
+import LavaRiver from "../components/lava_river";
 import MenuButtons from "../components/menu_buttons";
 import "../styles/main_page.css"
 // The spell book page will list all available spell with a description and a link to the spell's source 
@@ -10,7 +11,9 @@ export default function MainPage() {
 
     return (
         <div className="main-content-wrapper">
+            <LavaRiver></LavaRiver>
             <MenuButtons></MenuButtons>
+            <LavaRiver></LavaRiver>
         </div>
     );
 };
