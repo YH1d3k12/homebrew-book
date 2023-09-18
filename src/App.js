@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './styles/App.css';
 import MainPage from './screens/main_page';
 import SpellBook from './screens/spell_book';
 import SpellPage from './screens/spell_page';

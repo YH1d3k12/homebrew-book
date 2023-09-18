@@ -68,7 +68,7 @@ function SpellTable() {
     };
 
     return (
-        <div className='table-content-wrapper'>
+        <div className='spell-table-content-wrapper'>
             <button className='table-button' onClick={() => handleChangeLevel('first')}>1st Level</button>
             <button className='table-button' onClick={() => handleChangeLevel('second')}>2nd Level</button>
             <button className='table-button' onClick={() => handleChangeLevel('third')}>3rd Level</button>

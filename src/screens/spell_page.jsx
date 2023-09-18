@@ -7,7 +7,7 @@ export default function SpellPage() {
     const navigate = useNavigate();
 
     return (
-        <div className="content-wrapper">
+        <div className="spell-page-content-wrapper">
             <SpellCard></SpellCard>
             <button onClick={() => navigate("/spellbook")}>Go Back</button>
         </div>

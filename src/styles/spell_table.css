@@ -33,7 +33,7 @@
     list-style: none;
 }
 
-.table-content-wrapper
+.spell-table-content-wrapper
 {
     height: 90vh;
     width: 70vw;
@@ -48,27 +48,27 @@
 }
 
 /* Scrollbar background style */
-.table-content-wrapper::-webkit-scrollbar 
+.spell-table-content-wrapper::-webkit-scrollbar 
 {
     width: 5px;
 
 }
   
 /* Scrollbar thumb style */
-.table-content-wrapper::-webkit-scrollbar-thumb 
+.spell-table-content-wrapper::-webkit-scrollbar-thumb 
 {
     background-color: #ee5622;
     border-radius: 25px;
 }
 
 /* Scrollbar track style */
-.table-content-wrapper::-webkit-scrollbar-track 
+.spell-table-content-wrapper::-webkit-scrollbar-track 
 {
     background-color: #f0f0f0;
 }
 
 /* Scrollbar buttons */
-.table-content-wrapper::-webkit-scrollbar-button 
+.spell-table-content-wrapper::-webkit-scrollbar-button 
 {
     display: none;
 }

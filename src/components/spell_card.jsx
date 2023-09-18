@@ -27,7 +27,7 @@ function SpellCard()
     };
 
     return (
-        <div className="spell-content-wrapper">
+        <div className="spell-card-content-wrapper">
             <h1>{spell.name}</h1>
             <div className="spell-content">
                 <p>

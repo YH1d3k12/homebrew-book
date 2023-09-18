@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import "../styles/main_page.css"
 // The spell book page will list all available spell with a description and a link to the spell's source 
 
 // Make an array of spells containing the spell level, name, description, and id.
@@ -9,7 +10,7 @@ export default function MainPage() {
     const navigate = useNavigate();
 
     return (
-        <div>
+        <div className="main-content-wrapper">
             <button onClick={() => navigate("/spellbook")}>Spell Book</button>
         </div>
     );
