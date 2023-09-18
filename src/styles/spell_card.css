@@ -21,7 +21,7 @@
     list-style: none;
 }
 
-.spell-content-wrapper
+.spell-card-content-wrapper
 {
     height: 90vh;
     width: 70vw;
@@ -34,7 +34,7 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-.spell-content-wrapper h1
+.spell-card-content-wrapper h1
 {
     padding: 20px;
     border-radius: 5px 5px 0px 0px;

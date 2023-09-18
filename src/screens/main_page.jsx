@@ -1,4 +1,6 @@
-import { useNavigate } from "react-router-dom";
+import LavaRiver from "../components/lava_river";
+import MenuButtons from "../components/menu_buttons";
+import "../styles/main_page.css"
 // The spell book page will list all available spell with a description and a link to the spell's source 
 
 // Make an array of spells containing the spell level, name, description, and id.
@@ -6,11 +8,12 @@ import { useNavigate } from "react-router-dom";
 
 
 export default function MainPage() {
-    const navigate = useNavigate();
 
     return (
-        <div>
-            <button onClick={() => navigate("/spellbook")}>Spell Book</button>
+        <div className="main-content-wrapper">
+            <LavaRiver></LavaRiver>
+            <MenuButtons></MenuButtons>
+            <LavaRiver></LavaRiver>
         </div>
     );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from "react-router-dom";
-import "./spell_card.css";
+import "../styles/spell_card.css";
 
 function SpellCard()
 {
@@ -27,7 +27,7 @@ function SpellCard()
     };
 
     return (
-        <div className="spell-content-wrapper">
+        <div className="spell-card-content-wrapper">
             <h1>{spell.name}</h1>
             <div className="spell-content">
                 <p>
