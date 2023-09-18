@@ -1,22 +1,67 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 import "../styles/menu_buttons.css";
+import species from "../assets/images/species.png";
 
 function MenuButtons()
 {
+    const navigate = useNavigate();
+
     return (
-        <div className="spell-content-wrapper">
-            <h1>{spell.name}</h1>
-            <div className="spell-content">
-                <p>
-                    <strong>Type: </strong>{spell.type}<br/>
-                    <strong>Casting Time: </strong>{spell.castingTime}<br/>
-                    <strong>Range: </strong>{spell.range}<br/>
-                    <strong>Components: </strong>{spell.components}<br/>
-                    <strong>Duration: </strong>{spell.duration}<br/>
-                </p>
-                <p>{processLineBreaks(spell.effect)}</p>
-                <p><strong>At Higher Levels: </strong>{spell.upCasting}</p>
-                <p><strong>Spell List: </strong>{spell.available}</p>
+        <div className="menu-buttons-content-wrapper">
+            <div className="row">
+                <div className="card">
+                    <a onClick={() => navigate("/spellbook")}>
+                        <img src={species} alt="Spell Book"/>
+                        <h2>Species</h2>
+                    </a>
+                </div>
+                <div className="card">
+                    <a onClick={() => navigate("/spellbook")}>
+                        <img src={species} alt="Spell Book"/>
+                        <h2>Species</h2>
+                    </a>
+                </div>
+                <div className="card">
+                    <a onClick={() => navigate("/spellbook")}>
+                        <img src={species} alt="Spell Book"/>
+                        <h2>Species</h2>
+                    </a>
+                </div>
+                <div className="card">
+                    <a onClick={() => navigate("/spellbook")}>
+                        <img src={species} alt="Spell Book"/>
+                        <h2>Species</h2>
+                    </a>
+                </div>
+            </div>
+                        <div className="row">
+                <div className="card">
+                    <a onClick={() => navigate("/spellbook")}>
+                        <img src={species} alt="Spell Book"/>
+                        <h2>Species</h2>
+                    </a>
+                </div>
+                <div className="card">
+                    <a onClick={() => navigate("/spellbook")}>
+                        <img src={species} alt="Spell Book"/>
+                        <h2>Species</h2>
+                    </a>
+                </div>
+                <div className="card">
+                    <a onClick={() => navigate("/spellbook")}>
+                        <img src={species} alt="Spell Book"/>
+                        <h2>Species</h2>
+                    </a>
+                </div>
+                <div className="card">
+                    <a onClick={() => navigate("/spellbook")}>
+                        <img src={species} alt="Spell Book"/>
+                        <h2>Species</h2>
+                    </a>
+                </div>
+            </div>
+            <div className="row">
             </div>
         </div>
     );

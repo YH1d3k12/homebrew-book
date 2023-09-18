@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root
+{
+    --menu-buttons-content-wrapper-background-color:#2F2F2F;
+
+    --card-background-color: #cdcdcd;
+}
+
+* 
+{
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu-buttons-content-wrapper
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    height: 90vh;
+    width: 70vw;
+    padding: 15px;
+    border-radius: 8px;
+
+    background-color: var(--menu-buttons-content-wrapper-background-color);
+}
+
+.row
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.card
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.card a
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 2;
+}
+
+.card img
+{
+    height: auto;
+    width: 220px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card h2
+{
+    margin: 10px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+  
+.card::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,221,1) 10%, rgba(255,215,41,1) 25%, rgba(238,86,34,1) 55%, rgba(242,43,41,1) 70%);
+    box-shadow: 0 0 10px rgba(242,43,41,1), 0 0 20px rgba(242,43,41,1), 0 0 40px rgba(242,43,41,1), 0 0 80px rgba(242,43,41,1), 0 0 160px rgba(242,43,41,1);
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+}
+  
+.card:hover::before,
+.card:focus::before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.card:hover
+{
+    scale: 1.1;
+    transition: scale 0.9s ease-in-out;
+}

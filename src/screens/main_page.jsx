@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import MenuButtons from "../components/menu_buttons";
 import "../styles/main_page.css"
 // The spell book page will list all available spell with a description and a link to the spell's source 
 
@@ -7,11 +7,10 @@ import "../styles/main_page.css"
 
 
 export default function MainPage() {
-    const navigate = useNavigate();
 
     return (
         <div className="main-content-wrapper">
-            <button onClick={() => navigate("/spellbook")}>Spell Book</button>
+            <MenuButtons></MenuButtons>
         </div>
     );
 };
