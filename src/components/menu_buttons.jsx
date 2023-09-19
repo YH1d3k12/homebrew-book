@@ -23,66 +23,66 @@ function MenuButtons()
 
     return (
         <div className="menu-buttons-content-wrapper">
-            <div className="row">
-                <div className="card">
+            <div className="menu-buttons-row">
+                <div className="button-card">
                     <a onClick={() => navigate("/")}>
-                        <img className="icon" src={species} alt="Species"/>
+                        <img className="button-icon" src={species} alt="Species"/>
                         <h2>Species</h2>
                     </a>
                 </div>
-                <div className="card">
+                <div className="button-card">
                     <a onClick={() => navigate("/")}>
-                        <img className="icon" src={classes} alt="Classes"/>
+                        <img className="button-icon" src={classes} alt="Classes"/>
                         <h2>Classes</h2>
                     </a>
                 </div>
-                <div className="card">
+                <div className="button-card">
                     <a onClick={() => navigate("/spellbook")}>
-                        <img className="icon" src={spells} alt="Spell Book"/>
+                        <img className="button-icon" src={spells} alt="Spell Book"/>
                         <h2>Spells</h2>
                     </a>
                 </div>
-                <div className="card">
+                <div className="button-card">
                     <a onClick={() => navigate("/")}>
-                        <img className="icon" src={martial_skills} alt="Martial Skills"/>
+                        <img className="button-icon" src={martial_skills} alt="Martial Skills"/>
                         <h2>Martial Skills</h2>
                     </a>
                 </div>
-                <div className="card">
+                <div className="button-card">
                     <a onClick={() => navigate("/")}>
-                        <img className="icon" src={adventure_gear} alt="Adventure Gear"/>
+                        <img className="button-icon" src={adventure_gear} alt="Adventure Gear"/>
                         <h2>Adventure Gear</h2>
                     </a>
                 </div>
             </div>
-            <div className="row">
-                <div className="card">
+            <div className="menu-buttons-row">
+                <div className="button-card">
                     <a onClick={() => navigate("/")}>
-                        <img className="icon" src={feats} alt="Feats"/>
+                        <img className="button-icon" src={feats} alt="Feats"/>
                         <h2>Feats</h2>
                     </a>
                 </div>
-                <div className="card">
+                <div className="button-card">
                     <a onClick={() => navigate("/")}>
-                        <img className="icon" src={rules} alt="Rules"/>
+                        <img className="button-icon" src={rules} alt="Rules"/>
                         <h2>Rules</h2>
                     </a>
                 </div>
-                <div className="card">
+                <div className="button-card">
                     <a onClick={() => navigate("/")}>
-                        <img className="icon" src={crafting} alt="Crafting"/>
+                        <img className="button-icon" src={crafting} alt="Crafting"/>
                         <h2>Crafting</h2>
                     </a>
                 </div>
-                <div className="card">
+                <div className="button-card">
                     <a onClick={() => navigate("/")}>
-                        <img className="icon" src={materials} alt="Materials"/>
+                        <img className="button-icon" src={materials} alt="Materials"/>
                         <h2>Materials</h2>
                     </a>
                 </div>
-                <div className="card">
+                <div className="button-card">
                     <a onClick={() => navigate("/")}>
-                        <img className="icon" src={magic_items} alt="Magic Items"/>
+                        <img className="button-icon" src={magic_items} alt="Magic Items"/>
                         <h2>Magic Items</h2>
                     </a>
                 </div>

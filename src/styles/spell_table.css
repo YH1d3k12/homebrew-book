@@ -3,34 +3,23 @@
 :root 
 {
     --table-content-wrapper-backcground-color:#2F2F2F;
-    --table-content-wrapper-border-color:#221e22;
+    --table-content-wrapper-border-color:#1C1C1C;
 
     --table-button-background-color:#2F2F2F;
     --table-button-color: #f0f0f0;
-    --table-button-border-color:#221e22;
+    --table-button-border-color:#1C1C1C;
 
-    --table-button-focus-background-color:#221e22;
+    --table-button-focus-background-color:#1C1C1C;
     --table-button-focus-color:#ee5622;
-    --table-button-focus-border-color:#2e2e2e;
+    --table-button-focus-border-color:#2F2F2F;
     
-    --table-header-background-color:#221e22;
+    --table-header-background-color:#1C1C1C;
     --table-header-color:#ee5622;
 
     --table-row-primary-background-color:#cdcdcd;
     --table-row-secundary-background-color:#b4b4b4;
 
     --spell-name-hover-effect:#ee5622;
-}
-
-* 
-{
-    box-sizing: border-box;
-    padding: 0;
-    border: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    list-style: none;
 }
 
 .spell-table-content-wrapper

@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles//spell_page.css";
 import SpellCard from "../components/spell_card";
+import "../styles//spell_page.css";
 
 export default function SpellPage() {
     const navigate = useNavigate();

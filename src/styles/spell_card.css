@@ -11,16 +11,6 @@
     --spell-content-background-color: #cdcdcd;
 }
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    border: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    list-style: none;
-}
-
 .spell-card-content-wrapper
 {
     height: 90vh;
