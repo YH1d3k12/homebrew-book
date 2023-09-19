@@ -4,7 +4,7 @@
 {
     --menu-buttons-content-wrapper-background-color:#2F2F2F;
 
-    --card-background-color: #cdcdcd;
+    --card-color: #000000;
 }
 
 * 
@@ -19,11 +19,12 @@
 
 .menu-buttons-content-wrapper
 {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
     height: 100%;
-    width: 70vw;
+    width: 80vw;
     padding: 15px;
 
     background-color: var(--menu-buttons-content-wrapper-background-color);
@@ -31,9 +32,10 @@
 
 .row
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .card
@@ -41,8 +43,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     position: relative;
+    
+    height: 120px;
+    width: 120px;
 }
 
 .card a
@@ -50,25 +54,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
+    height: 100%;
     width: 100%;
+
+    cursor: pointer;
     z-index: 2;
 }
 
-.card img
+.icon
 {
-    height: auto;
+    height: 50%;
     width: 50%;
-    transition: transform 0.3s ease-in-out;
 }
 
 .card h2
 {
-    margin: 10px 0px;
+    margin: 5px 0px;
+
+    color: var(--card-color);
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
 }
   
-.card::before {
+.card::before 
+{
     content: "";
     position: absolute;
     width: 50%;
@@ -81,8 +92,8 @@
     transition: transform 1s, opacity 1s;
 }
   
-.card:hover::before,
-.card:focus::before {
+.card:hover::before
+{
     transform: scale(1);
     opacity: 1;
 }
@@ -90,5 +101,80 @@
 .card:hover
 {
     scale: 1.1;
-    transition: scale 0.9s ease-in-out;
+    transition: scale 0.3s ease-in-out;
+}
+
+@media (min-width: 640px) {
+    .card
+    {
+        height: 150px;
+        width: 150px;
+    }
+    .card h2
+    {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-buttons-content-wrapper
+    {
+        flex-direction: column;
+        justify-content: start;
+    }
+    
+    .row
+    {
+        flex-direction: row;
+    }
+
+    .card
+    {
+        height: 120px;
+        width: 120px;
+    }
+
+    .card h2
+    {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card
+    {
+        height: 150px;
+        width: 150px;
+    }
+
+    .card h2
+    {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .card
+    {
+        height: 180px;
+        width: 180px;
+    }
+
+    .card h2
+    {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1536px) {
+    .card
+    {
+        height: 220px;
+        width: 220px;
+    }
+
+    .card h2
+    {
+        font-size: 1.1rem;
+    }
 }

@@ -1,4 +1,5 @@
-@keyframes moveGradient {
+@keyframes moveGradient 
+{
     0% 
     {
         background-position: 50% 0%;
@@ -15,9 +16,9 @@
 
 .lava-river
 {
-    width: 20px;
     height: 100vh;
-    background: linear-gradient(0deg, rgba(242,43,41,1) 0%, rgba(238,86,34,1) 35%, rgba(255,215,41,1) 45%, rgba(255,244,173,1) 50%, rgba(255,215,41,1) 55%, rgba(238,86,34,1) 65%, rgba(242,43,41,1) 100%);
-    background-size: 200% 200%; /* Aumenta o tamanho para garantir que o gradiente se mova completamente */
+    width: 20px;
+    background: linear-gradient(0deg, #f22b29 0%, #ee5622 35%, #ffd729 45%, #fff4ad 50%, #ffd729 55%, #ee5622 65%, #f22b29 100%);
+    background-size: 200% 200%;
     animation: moveGradient 10s linear infinite;
 }

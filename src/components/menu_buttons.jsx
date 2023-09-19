@@ -26,31 +26,31 @@ function MenuButtons()
             <div className="row">
                 <div className="card">
                     <a onClick={() => navigate("/")}>
-                        <img src={species} alt="Species"/>
+                        <img className="icon" src={species} alt="Species"/>
                         <h2>Species</h2>
                     </a>
                 </div>
                 <div className="card">
                     <a onClick={() => navigate("/")}>
-                        <img src={classes} alt="Classes"/>
+                        <img className="icon" src={classes} alt="Classes"/>
                         <h2>Classes</h2>
                     </a>
                 </div>
                 <div className="card">
                     <a onClick={() => navigate("/spellbook")}>
-                        <img src={spells} alt="Spell Book"/>
+                        <img className="icon" src={spells} alt="Spell Book"/>
                         <h2>Spells</h2>
                     </a>
                 </div>
                 <div className="card">
                     <a onClick={() => navigate("/")}>
-                        <img src={martial_skills} alt="Martial Skills"/>
+                        <img className="icon" src={martial_skills} alt="Martial Skills"/>
                         <h2>Martial Skills</h2>
                     </a>
                 </div>
                 <div className="card">
                     <a onClick={() => navigate("/")}>
-                        <img src={adventure_gear} alt="Adventure Gear"/>
+                        <img className="icon" src={adventure_gear} alt="Adventure Gear"/>
                         <h2>Adventure Gear</h2>
                     </a>
                 </div>
@@ -58,31 +58,31 @@ function MenuButtons()
             <div className="row">
                 <div className="card">
                     <a onClick={() => navigate("/")}>
-                        <img src={feats} alt="Feats"/>
+                        <img className="icon" src={feats} alt="Feats"/>
                         <h2>Feats</h2>
                     </a>
                 </div>
                 <div className="card">
                     <a onClick={() => navigate("/")}>
-                        <img src={rules} alt="Rules"/>
+                        <img className="icon" src={rules} alt="Rules"/>
                         <h2>Rules</h2>
                     </a>
                 </div>
                 <div className="card">
                     <a onClick={() => navigate("/")}>
-                        <img src={crafting} alt="Crafting"/>
+                        <img className="icon" src={crafting} alt="Crafting"/>
                         <h2>Crafting</h2>
                     </a>
                 </div>
                 <div className="card">
                     <a onClick={() => navigate("/")}>
-                        <img src={materials} alt="Materials"/>
+                        <img className="icon" src={materials} alt="Materials"/>
                         <h2>Materials</h2>
                     </a>
                 </div>
                 <div className="card">
                     <a onClick={() => navigate("/")}>
-                        <img src={magic_items} alt="Magic Items"/>
+                        <img className="icon" src={magic_items} alt="Magic Items"/>
                         <h2>Magic Items</h2>
                     </a>
                 </div>
