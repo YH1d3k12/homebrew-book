@@ -17,6 +17,7 @@ function SpellCard()
                 <React.Fragment key={index}>
                     {line}
                     <br/>
+                    <br/>
                 </React.Fragment>
             ));
         }
