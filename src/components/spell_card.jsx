@@ -30,7 +30,7 @@ function SpellCard()
     return (
         <div className="spell-card-content-wrapper">
             <h1>{spell.name}</h1>
-            <div className="spell-content">
+            <div className="spell-card-content">
                 <p>
                     <strong>Type: </strong>{spell.type}<br/>
                     <strong>Casting Time: </strong>{spell.castingTime}<br/>
