@@ -4,17 +4,7 @@
 {
     --menu-buttons-content-wrapper-background-color:#2F2F2F;
 
-    --card-color: #000000;
-}
-
-* 
-{
-    box-sizing: border-box;
-    padding: 0;
-    border: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
+    --menu-buttons-card-color: #000000;
 }
 
 .menu-buttons-content-wrapper
@@ -30,7 +20,7 @@
     background-color: var(--menu-buttons-content-wrapper-background-color);
 }
 
-.row
+.menu-buttons-row
 {
     display: flex;
     flex-direction: column;
@@ -38,7 +28,7 @@
     justify-content: space-evenly;
 }
 
-.card
+.button-card
 {
     display: flex;
     align-items: center;
@@ -49,7 +39,7 @@
     width: 120px;
 }
 
-.card a
+.button-card a
 {
     display: flex;
     flex-direction: column;
@@ -63,22 +53,22 @@
     z-index: 2;
 }
 
-.icon
+.button-icon
 {
     height: 50%;
     width: 50%;
 }
 
-.card h2
+.button-card h2
 {
     margin: 5px 0px;
 
-    color: var(--card-color);
+    color: var(--menu-buttons-card-color);
     font-family: 'Roboto', sans-serif;
     font-size: 0.8rem;
 }
   
-.card::before 
+.button-card::before 
 {
     content: "";
     position: absolute;
@@ -92,88 +82,93 @@
     transition: transform 1s, opacity 1s;
 }
   
-.card:hover::before
+.button-card:hover::before
 {
     transform: scale(1);
     opacity: 1;
 }
 
-.card:hover
+.button-card:hover
 {
     scale: 1.1;
     transition: scale 0.3s ease-in-out;
 }
 
-@media (min-width: 640px) {
-    .card
+@media (min-width: 640px) 
+{
+    .button-card
     {
         height: 150px;
         width: 150px;
     }
-    .card h2
+    .button-card h2
     {
         font-size: 0.9rem;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) 
+{
     .menu-buttons-content-wrapper
     {
         flex-direction: column;
         justify-content: start;
     }
     
-    .row
+    .menu-buttons-row
     {
         flex-direction: row;
     }
 
-    .card
+    .button-card
     {
         height: 120px;
         width: 120px;
     }
 
-    .card h2
+    .button-card h2
     {
         font-size: 0.8rem;
     }
 }
 
-@media (min-width: 1024px) {
-    .card
+@media (min-width: 1024px) 
+{
+    .button-card
     {
         height: 150px;
         width: 150px;
     }
 
-    .card h2
+    .button-card h2
     {
         font-size: 0.9rem;
     }
 }
 
-@media (min-width: 1280px) {
-    .card
+@media (min-width: 1280px) 
+{
+    .button-card
     {
         height: 180px;
         width: 180px;
     }
 
-    .card h2
+    .button-card h2
     {
         font-size: 1rem;
     }
 }
 
-@media (min-width: 1536px) {
-    .card
+@media (min-width: 1536px)
+{
+    .button-card
     {
         height: 220px;
         width: 220px;
     }
 
-    .card h2
+    .button-card h2
     {
         font-size: 1.1rem;
     }

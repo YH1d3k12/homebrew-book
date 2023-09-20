@@ -8,7 +8,7 @@ const SecondLevelSpells = [
         duration: "Concentration, up to 1 minute",
         effect: "Choose a manufactured metal object, such as a metal weapon or a suit of heavy or medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes 2d8 fire damage when you cast the spell. Until the spell ends, you can use a bonus action on each of your subsequent turns to cause this damage again.\n If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can. If it doesn’t drop the object, it has disadvantage on attack rolls and ability checks until the start of your next turn.",
         description: "Inflicts intense heat and damage to metal objects.",
-        upCasting: "When you cast this spell at higher levels, the damage increases by 1d8 for each level above 2nd.",
+        upCasting: "The damage increases by 1d8 for each spell level above 2nd.",
         available: "Druid, Ranger"
     },
     {
@@ -20,7 +20,7 @@ const SecondLevelSpells = [
         duration: "Concentration, up to 1 minute",
         effect: "Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.",
         description: "Immobilizes a humanoid creature, rendering them unable to move.",
-        upCasting: "When you cast this spell at higher levels, you can target one additional humanoid for each level above 2nd. The humanoids must be within 30 feet of each other when you target them.",
+        upCasting: "You can target one additional humanoid for each spell level above 2nd. The humanoids must be within 30 feet of each other when you target them.",
         available: "Bard, Cleric, Druid, Sorcerer, Warlock, Wizard"
     },
     {
