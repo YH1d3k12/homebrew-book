@@ -57,7 +57,6 @@
 
 .spell-table-body-first a:hover
 {
-    scale: 1.1;
     color: var(--spell-name-hover-effect);
     cursor: pointer;
 }
