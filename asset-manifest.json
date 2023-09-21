@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/homebrew-book/static/css/main.86a602b9.css",
-    "main.js": "/homebrew-book/static/js/main.cfc0a775.js",
+    "main.js": "/homebrew-book/static/js/main.f63f472f.js",
     "static/js/787.26da21f0.chunk.js": "/homebrew-book/static/js/787.26da21f0.chunk.js",
     "static/media/adventure_gear.png": "/homebrew-book/static/media/adventure_gear.95480cca4eb447f96c76.png",
     "static/media/materials.png": "/homebrew-book/static/media/materials.b08c286a322f8f81a852.png",
@@ -12,11 +12,11 @@
     "static/media/species.png": "/homebrew-book/static/media/species.0e8f779e87a7c5b79857.png",
     "index.html": "/homebrew-book/index.html",
     "main.86a602b9.css.map": "/homebrew-book/static/css/main.86a602b9.css.map",
-    "main.cfc0a775.js.map": "/homebrew-book/static/js/main.cfc0a775.js.map",
+    "main.f63f472f.js.map": "/homebrew-book/static/js/main.f63f472f.js.map",
     "787.26da21f0.chunk.js.map": "/homebrew-book/static/js/787.26da21f0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.86a602b9.css",
-    "static/js/main.cfc0a775.js"
+    "static/js/main.f63f472f.js"
   ]
 }
