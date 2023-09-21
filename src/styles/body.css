@@ -18,6 +18,8 @@
 
 .body
 {
+    display: grid;
+    grid-template-rows: 10vh 90vh;
     height: 100vh;
     width: 100vw;
     background-color: var(--body-background-color);

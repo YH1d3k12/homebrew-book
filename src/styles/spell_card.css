@@ -13,10 +13,9 @@
 
 .spell-card-content-wrapper
 {
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     padding: 15px;
-    border-radius: 8px;
 
     background-color: var(--spell-content-wrapper-backcground-color);
     border: solid 1px var(--spell-content-wrapper-border-color);
