@@ -13,8 +13,8 @@
 
 .spell-card-content-wrapper
 {
-    height: 90vh;
-    width: 90vw;
+    height: 90%;
+    width: 90%;
     padding: 15px;
     border-radius: 8px;
 
@@ -113,7 +113,7 @@
 {   
     .spell-card-content-wrapper
     {
-        width: 70vw;
+        width: 70%;
     }
 
     .spell-card-content-wrapper h1
