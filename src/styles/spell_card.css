@@ -43,6 +43,7 @@
     background-color: var(--spell-content-background-color);
     font-size: 0.9rem;
     font-weight: 400;
+    text-align: justify;
     overflow-y: auto;
 }
 

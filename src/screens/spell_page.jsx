@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import SpellCard from "../components/spell_card";
 import "../styles//spell_page.css";
 
-export default function SpellPage() {
+export default function SpellPageScreen() 
+{
     const navigate = useNavigate();
 
     return (
