@@ -4,7 +4,8 @@ import SpellTable from "../components/spell_table";
 import "../styles/spell_book.css"
 
 
-export default function SpellBook() {
+export default function SpellBookScreen() 
+{
     const navigate = useNavigate();
 
     return (

@@ -57,15 +57,18 @@
 {
     height: 50%;
     width: 50%;
+    filter: drop-shadow(1px 1px 2px #fff4ad) drop-shadow(2px 2px 4px #ffd729) drop-shadow(3px 3px 6px #ee5622) drop-shadow(4px 4px 8px #f22b29);
 }
 
 .button-card h2
 {
-    margin: 5px 0px;
+    margin: 10px 0px;
 
     color: var(--menu-buttons-card-color);
     font-family: 'Roboto', sans-serif;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    text-shadow: 0 0 10px #fff4ad, 0 0 20px #ffd729, 0 0 40px #ee5622, 0 0 80px #f22b29;
+    z-index: 3;
 }
   
 .button-card::before 
@@ -79,19 +82,20 @@
     box-shadow: 0 0 10px rgba(242,43,41,1), 0 0 20px rgba(242,43,41,1), 0 0 40px rgba(242,43,41,1), 0 0 80px rgba(242,43,41,1), 0 0 160px rgba(242,43,41,1);
     transform: scale(0);
     opacity: 0;
-    transition: transform 1s, opacity 1s;
+    transition: transform 0.1s, opacity 0.1s;
 }
   
 .button-card:hover::before
 {
     transform: scale(1);
     opacity: 1;
+    transition: transform 0.1s, opacity 0.1s;
 }
 
 .button-card:hover
 {
     scale: 1.1;
-    transition: scale 0.3s ease-in-out;
+    transition: scale 0.1s ease-in-out;
 }
 
 @media (min-width: 640px) 
@@ -103,7 +107,7 @@
     }
     .button-card h2
     {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -128,7 +132,7 @@
 
     .button-card h2
     {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 }
 
@@ -142,7 +146,7 @@
 
     .button-card h2
     {
-        font-size: 0.9rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -156,7 +160,7 @@
 
     .button-card h2
     {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -170,6 +174,6 @@
 
     .button-card h2
     {
-        font-size: 1.1rem;
+        font-size: 1.7rem;
     }
 }
