@@ -82,19 +82,20 @@
     box-shadow: 0 0 10px rgba(242,43,41,1), 0 0 20px rgba(242,43,41,1), 0 0 40px rgba(242,43,41,1), 0 0 80px rgba(242,43,41,1), 0 0 160px rgba(242,43,41,1);
     transform: scale(0);
     opacity: 0;
-    transition: transform 1s, opacity 1s;
+    transition: transform 0.1s, opacity 0.1s;
 }
   
 .button-card:hover::before
 {
     transform: scale(1);
     opacity: 1;
+    transition: transform 0.1s, opacity 0.1s;
 }
 
 .button-card:hover
 {
     scale: 1.1;
-    transition: scale 0.3s ease-in-out;
+    transition: scale 0.1s ease-in-out;
 }
 
 @media (min-width: 640px) 
