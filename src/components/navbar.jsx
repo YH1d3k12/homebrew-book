@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import "../styles/navbar.css"
+import dragon from "../assets/images/dragon.png";
 
 function NavBar()
 {
@@ -9,8 +10,11 @@ function NavBar()
     return (
         <header className="navigation-container">
             <a className="navigation-logo" onClick={() => navigate("/")}>
-                <h1>D&D5e Homebrew Book</h1>
-                <p>by Djalma Hideki Yamamoto</p>
+                <img src={dragon} alt="Dragon" />
+                <div>
+                    <h1>D&D5e Homebrew Book</h1>
+                    <p>by Djalma Hideki Yamamoto</p>
+                </div>
             </a>
         </header>
     );

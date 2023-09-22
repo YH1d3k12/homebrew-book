@@ -17,8 +17,16 @@
 .lava-river
 {
     height: 100%;
-    width: 20px;
+    width: 10px;
     background: linear-gradient(0deg, #f22b29 0%, #ee5622 35%, #ffd729 45%, #fff4ad 50%, #ffd729 55%, #ee5622 65%, #f22b29 100%);
     background-size: 200% 200%;
     animation: moveGradient 10s linear infinite;
+}
+
+@media (min-width: 640px) 
+{
+    .lava-river
+    {
+        width: 20px;
+    }
 }
