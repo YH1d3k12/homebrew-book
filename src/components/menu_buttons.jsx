@@ -23,7 +23,7 @@ function MenuButtons()
         <div className="menu-buttons-content-wrapper">
             <div className="menu-buttons-row">
                 <div className="button-card">
-                    <a onClick={() => navigate("/")}>
+                    <a onClick={() => navigate("/species")}>
                         <img className="button-icon" src={species} alt="Species"/>
                         <h2>Species</h2>
                     </a>
