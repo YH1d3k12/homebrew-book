@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import "../styles/menu_buttons.css";
+import "./menu_buttons.css";
 
 import species from "../assets/images/species.png";
 import classes from "../assets/images/classes.png";
@@ -15,8 +15,6 @@ import magic_items from "../assets/images/magic_items.png";
 import materials from "../assets/images/materials.png";
 
 
-
-
 function MenuButtons()
 {
     const navigate = useNavigate();
@@ -25,7 +23,7 @@ function MenuButtons()
         <div className="menu-buttons-content-wrapper">
             <div className="menu-buttons-row">
                 <div className="button-card">
-                    <a onClick={() => navigate("/")}>
+                    <a onClick={() => navigate("/species")}>
                         <img className="button-icon" src={species} alt="Species"/>
                         <h2>Species</h2>
                     </a>

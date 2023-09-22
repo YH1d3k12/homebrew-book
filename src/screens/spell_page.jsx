@@ -1,6 +1,6 @@
 import React from "react";
 import SpellCard from "../components/spell_card";
-import "../styles//spell_page.css";
+import "./spell_page.css";
 
 export default function SpellPageScreen() 
 {

@@ -5,7 +5,7 @@ import SecondLevelSpells from "../data/second_level_spells_data";
 import ThirdLevelSpells from "../data/third_level_spells_data";
 import "../styles/table.css";
 import "../styles/table_tabs.css";
-import "../styles/spell_table.css";
+import "./spell_table.css";
 
 function SpellTable() {
     const navigate = useNavigate();
