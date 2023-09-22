@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import "../styles/menu_buttons.css";
+import "./menu_buttons.css";
 
 import species from "../assets/images/species.png";
 import classes from "../assets/images/classes.png";
@@ -13,8 +13,6 @@ import rules from "../assets/images/rules.png";
 import crafting from "../assets/images/crafting.png";
 import magic_items from "../assets/images/magic_items.png";
 import materials from "../assets/images/materials.png";
-
-
 
 
 function MenuButtons()

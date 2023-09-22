@@ -1,5 +1,5 @@
 import React from 'react';
-import "../styles/lava_river.css";
+import "./lava_river.css";
 
 function LavaRiver()
 {
