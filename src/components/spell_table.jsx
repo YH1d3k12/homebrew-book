@@ -1,19 +1,42 @@
-import React, { useState } from 'react';
+import React, { useEffect,  useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import FirstLevelSpells from "../data/first_level_spells_data";
-import SecondLevelSpells from "../data/second_level_spells_data";
-import ThirdLevelSpells from "../data/third_level_spells_data";
+import GetSpells from '../data/getSpells';
 import "../styles/table.css";
 import "../styles/table_tabs.css";
 import "./spell_table.css";
 
 function SpellTable() {
     const navigate = useNavigate();
+    
+    // Define spells como um array vazio
+    // SetSpells altera o valor de spells quando for chamado
+    const [spells, setSpells] = useState([]);
 
     // Controla o nível atual da tabela
     // currentLevel é uma váriavel criada pelo useState que retem o valor 'first' por padrão quando a página é carregada
     // setCurrentLevel é uma função que altera o valor de currentLevel
-    const [currentLevel, setCurrentLevel] = useState('first');
+    const [currentLevel, setCurrentLevel] = useState(1);
+    
+    // Quando o componente é carregado useEffect é chamado
+    useEffect(() => {
+        const loadSpells = async () => {
+            try 
+            {
+                let loadedSpells = await GetSpells();
+    
+                setSpells(loadedSpells);
+            }
+            catch (error) 
+            {
+                console.error('Failed to load spells:', error);
+            }
+        };
+    
+        // Chama loadSpells quando carregado
+        loadSpells();
+    // Segundo parametro de useEffect é uma lista de dependencias, se vazia, a função é chamada apenas uma vez
+    // Se a lista não for vazia, a função é chamada sempre que um dos valores da lista mudar
+    }, []);
 
     // Função chamada pelos botões para alternar o nível dos feitiços
     const handleChangeLevel = (level) => {
@@ -26,22 +49,7 @@ function SpellTable() {
     };
 
     // Função para renderizar a tabela com base no nível selecionado
-    const renderTableByLevel = () => {
-        let spells = [];
-
-        // Selecionar os feitiços com base no nível
-        if (currentLevel === 'first') 
-        {
-            spells = FirstLevelSpells;
-        } 
-        else if (currentLevel === 'second')
-        {
-          spells = SecondLevelSpells;
-        } 
-        else if (currentLevel === 'third') 
-        {
-          spells = ThirdLevelSpells;
-        }
+    const renderTable = () => {
 
         return (
             <table className="content-table">
@@ -54,12 +62,12 @@ function SpellTable() {
                     </tr>
                 </thead>
                 <tbody>
-                    {spells.map((spell, index) => (
-                        <tr key={index}>
+                    {spells.filter((spell) => spell.level === currentLevel).map((spell) => (
+                        <tr key={spell.id}>
                             <td className="spell-table-body-first">
                                 <a onClick={() => handleSpellClick(spell)}>{spell.name}</a>
                             </td>
-                            <td className="spell-table-body-second">{spell.type}</td>
+                            <td className="spell-table-body-second">{spell.type_name}</td>
                             <td className="spell-table-body-third">{spell.description}</td>
                             <td className="spell-table-body-fourth">{spell.available}</td>
                         </tr>
@@ -71,10 +79,10 @@ function SpellTable() {
 
     return (
         <div className="spell-table-content-wrapper">
-            <button className="table-tab" onClick={() => handleChangeLevel('first')}>1st Level</button>
-            <button className="table-tab" onClick={() => handleChangeLevel('second')}>2nd Level</button>
-            <button className="table-tab" onClick={() => handleChangeLevel('third')}>3rd Level</button>
-            {renderTableByLevel()}
+            <button className="table-tab" onClick={() => handleChangeLevel(1)}>1st Level</button>
+            <button className="table-tab" onClick={() => handleChangeLevel(2)}>2nd Level</button>
+            <button className="table-tab" onClick={() => handleChangeLevel(3)}>3rd Level</button>
+            {renderTable()}
         </div>
     );
 }
