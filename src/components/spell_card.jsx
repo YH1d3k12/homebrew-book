@@ -32,7 +32,7 @@ function SpellCard()
             <h1>{spell.name}</h1>
             <div className="spell-card-content">
                 <p>
-                    <strong>Type: </strong>{spell.type}<br/>
+                    <strong>Type: </strong>{spell.type_name}<br/>
                     <strong>Casting Time: </strong>{spell.castingTime}<br/>
                     <strong>Range: </strong>{spell.range}<br/>
                     <strong>Components: </strong>{spell.components}<br/>
