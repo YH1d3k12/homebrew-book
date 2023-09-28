@@ -1,49 +1,36 @@
-import React, { useEffect,  useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import FirstLevelSpells from "../data/first_level_spells_data";
-import SecondLevelSpells from "../data/second_level_spells_data";
-import ThirdLevelSpells from "../data/third_level_spells_data";
+import GetSpells from '../data/getSpells';
 import "../styles/table.css";
 import "../styles/table_tabs.css";
 import "./spell_table.css";
-import GetSpells from '../data/getSpells';
 
-function SpellTable() {
+function SpellTable2() {
     const navigate = useNavigate();
 
     // Controla o nível atual da tabela
     // currentLevel é uma váriavel criada pelo useState que retem o valor 'first' por padrão quando a página é carregada
     // setCurrentLevel é uma função que altera o valor de currentLevel
     const [currentLevel, setCurrentLevel] = useState('first');
+
     const [spells, setSpells] = useState([]);
 
     useEffect(() => {
-        const loadSpells = async () => {
-          try {
-            let loadedSpells = [];
-    
-            if (currentLevel === 'first') {
-              loadedSpells = await GetSpells();
-            } else if (currentLevel === 'second') {
-              // Load spells for second level
-            } else if (currentLevel === 'third') {
-              // Load spells for third level
-            }
-
-            if (loadedSpells instanceof Promise) 
+        const fetchData = async () => {
+            try 
             {
-                loadedSpells = await loadedSpells;
+                const spellsData = await GetSpells();
+                setSpells(spellsData);
+            } catch (error) 
+            {
+                console.error('Error fetching spells:', error);
             }
-    
-            setSpells(loadedSpells);
-          } catch (error) {
-            console.error('Erro ao carregar feitiços:', error);
-          }
         };
-    
-        loadSpells();
-      }, [currentLevel]);
-    
+
+        // Chama a função FetchData quando o componente carrega
+        fetchData();
+    }, []);
+
     // Função chamada pelos botões para alternar o nível dos feitiços
     const handleChangeLevel = (level) => {
         setCurrentLevel(level);
@@ -55,7 +42,7 @@ function SpellTable() {
     };
 
     // Função para renderizar a tabela com base no nível selecionado
-    const renderTable = () => {
+    const renderTableByLevel = () => {
         return (
             <table className="content-table">
                 <thead>
@@ -67,8 +54,8 @@ function SpellTable() {
                     </tr>
                 </thead>
                 <tbody>
-                    {spells.map((spell) => (
-                        <tr key={spell.id}>
+                    {spells.map((spell, index) => (
+                        <tr key={index}>
                             <td className="spell-table-body-first">
                                 <a onClick={() => handleSpellClick(spell)}>{spell.name}</a>
                             </td>
@@ -87,9 +74,9 @@ function SpellTable() {
             <button className="table-tab" onClick={() => handleChangeLevel('first')}>1st Level</button>
             <button className="table-tab" onClick={() => handleChangeLevel('second')}>2nd Level</button>
             <button className="table-tab" onClick={() => handleChangeLevel('third')}>3rd Level</button>
-            {renderTable()}
+            {renderTableByLevel()}
         </div>
     );
 }
 
-export default SpellTable;
+export default SpellTable2;
