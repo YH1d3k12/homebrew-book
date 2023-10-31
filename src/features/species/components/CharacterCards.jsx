@@ -1,17 +1,14 @@
-import React from 'react';
-import { useNavigate } from "react-router-dom";
-import "./characterCards.css";
+import { Link } from "react-router-dom";
+
 import species from "../../../data/species_data";
+import "./characterCards.css";
 
 
-function CharacterCards()
-{
-    const navigate = useNavigate();
-
+const CharacterCards = () => {
     return (
         <div className="character-cards-content-wrapper">
             {species.map((specie) => (
-                <a onClick={() => navigate("/")} className="character-card">
+                <Link to="" className="character-card">
                     <div className="character-card-lines"></div>
                     <div className="character-card-image-box">
                         <img className="character-card-image" src={specie.image} alt={specie.name} />
@@ -20,10 +17,11 @@ function CharacterCards()
                         <h2>{specie.name}</h2>
                         <h5>{specie.type}</h5>
                     </div>
-                </a>
-            ))}
+                </Link>
+            ))};
         </div>
     );
-}
+};
+
 
 export default CharacterCards;

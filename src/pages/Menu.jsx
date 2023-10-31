@@ -1,5 +1,5 @@
-import LavaRiver from "../components/effects/LavaRiver";
-import MenuButtons from "../features/menu/components/MenuButtons";
+import LavaRiver from "../components/effects/LavaRiver.jsx";
+import MenuButtons from "../features/menu/components/MenuButtons.jsx";
 
 import "../features/menu/menu.css";
 
