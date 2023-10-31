@@ -12,6 +12,9 @@ const SpellTable = ({data, currentLevel}) => {
         navigate("/spellpage", { state: { spell } });
     };
 
+    // Organiza os dados em ordem alfabética pelo nome da magia.
+    const sortedData = [...data].sort((a, b) => a.name.localeCompare(b.name));
+
     return (
         <table className="content-table">
             <thead>
@@ -23,7 +26,7 @@ const SpellTable = ({data, currentLevel}) => {
                 </tr>
             </thead>
             <tbody>
-                {data.filter((spell) => spell.level === currentLevel).map((spell) => (
+                {sortedData.filter((spell) => spell.level === currentLevel).map((spell) => (
                     <tr key={spell.id}>
                         <td className="spell-table-body-first">
                             <a onClick={() => handleSpellClick(spell)}>{spell.name}</a>
