@@ -1,5 +1,4 @@
-:root 
-{
+:root {
     --spell-content-wrapper-backcground-color:#2F2F2F;
     --spell-content-wrapper-border-color:#221e22;
 
@@ -9,8 +8,7 @@
     --spell-content-background-color: #cdcdcd;
 }
 
-.spell-card-content-wrapper
-{
+.spell-card-content-wrapper {
     height: 100%;
     width: 100%;
     padding: 15px;
@@ -21,8 +19,7 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-.spell-card-content-wrapper h1
-{
+.spell-card-content-wrapper h1 {
     padding: 10px;
     border-radius: 5px 5px 0px 0px;
 
@@ -31,8 +28,7 @@
     font-size: 1.4rem;
 }
 
-.spell-card-content
-{   
+.spell-card-content {   
     max-height: calc(100% - 75px);
     padding: 10px;
     border-radius: 0px 0px 5px 5px;
@@ -45,93 +41,76 @@
 }
 
 /* Scrollbar background style */
-.spell-card-content::-webkit-scrollbar 
-{
+.spell-card-content::-webkit-scrollbar {
     width: 5px;
 
 }
   
 /* Scrollbar thumb style */
-.spell-card-content::-webkit-scrollbar-thumb 
-{
+.spell-card-content::-webkit-scrollbar-thumb {
     background-color: #ee5622;
     border-radius: 25px;
 }
 
 /* Scrollbar track style */
-.spell-card-content::-webkit-scrollbar-track 
-{
+.spell-card-content::-webkit-scrollbar-track {
     background-color: #f0f0f0;
 }
 
 /* Scrollbar buttons */
-.spell-card-content::-webkit-scrollbar-button 
-{
+.spell-card-content::-webkit-scrollbar-button {
     display: none;
 }
 
-.spell-card-content strong
-{
+.spell-card-content strong {
     font-size: 0.95rem;
     font-weight: 700;
 }
 
-.spell-card-content p
-{
+.spell-card-content p {
     margin-bottom: 15px;
 }
 
-@media (min-width: 768px) 
-{   
-    .spell-card-content-wrapper h1
-    { 
+@media (min-width: 768px) {   
+    .spell-card-content-wrapper h1 { 
         padding: 15px;
         font-size: 1.5rem;
     }
 
-    .spell-card-content
-    {   
+    .spell-card-content {   
         padding: 15px;
         font-size: 1rem;
     }    
     
-    .spell-card-content strong
-    {
+    .spell-card-content strong {
         font-size: 1.05rem;
     }
     
-    .spell-card-content p
-    {
+    .spell-card-content p {
         margin-bottom: 20px;
     }
 }
 
-@media (min-width: 1280px) 
-{   
-    .spell-card-content-wrapper
-    {
+@media (min-width: 1280px) {   
+    .spell-card-content-wrapper {
         width: 70%;
     }
 
-    .spell-card-content-wrapper h1
-    { 
+    .spell-card-content-wrapper h1 { 
         padding: 20px;
         font-size: 1.8rem;
     }
 
-    .spell-card-content
-    {   
+    .spell-card-content {   
         padding: 20px;
         font-size: 1.05rem;
     }    
     
-    .spell-card-content strong
-    {
+    .spell-card-content strong {
         font-size: 1.1rem;
     }
     
-    .spell-card-content p
-    {
+    .spell-card-content p {
         margin-bottom: 30px;
     }
 }

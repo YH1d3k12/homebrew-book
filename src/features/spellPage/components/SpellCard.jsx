@@ -2,8 +2,8 @@ import React from 'react';
 import { useLocation } from "react-router-dom";
 import "./spellCard.css";
 
-function SpellCard()
-{
+
+const SpellCard = () => {
     const location = useLocation();
     const { spell } = location.state;
 
@@ -45,5 +45,6 @@ function SpellCard()
         </div>
     );
 }
+
 
 export default SpellCard;
