@@ -13,35 +13,6 @@
     --spell-name-hover-effect:#ee5622;
 }
 
-.spell-table-content-wrapper {
-    height: 100%;
-    width: 100%;
-    padding: 15px;
-
-    background-color: var(--table-content-wrapper-backcground-color);
-    border: solid 1px var(--table-content-wrapper-border-color);
-
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    overflow-y: auto;
-}
-
-.spell-table-content-wrapper::-webkit-scrollbar {
-    width: 5px;
-}
-  
-.spell-table-content-wrapper::-webkit-scrollbar-thumb {
-    background-color: #ee5622;
-    border-radius: 25px;
-}
-
-.spell-table-content-wrapper::-webkit-scrollbar-track {
-    background-color: #f0f0f0;
-}
-
-.spell-table-content-wrapper::-webkit-scrollbar-button {
-    display: none;
-}
-
 .spell-table-body-first {
     font-size: 0.8rem;
     font-weight: 500;
@@ -75,6 +46,7 @@
     display: none;
 }
 
+
 @media (min-width: 768px) {
     .spell-table-head-third,
     .spell-table-body-third {
@@ -90,10 +62,6 @@
 }
 
 @media (min-width: 1536px) {
-    .spell-table-content-wrapper {
-        width: 70vw;
-    }
-
     .spell-table-body-first,
     .spell-table-body-second,
     .spell-table-body-third,
