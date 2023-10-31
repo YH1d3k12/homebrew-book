@@ -1,9 +1,10 @@
-import React, { useEffect,  useState } from 'react';
+import { useEffect,  useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import data from '../../../data/spells_data.js';
 import "../../../styles/table.css";
 import "../../../styles/table_tabs.css";
 import "./spellTable.css";
+
 
 function SpellTable() {
     const navigate = useNavigate();
@@ -76,5 +77,6 @@ function SpellTable() {
         </div>
     );
 }
+
 
 export default SpellTable;
