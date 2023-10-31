@@ -1,5 +1,9 @@
-.navigation-container
-{
+:root {
+    --navigation-background-color: #0e0e0e;
+    --navigation-logo-color: #0e0e0e;
+}
+
+.navigation-container {
     display: flex;
     flex-direction: row;
 
@@ -7,51 +11,48 @@
     width: 100%;
     
     padding: 15px;
-    background-color: #0e0e0e;
+    background-color: var(--navigation-background-color);
 }
 
-.navigation-logo
-{
+.navigation-logo {
     display: flex;
     flex-direction: row;
     justify-content: center;
 
     margin-left: 3%;
+
+    color: var(--navigation-logo-color);
     cursor: pointer;
 }
 
-.navigation-logo img
-{
+.navigation-logo img {
     height: 100%;
     width: auto;
-    margin-right: 10px;
+    margin-right: 20px;
+
     filter: drop-shadow(1px 1px 2px #fff4ad) drop-shadow(2px 2px 4px #ffd729) drop-shadow(3px 3px 6px #ee5622) drop-shadow(4px 4px 8px #f22b29);
 }
 
-.navigation-logo div
-{
+.navigation-logo div {
     display: flex;
     flex-direction: column;
-    align-items: left;
     justify-content: center;
+    align-items: left;
 }
 
-.navigation-logo h1
-{
+.navigation-logo h1 {
     font-size: 1.2rem;
     font-weight: 700;
     text-shadow: 0 0 10px #fff4ad, 0 0 20px #ffd729, 0 0 40px #ee5622, 0 0 80px #f22b29;
 }
 
-.navigation-logo p
-{
+.navigation-logo p {
     font-size: 0.8rem;
     font-weight: 500;
     text-shadow: 0 0 10px #fff4ad, 0 0 20px #ffd729, 0 0 40px #ee5622, 0 0 80px #f22b29;
 }
 
-@media (min-width: 640px) 
-{
+@media (min-width: 640px) {
     .navigation-logo
     {
         margin-left: 5%;
@@ -67,8 +68,7 @@
     }
 }
 
-@media (min-width: 768px) 
-{
+@media (min-width: 768px) {
     .navigation-logo
     {
         margin-left: 8%;

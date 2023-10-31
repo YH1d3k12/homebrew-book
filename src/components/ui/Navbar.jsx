@@ -1,21 +1,19 @@
 import React from 'react';
-import { useNavigate } from "react-router-dom";
-import "./navbar.css"
-import dragon from "../../assets/images/dragon.png";
+import { Link  } from "react-router-dom";
 
-function NavBar()
-{
-    const navigate = useNavigate();
-    
+import dragon from "../../assets/images/dragon.png";
+import "./navbar.css"
+
+const NavBar =() => {
     return (
         <header className="navigation-container">
-            <a className="navigation-logo" onClick={() => navigate("/")}>
+            <Link className="navigation-logo" to="/">
                 <img src={dragon} alt="Dragon" />
                 <div>
                     <h1>D&D5e Homebrew Book</h1>
                     <p>by Djalma Hideki Yamamoto</p>
                 </div>
-            </a>
+            </Link>
         </header>
     );
 }
