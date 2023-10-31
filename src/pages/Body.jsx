@@ -1,13 +1,18 @@
 import { Outlet } from "react-router-dom";
-import "../features/body/body.css";
+
 import NavBar from "../components/ui/Navbar";
 
+import "../features/body/body.css";
 
-export default function Body() {
+
+const Body = () => {
     return (
         <div className="body">
             <NavBar />
             <Outlet />
         </div>
-    )
-}
+    );
+};
+
+
+export default Body;

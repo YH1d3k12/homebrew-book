@@ -1,8 +1,8 @@
-import React from 'react';
 import { Link  } from "react-router-dom";
 
 import dragon from "../../assets/images/dragon.png";
 import "./navbar.css"
+
 
 const NavBar =() => {
     return (
@@ -16,6 +16,7 @@ const NavBar =() => {
             </Link>
         </header>
     );
-}
+};
+
 
 export default NavBar;
