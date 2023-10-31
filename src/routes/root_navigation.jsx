@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import MainPageScreen from "../screens/main_page";
-import SpellBookScreen  from "../screens/spell_book";
-import SpellPageScreen  from "../screens/spell_page";
-import Body from "../screens/body";
-import SpeciesScreen from "../screens/species";
+import MainPageScreen from "../pages/Menu.jsx";
+import SpellBookScreen  from "../pages/SpellBook";
+import SpellPageScreen  from "../pages/SpellPage";
+import Body from "../pages/Body.jsx";
+import SpeciesScreen from "../pages/Species";
 
 
 export default function RootNavigation()

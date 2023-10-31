@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import "./body.css";
-import NavBar from "../components/navbar";
+import NavBar from "../components/ui/Navbar";
 
 
 export default function Body() {

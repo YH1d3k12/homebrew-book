@@ -1,6 +1,6 @@
 import LavaRiver from "../components/lava_river";
 import MenuButtons from "../components/menu_buttons";
-import "./main_page.css"
+import "./menu.css"
 
 export default function MainPageScreen() 
 {

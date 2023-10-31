@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import "./navbar.css"
-import dragon from "../assets/images/dragon.png";
+import dragon from "../../assets/images/dragon.png";
 
 function NavBar()
 {
