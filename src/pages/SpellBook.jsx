@@ -1,7 +1,6 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import SpellTable from "../components/spell_table";
-import "./spellBook.css"
+import SpellTable from "../features/spellBook/components/SpellTable.jsx";
+import "../features/spellBook/spellBook.css";
 
 
 export default function SpellBookScreen() 

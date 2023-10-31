@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import "./character_cards.css";
-import species from "../data/species_data";
+import "./characterCards.css";
+import species from "../../../data/species_data";
 
 
 function CharacterCards()

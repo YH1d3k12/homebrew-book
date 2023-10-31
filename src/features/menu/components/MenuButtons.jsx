@@ -1,18 +1,18 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import "./menu_buttons.css";
+import "./menuButtons.css";
 
-import species from "../assets/images/species.png";
-import classes from "../assets/images/classes.png";
-import spells from "../assets/images/spells.png";
-import martial_skills from "../assets/images/martial_skills.png";
-import adventure_gear from "../assets/images/adventure_gear.png";
+import species from "../../../assets/images/species.png";
+import classes from "../../../assets/images/classes.png";
+import spells from "../../../assets/images/spells.png";
+import martial_skills from "../../../assets/images/martial_skills.png";
+import adventure_gear from "../../../assets/images/adventure_gear.png";
 
-import feats from "../assets/images/feats.png";
-import rules from "../assets/images/rules.png";
-import crafting from "../assets/images/crafting.png";
-import magic_items from "../assets/images/magic_items.png";
-import materials from "../assets/images/materials.png";
+import feats from "../../../assets/images/feats.png";
+import rules from "../../../assets/images/rules.png";
+import crafting from "../../../assets/images/crafting.png";
+import magic_items from "../../../assets/images/magic_items.png";
+import materials from "../../../assets/images/materials.png";
 
 
 function MenuButtons()

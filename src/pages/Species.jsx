@@ -1,6 +1,6 @@
-import CharacterCards from "../components/characters_cards";
-import LavaRiver from "../components/lava_river";
-import "./species.css"
+import CharacterCards from "../features/species/components/CharacterCards.jsx";
+import LavaRiver from "../components/effects/LavaRiver.jsx";
+import "../features/species/species.css";
 
 export default function SpeciesScreen() 
 {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from "react-router-dom";
-import "./spell_card.css";
+import "./spellCard.css";
 
 function SpellCard()
 {
