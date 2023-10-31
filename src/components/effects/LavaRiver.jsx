@@ -1,8 +1,7 @@
 import React from 'react';
 import "./lavaRiver.css";
 
-function LavaRiver()
-{
+const LavaRiver = () => {
     return (
         <div className="lava-river"></div>
     );

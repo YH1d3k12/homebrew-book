@@ -218,7 +218,7 @@ const spells = [
         range: "Touch",
         components: "V, S, M (a small toolkit or set of tools)",
         duration: "Instantaneous",
-        effect: "You channel mending energy into a construct or object, restoring it to a functional state. This spell can repair simple mechanical devices, weapons, armor, or other non-magical items. However, it cannot restore missing parts or pieces of objects or constructs unless you have the required materials within 5 feet of you during casting. \n A construct regains hit points equal to 2d8 + your spellcasting ability modifier.",
+        effect: "You channel mending energy into a construct or object, restoring it to a functional state. This spell can repair simple mechanical devices, weapons, armor, or other non-magical items. However, it cannot restore missing parts or pieces of objects or constructs unless you have the required materials within 5 feet of you during casting. \n A construct regains hit points equal to 1d8 + your spellcasting ability modifier.",
         description: "Heals constructs and repairs non-magical objects.",
         upCasting: "The healing increases by 1d8 for each spell level above 1st.",
         available: "Artificer"
