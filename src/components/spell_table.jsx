@@ -1,6 +1,6 @@
 import React, { useEffect,  useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import GetSpells from '../data/getSpells';
+import data from '../data/spells_data.js';
 import "../styles/table.css";
 import "../styles/table_tabs.css";
 import "./spell_table.css";
@@ -20,16 +20,7 @@ function SpellTable() {
     // Quando o componente é carregado useEffect é chamado
     useEffect(() => {
         const loadSpells = async () => {
-            try 
-            {
-                let loadedSpells = await GetSpells();
-    
-                setSpells(loadedSpells);
-            }
-            catch (error) 
-            {
-                console.error('Failed to load spells:', error);
-            }
+            setSpells(data)
         };
     
         // Chama loadSpells quando carregado
@@ -50,7 +41,6 @@ function SpellTable() {
 
     // Função para renderizar a tabela com base no nível selecionado
     const renderTable = () => {
-
         return (
             <table className="content-table">
                 <thead>
