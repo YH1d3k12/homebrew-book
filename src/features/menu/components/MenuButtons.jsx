@@ -1,5 +1,4 @@
-import React from 'react';
-import { useNavigate } from "react-router-dom";
+import { Link  } from "react-router-dom";
 import "./menuButtons.css";
 
 import species from "../../../assets/images/species.png";
@@ -15,78 +14,76 @@ import magic_items from "../../../assets/images/magic_items.png";
 import materials from "../../../assets/images/materials.png";
 
 
-function MenuButtons()
-{
-    const navigate = useNavigate();
-
+const MenuButtons = () => {
     return (
         <div className="menu-buttons-content-wrapper">
             <div className="menu-buttons-row">
                 <div className="button-card">
-                    <a onClick={() => navigate("/species")}>
+                    <Link to="/species">
                         <img className="button-icon" src={species} alt="Species"/>
                         <h2>Species</h2>
-                    </a>
+                    </Link>
                 </div>
                 <div className="button-card">
-                    <a onClick={() => navigate("/")}>
+                    <Link to="">
                         <img className="button-icon" src={classes} alt="Classes"/>
                         <h2>Classes</h2>
-                    </a>
+                    </Link>
                 </div>
                 <div className="button-card">
-                    <a onClick={() => navigate("/spellbook")}>
+                    <Link to="/spellbook">
                         <img className="button-icon" src={spells} alt="Spell Book"/>
                         <h2>Spells</h2>
-                    </a>
+                    </Link>
                 </div>
                 <div className="button-card">
-                    <a onClick={() => navigate("/")}>
+                    <Link to="/">
                         <img className="button-icon" src={martial_skills} alt="Martial Skills"/>
                         <h2>Martial Skills</h2>
-                    </a>
+                    </Link>
                 </div>
                 <div className="button-card">
-                    <a onClick={() => navigate("/")}>
+                    <Link to="/">
                         <img className="button-icon" src={adventure_gear} alt="Adventure Gear"/>
                         <h2>Adventure Gear</h2>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className="menu-buttons-row">
                 <div className="button-card">
-                    <a onClick={() => navigate("/")}>
+                    <Link to="/">
                         <img className="button-icon" src={feats} alt="Feats"/>
                         <h2>Feats</h2>
-                    </a>
+                    </Link>
                 </div>
                 <div className="button-card">
-                    <a onClick={() => navigate("/")}>
+                    <Link to="/">
                         <img className="button-icon" src={rules} alt="Rules"/>
                         <h2>Rules</h2>
-                    </a>
+                    </Link>
                 </div>
                 <div className="button-card">
-                    <a onClick={() => navigate("/")}>
+                    <Link to="/">
                         <img className="button-icon" src={crafting} alt="Crafting"/>
                         <h2>Crafting</h2>
-                    </a>
+                    </Link>
                 </div>
                 <div className="button-card">
-                    <a onClick={() => navigate("/")}>
+                    <Link to="/">
                         <img className="button-icon" src={materials} alt="Materials"/>
                         <h2>Materials</h2>
-                    </a>
+                    </Link>
                 </div>
                 <div className="button-card">
-                    <a onClick={() => navigate("/")}>
+                    <Link to="/">
                         <img className="button-icon" src={magic_items} alt="Magic Items"/>
                         <h2>Magic Items</h2>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
     );
-}
+};
+
 
 export default MenuButtons;

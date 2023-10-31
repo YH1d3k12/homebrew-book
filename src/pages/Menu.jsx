@@ -1,14 +1,17 @@
 import LavaRiver from "../components/effects/LavaRiver";
 import MenuButtons from "../features/menu/components/MenuButtons";
+
 import "../features/menu/menu.css";
 
-export default function MainPageScreen() 
-{
+
+const Menu = () => {
     return (
-        <div className="main-content-wrapper">
+        <div className="menu-content-wrapper">
             <LavaRiver></LavaRiver>
             <MenuButtons></MenuButtons>
             <LavaRiver></LavaRiver>
         </div>
     );
 };
+
+export default Menu;
