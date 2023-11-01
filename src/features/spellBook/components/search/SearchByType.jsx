@@ -20,7 +20,14 @@ const SearchByType = ({ value, onChange }) => {
         >
             <option value="">Select By Magic School</option>
             <option value="Abjuration">Abjuration</option>
+            <option value="Chronurgy">Chronurgy</option>
             <option value="Conjuration">Conjuration</option>
+            <option value="Divination">Divination</option>
+            <option value="Enchantment">Enchantment</option>
+            <option value="Evocation">Evocation</option>
+            <option value="Illusion">Illusion</option>
+            <option value="Necromancy">Necromancy</option>
+            <option value="Transmutation">Transmutation</option>
         </select>
     );
 };

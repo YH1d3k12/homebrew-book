@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import SearchByName from "../features/spellBook/components/search/SearchByName.jsx";
 import SearchByType from "../features/spellBook/components/search/SearchByType.jsx";
 import SearchByClass from "../features/spellBook/components/search/SearchByClass.jsx";
+import SearchBySource from "../features/spellBook/components/search/SearchBySource.jsx";
+
 import TableTabs from "../components/tab/TableTab.jsx";
 import SpellTable from "../features/spellBook/components/SpellTable.jsx";
 
@@ -16,6 +18,7 @@ const SpellBook = () => {
     const [searchByName, setSearchByName] = useState("");
     const [searchByType, setSearchByType] = useState("");
     const [searchByClass, setSearchByClass] = useState("");
+    const [searchBySource, setSearchBySource] = useState("");
     
     // Quando o componente é carregado useEffect é chamado.
     useEffect(() => {
@@ -30,7 +33,7 @@ const SpellBook = () => {
 
             if (searchByType) {
                 filteredSpells = filteredSpells.filter(spell =>
-                    spell.type_name.toLowerCase().includes(searchByType.toLowerCase())
+                    spell.type.toLowerCase().includes(searchByType.toLowerCase())
                 );
             }
 
@@ -39,12 +42,18 @@ const SpellBook = () => {
                     spell.available.toLowerCase().includes(searchByClass.toLowerCase())
                 );
             }
+
+            if (searchBySource) {
+                filteredSpells = filteredSpells.filter(spell =>
+                    spell.source.toLowerCase().includes(searchBySource.toLowerCase())
+                );
+            }
     
             setSpells(filteredSpells);
         };
     
         loadSpells();
-    }, [searchByName, searchByType, searchByClass]);
+    }, [searchByName, searchByType, searchByClass, searchBySource]);
     
     return (
         <div className="spell-book-content-wrapper">
@@ -52,6 +61,7 @@ const SpellBook = () => {
                 <SearchByName value={searchByName} onChange={setSearchByName}/>
                 <SearchByType value={searchByType} onChange={setSearchByType}/>
                 <SearchByClass value={searchByClass} onChange={setSearchByClass}/>
+                <SearchBySource value={searchBySource} onChange={setSearchBySource}/>
                 <TableTabs setCurrentLevel={setCurrentLevel}></TableTabs>
                 <SpellTable 
                     data={spells} 

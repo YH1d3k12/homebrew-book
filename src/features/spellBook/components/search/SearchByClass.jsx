@@ -19,8 +19,15 @@ const SearchByClass = ({ value, onChange }) => {
             onChange={(e) => setSelectedValue(e.target.value)}
         >
             <option value="">Select By Class</option>
-            <option value="Wizard">Wizard</option>
+            <option value="Artificer">Artificer</option>
+            <option value="Bard">Bard</option>
+            <option value="Cleric">Cleric</option>
+            <option value="Druid">Druid</option>
+            <option value="Paladin">Paladin</option>
+            <option value="Ranger">Ranger</option>
             <option value="Sorcerer">Sorcerer</option>
+            <option value="Warlock">Warlock</option>
+            <option value="Wizard">Wizard</option>
         </select>
     );
 };

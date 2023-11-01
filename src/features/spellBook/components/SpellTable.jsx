@@ -31,7 +31,7 @@ const SpellTable = ({data, currentLevel}) => {
                         <td className="spell-table-body-first">
                             <a onClick={() => handleSpellClick(spell)}>{spell.name}</a>
                         </td>
-                        <td className="spell-table-body-second">{spell.type_name}</td>
+                        <td className="spell-table-body-second">{spell.type}</td>
                         <td className="spell-table-body-third">{spell.description}</td>
                         <td className="spell-table-body-fourth">{spell.available}</td>
                     </tr>
