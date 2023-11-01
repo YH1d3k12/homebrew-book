@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/homebrew-book/static/css/main.6f5e0bed.css",
-    "main.js": "/homebrew-book/static/js/main.434a82c9.js",
+    "main.css": "/homebrew-book/static/css/main.6717bf8a.css",
+    "main.js": "/homebrew-book/static/js/main.664a8b35.js",
     "static/js/787.26da21f0.chunk.js": "/homebrew-book/static/js/787.26da21f0.chunk.js",
     "static/media/gnome.jpg": "/homebrew-book/static/media/gnome.4c7e52a537428391310f.jpg",
     "static/media/human.jpg": "/homebrew-book/static/media/human.c96827ec43067255357c.jpg",
@@ -32,12 +32,12 @@
     "static/media/magic_items.png": "/homebrew-book/static/media/magic_items.0f62b509b602a75ad651.png",
     "static/media/species.png": "/homebrew-book/static/media/species.0e8f779e87a7c5b79857.png",
     "index.html": "/homebrew-book/index.html",
-    "main.6f5e0bed.css.map": "/homebrew-book/static/css/main.6f5e0bed.css.map",
-    "main.434a82c9.js.map": "/homebrew-book/static/js/main.434a82c9.js.map",
+    "main.6717bf8a.css.map": "/homebrew-book/static/css/main.6717bf8a.css.map",
+    "main.664a8b35.js.map": "/homebrew-book/static/js/main.664a8b35.js.map",
     "787.26da21f0.chunk.js.map": "/homebrew-book/static/js/787.26da21f0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f5e0bed.css",
-    "static/js/main.434a82c9.js"
+    "static/css/main.6717bf8a.css",
+    "static/js/main.664a8b35.js"
   ]
 }
