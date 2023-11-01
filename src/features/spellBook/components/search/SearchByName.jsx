@@ -16,7 +16,7 @@ const SearchByName = ({ value, onChange }) => {
         <input
             className="search-input"
             type="text"
-            placeholder="Search by name"
+            placeholder="Search By Name"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
         />
