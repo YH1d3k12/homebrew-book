@@ -1,4 +1,4 @@
-import "../../styles/table_tabs.css";
+import "../../../../styles/table_tabs.css";
 
 
 const TableTabs = ({setCurrentLevel}) => {

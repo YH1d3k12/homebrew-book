@@ -5,8 +5,8 @@ import SearchByType from "../features/spellBook/components/search/SearchByType.j
 import SearchByClass from "../features/spellBook/components/search/SearchByClass.jsx";
 import SearchBySource from "../features/spellBook/components/search/SearchBySource.jsx";
 
-import TableTabs from "../components/tab/TableTab.jsx";
-import SpellTable from "../features/spellBook/components/SpellTable.jsx";
+import TableTabs from "../features/spellBook/components/table/TableTab.jsx";
+import SpellTable from "../features/spellBook/components/table/SpellTable.jsx";
 
 import data from "../data/spells_data.js";
 import "../features/spellBook/spellBook.css";
