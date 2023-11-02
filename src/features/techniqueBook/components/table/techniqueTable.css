@@ -13,6 +13,14 @@
     --spell-name-hover-effect:#ee5622;
 }
 
+/**************** Table Header *****************/
+.technique-table-head-third,
+.technique-table-head-fourth,
+.technique-table-head-fifth {
+    display: none;
+}
+
+/**************** Table Body *****************/
 .technique-table-body-first {
     font-size: 0.8rem;
     font-weight: 500;
@@ -29,6 +37,7 @@
     font-weight: 300;
 }
 
+
 .technique-table-body-third {
     display: none;
     font-size: 0.8rem;
@@ -38,25 +47,32 @@
 .technique-table-body-fourth {
     display: none;
     font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.technique-table-body-fifth {
+    display: none;
+    font-size: 0.8rem;
     font-weight: 500;
 }
 
-.technique-table-head-third,
-.technique-table-head-fourth {
-    display: none;
-}
-
-
-@media (min-width: 768px) {
+@media (min-width: 480px) {
     .technique-table-head-third,
     .technique-table-body-third {
         display: table-cell;
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 768px) {
     .technique-table-head-fourth,
     .technique-table-body-fourth {
+        display: table-cell;
+    }
+}
+
+@media (min-width: 1280px) {
+    .technique-table-head-fifth,
+    .technique-table-body-fifth {
         display: table-cell;
     }
 }
@@ -65,7 +81,8 @@
     .technique-table-body-first,
     .technique-table-body-second,
     .technique-table-body-third,
-    .technique-table-body-fourth {
+    .technique-table-body-fourth,
+    .technique-table-body-fifth {
         font-size: 0.85rem;
     }
 }

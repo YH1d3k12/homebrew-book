@@ -6,6 +6,7 @@ import Species from "../pages/Species.jsx";
 import SpellBook  from "../pages/SpellBook.jsx";
 import SpellPage  from "../pages/SpellPage.jsx";
 import TechniqueBook from "../pages/TechniqueBook.jsx";
+import TechniquePage from "../pages/TechniquePage.jsx";
 
 
 export default function RootNavigation()
@@ -19,6 +20,7 @@ export default function RootNavigation()
 					<Route path="/spellbook" element={<SpellBook  />} />
 					<Route path="/spellpage" element={<SpellPage  />} />
 					<Route path="/techniquebook" element={<TechniqueBook  />} />
+					<Route path="/techniquepage" element={<TechniquePage  />} />
 				</Route>
 			</Routes>
 	  </BrowserRouter>

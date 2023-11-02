@@ -60,8 +60,8 @@ const TechniqueBook = () => {
             <div className="techniques-table-container">
                 <SearchByName value={searchByName} onChange={setSearchByName}/>
                 <SearchByStat value={searchByStat} onChange={setSearchByStat}/>
-                <SearchByClass value={searchByClass} onChange={setSearchByClass}/>
                 <SearchBySource value={searchBySource} onChange={setSearchBySource}/>
+                <SearchByClass value={searchByClass} onChange={setSearchByClass}/>
                 <TableTabs setCurrentLevel={setCurrentLevel}></TableTabs>
                 <TechniqueTable 
                     data={techniques} 
