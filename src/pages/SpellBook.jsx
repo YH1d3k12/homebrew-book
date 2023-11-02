@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import SearchByName from "../features/spellBook/components/search/SearchByName.jsx";
+import SearchByName from "../components/search/SearchByName.jsx";
 import SearchByType from "../features/spellBook/components/search/SearchByType.jsx";
 import SearchByClass from "../features/spellBook/components/search/SearchByClass.jsx";
 import SearchBySource from "../features/spellBook/components/search/SearchBySource.jsx";
