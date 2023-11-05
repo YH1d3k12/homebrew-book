@@ -19,12 +19,12 @@ const SearchByStat = ({ value, onChange }) => {
             onChange={(e) => setSelectedValue(e.target.value)}
         >
             <option value="">Select By Stat Scaling</option>
-            <option value="Strength">Strength</option>
-            <option value="Dexterity">Dexterity</option>
-            <option value="Constitution">Constitution</option>
-            <option value="Intelligence">Intelligence</option>
-            <option value="Wisdom">Wisdom</option>
-            <option value="Charisma">Charisma</option>
+            <option value="Str">Strength</option>
+            <option value="Dex">Dexterity</option>
+            <option value="Con">Constitution</option>
+            <option value="Int">Intelligence</option>
+            <option value="Wis">Wisdom</option>
+            <option value="Cha">Charisma</option>
         </select>
     );
 };
