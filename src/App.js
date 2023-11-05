@@ -1,9 +1,8 @@
-import React from 'react';
-import RootNavigation from './routes/root_navigation';
+import React from "react";
+import RootNavigation from "./routes/RootNavigation.jsx";
 
-export default function App() 
-{
+export default function App() {
     return (
-        <RootNavigation/>
+        <RootNavigation />
     );
 };

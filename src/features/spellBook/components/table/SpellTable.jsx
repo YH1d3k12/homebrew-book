@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import "../../../styles/table.css";
+import "../../../../styles/table.css";
 import "./spellTable.css";
 
 

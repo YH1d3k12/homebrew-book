@@ -49,7 +49,26 @@
 .button-icon {
     height: 50%;
     width: 50%;
-    filter: drop-shadow(1px 1px 2px #fff4ad) drop-shadow(2px 2px 4px #ffd729) drop-shadow(3px 3px 6px #ee5622) drop-shadow(4px 4px 8px #f22b29);
+    animation-timing-function: ease-in-out;
+    animation: heat 4s linear infinite;
+}
+
+@keyframes heat {
+    0% {
+        filter: drop-shadow(1px 1px 1px #fff4ad) drop-shadow(2px 2px 2px #ffd729) drop-shadow(3px 3px 4px #ee5622) drop-shadow(4px 4px 6px #f22b29);
+    }
+    40% {
+        filter: drop-shadow(1px 1px 2px #fff4ad) drop-shadow(2px 2px 4px #ffd729) drop-shadow(3px 3px 6px #ee5622) drop-shadow(4px 4px 8px #f22b29);
+    }
+    60% {
+        filter: drop-shadow(2px 2px 4px #fff4ad) drop-shadow(3px 3px 6px #ffd729) drop-shadow(4px 4px 8px #ee5622) drop-shadow(5px 5px 10px #f22b29);
+    }
+    80% {
+        filter: drop-shadow(1px 1px 2px #fff4ad) drop-shadow(2px 2px 4px #ffd729) drop-shadow(3px 3px 6px #ee5622) drop-shadow(4px 4px 8px #f22b29);
+    }
+    100% {
+        filter: drop-shadow(1px 1px 1px #fff4ad) drop-shadow(2px 2px 2px #ffd729) drop-shadow(3px 3px 4px #ee5622) drop-shadow(4px 4px 6px #f22b29);
+    }
 }
 
 .button-card h2 {

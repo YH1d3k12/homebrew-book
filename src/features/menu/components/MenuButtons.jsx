@@ -37,7 +37,7 @@ const MenuButtons = () => {
                     </Link>
                 </div>
                 <div className="button-card">
-                    <Link to="/">
+                    <Link to="/techniquebook">
                         <img className="button-icon" src={martial_skills} alt="Martial Skills"/>
                         <h2>Martial Skills</h2>
                     </Link>

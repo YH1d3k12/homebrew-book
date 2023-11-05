@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-import UseDebounce from "../../../../utilities/UseDebounce";
-import "../../../../styles/search.css";
+import UseDebounce from "../../utilities/UseDebounce";
+import "../../styles/search.css";
 
 
 const SearchByName = ({ value, onChange }) => {
@@ -16,7 +16,7 @@ const SearchByName = ({ value, onChange }) => {
         <input
             className="search-input"
             type="text"
-            placeholder="Search by name"
+            placeholder="Search By Name"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
         />

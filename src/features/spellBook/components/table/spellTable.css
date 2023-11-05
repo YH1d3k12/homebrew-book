@@ -1,0 +1,63 @@
+:root {
+    --table-content-wrapper-backcground-color:#2F2F2F;
+    --table-content-wrapper-border-color:#1C1C1C;
+    
+    --spell-name-hover-effect:#ee5622;
+}
+
+.spell-table-body-first {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.spell-table-body-first a:hover {
+    color: var(--spell-name-hover-effect);
+    cursor: pointer;
+}
+
+.spell-table-body-second {
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.spell-table-body-third {
+    display: none;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.spell-table-body-fourth {
+    display: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.spell-table-head-third,
+.spell-table-head-fourth {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .spell-table-head-third,
+    .spell-table-body-third {
+        display: table-cell;
+    }
+}
+
+@media (min-width: 1280px) {
+    .spell-table-head-fourth,
+    .spell-table-body-fourth {
+        display: table-cell;
+    }
+}
+
+@media (min-width: 1536px) {
+    .spell-table-body-first,
+    .spell-table-body-second,
+    .spell-table-body-third,
+    .spell-table-body-fourth {
+        font-size: 0.85rem;
+    }
+}
