@@ -36,6 +36,11 @@
     display: none;
 }
 
+.spell-table-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 @media (min-width: 480px) {
     .spell-table-container {
         width: 90%;

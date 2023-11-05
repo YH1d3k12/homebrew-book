@@ -1,7 +1,7 @@
 import "../../../../styles/tableTabs.css";
 
 
-const TableTabs = ({setCurrentLevel}) => {
+const SpellTableTabs = ({setCurrentLevel}) => {
     
     const handleChangeLevel = (level) => {
         setCurrentLevel(level);
@@ -9,6 +9,7 @@ const TableTabs = ({setCurrentLevel}) => {
 
     return (
         <div>
+            <button className="table-tab" onClick={() => handleChangeLevel(0)}>Cantrips</button>
             <button className="table-tab" onClick={() => handleChangeLevel(1)}>1st Level</button>
             <button className="table-tab" onClick={() => handleChangeLevel(2)}>2nd Level</button>
             <button className="table-tab" onClick={() => handleChangeLevel(3)}>3rd Level</button>
@@ -23,4 +24,4 @@ const TableTabs = ({setCurrentLevel}) => {
 }
 
 
-export default TableTabs;
+export default SpellTableTabs;

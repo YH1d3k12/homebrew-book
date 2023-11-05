@@ -1,3 +1,7 @@
+:root {
+    --checkbox-color: #f0f0f0;
+}
+
 .search-input {
     width: 220px;
     border-radius: 4px;
@@ -10,4 +14,16 @@
     border-radius: 4px;
     padding: 8px 12px;
     margin: 10px;
+}
+
+.search-checkbox {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    color: var(--checkbox-color);
+}
+
+.search-checkbox input {
+    margin: 5px;
 }

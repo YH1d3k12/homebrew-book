@@ -1,59 +1,31 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import SearchByName from "../components/search/SearchByName.jsx";
 import SearchByType from "../features/spellBook/components/search/SearchByType.jsx";
 import SearchByClass from "../features/spellBook/components/search/SearchByClass.jsx";
 import SearchBySource from "../features/spellBook/components/search/SearchBySource.jsx";
+import CheckBox from "../components/search/CheckBox.jsx";
 
-import TableTabs from "../features/spellBook/components/table/TableTab.jsx";
+import SpellTableTabs from "../features/spellBook/components/table/SpellTableTab.jsx";
 import SpellTable from "../features/spellBook/components/table/SpellTable.jsx";
+import UseFilteredSpells from "../features/spellBook/hooks/UseFilteredSpells.js";
 
-import data from "../data/spells_data.js";
 import "../features/spellBook/spellBook.css";
 
 
 const SpellBook = () => {
-    const [spells, setSpells] = useState([]);
-    const [currentLevel, setCurrentLevel] = useState(1);
+    const [currentLevel, setCurrentLevel] = useState(0);
     const [searchByName, setSearchByName] = useState("");
     const [searchByType, setSearchByType] = useState("");
     const [searchByClass, setSearchByClass] = useState("");
     const [searchBySource, setSearchBySource] = useState("");
-    
-    // Quando o componente é carregado useEffect é chamado.
-    useEffect(() => {
-        const loadSpells = async () => {
-            let filteredSpells = data;
-    
-            if (searchByName) {
-                filteredSpells = filteredSpells.filter(spell =>
-                    spell.name.toLowerCase().includes(searchByName.toLowerCase())
-                );
-            }
+    const [hasV, setHasV] = useState(false);
+    const [hasS, setHasS] = useState(false);
+    const [hasM, setHasM] = useState(false);
+    const [hasConcentration, setHasConcentration] = useState(false);
+    const [hasRitual, setHasRitual] = useState(false);
+    const spells = UseFilteredSpells(searchByName, searchByType, searchByClass, searchBySource, hasV, hasS, hasM, hasConcentration, hasRitual);
 
-            if (searchByType) {
-                filteredSpells = filteredSpells.filter(spell =>
-                    spell.type.toLowerCase().includes(searchByType.toLowerCase())
-                );
-            }
-
-            if (searchByClass) {
-                filteredSpells = filteredSpells.filter(spell =>
-                    spell.available.toLowerCase().includes(searchByClass.toLowerCase())
-                );
-            }
-
-            if (searchBySource) {
-                filteredSpells = filteredSpells.filter(spell =>
-                    spell.source.toLowerCase().includes(searchBySource.toLowerCase())
-                );
-            }
-    
-            setSpells(filteredSpells);
-        };
-    
-        loadSpells();
-    }, [searchByName, searchByType, searchByClass, searchBySource]);
     
     return (
         <div className="spell-book-content-wrapper">
@@ -62,7 +34,14 @@ const SpellBook = () => {
                 <SearchByType value={searchByType} onChange={setSearchByType}/>
                 <SearchByClass value={searchByClass} onChange={setSearchByClass}/>
                 <SearchBySource value={searchBySource} onChange={setSearchBySource}/>
-                <TableTabs setCurrentLevel={setCurrentLevel}></TableTabs>
+                <div className="spell-table-checkboxes">
+                    <CheckBox label="V" value={hasV} onChange={setHasV}/>
+                    <CheckBox label="S" value={hasS} onChange={setHasS}/>
+                    <CheckBox label="M" value={hasM} onChange={setHasM}/>
+                    <CheckBox label="Concentration" value={hasConcentration} onChange={setHasConcentration}/>
+                    <CheckBox label="Ritual" value={hasRitual} onChange={setHasRitual}/>
+                </div>
+                <SpellTableTabs setCurrentLevel={setCurrentLevel}></SpellTableTabs>
                 <SpellTable 
                     data={spells} 
                     currentLevel={currentLevel}>
