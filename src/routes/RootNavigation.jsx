@@ -7,6 +7,7 @@ import SpellBook  from "../pages/SpellBook.jsx";
 import SpellPage  from "../pages/SpellPage.jsx";
 import TechniqueBook from "../pages/TechniqueBook.jsx";
 import TechniquePage from "../pages/TechniquePage.jsx";
+import AdventureGear from "../pages/AdventureGear.jsx";
 
 
 export default function RootNavigation()
@@ -21,6 +22,7 @@ export default function RootNavigation()
 					<Route path="/spellpage" element={<SpellPage  />} />
 					<Route path="/techniquebook" element={<TechniqueBook  />} />
 					<Route path="/techniquepage" element={<TechniquePage  />} />
+					<Route path="/adventuregear" element={<AdventureGear  />} />
 				</Route>
 			</Routes>
 	  </BrowserRouter>

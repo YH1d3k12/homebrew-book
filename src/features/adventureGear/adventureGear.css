@@ -1,0 +1,13 @@
+:root {
+    --adventure-gear-background-color: #2F2F2F;
+}
+
+.adventure-gear-content-wrapper {
+    display: grid;
+    grid-template-columns: 16vw 84vw;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: var(--adventure-gear-background-color);
+}
