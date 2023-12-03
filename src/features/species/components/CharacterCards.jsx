@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import species from "../../../data/species_data";
+import species from "../../../data/SpeciesData.js";
 import "./characterCards.css";
 
 

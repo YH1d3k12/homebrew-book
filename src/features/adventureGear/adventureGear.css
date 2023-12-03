@@ -11,3 +11,38 @@
 
     background-color: var(--adventure-gear-background-color);
 }
+
+.adventure-gear-table-container {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+
+    overflow-y: auto;
+}
+
+.adventure-gear-table-container::-webkit-scrollbar {
+    width: 5px;
+}
+  
+.adventure-gear-table-container::-webkit-scrollbar-thumb {
+    background-color: #ee5622;
+    border-radius: 25px;
+}
+
+.adventure-gear-table-container::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+}
+
+.adventure-gear-table-container::-webkit-scrollbar-button {
+    display: none;
+}
+
+.adventure-gear-table-container div {
+    margin-bottom: 20px;
+}
+
+.adventure-gear-table-container div h2 {
+    margin-bottom: 20px;
+    color: #0e0e0e;
+    text-shadow: 0 0 10px #fff4ad, 0 0 20px #ffd729, 0 0 40px #ee5622, 0 0 80px #f22b29
+}

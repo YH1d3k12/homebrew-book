@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import data from "../../../data/techniques_data.js";
+import data from "../../../data/TechniquesData.js";
 
 const UseFilteredTechniques = (
     searchByName,
