@@ -23,21 +23,21 @@ const ItemsSideBar = () => {
     return (
         <nav className="items-sidebar">
             <ul>
-                <li><Link><img src={axe} alt="Axe" /><span>Meele Weapons</span></Link></li>
-                <li><Link><img src={bow} alt="Bow" /><span>Ranged Weapons</span></Link></li>
-                <li><Link><img src={firearm} alt="Firearm" /><span>Firearms</span></Link></li>
-                <li><Link><img src={heavy_armor} alt="Heavy Armor" /><span>Armors</span></Link></li>
-                <li><Link><img src={ammunition} alt="Ammunition" /><span>Ammunitions</span></Link></li>
-                <li><Link><img src={bomb} alt="Bomb" /><span>Bombs</span></Link></li>
-                <li><Link><img src={chemical} alt="Chemical" /><span>Potions</span></Link></li>
-                <li><Link><img src={poison} alt="Poison" /><span>Poisons</span></Link></li>
-                <li><Link><img src={tools} alt="Tools" /><span>Tools</span></Link></li>
-                <li><Link><img src={harp} alt="Harp" /><span>Instruments</span></Link></li>
-                <li><Link><img src={cheese} alt="Cheese" /><span>Food</span></Link></li>
-                <li><Link><img src={net} alt="Net" /><span>Useful Gear</span></Link></li>
-                <li><Link><img src={mounts} alt="Mounts" /><span>Mounts</span></Link></li>
-                <li><Link><img src={siege_equipment} alt="Siege Equipment" /><span>Siege Equipment</span></Link></li>
-                <li><Link><img src={vehicles} alt="Vehicles" /><span>Vehicles</span></Link></li>
+                <li><Link to="melee"><img src={axe} alt="Axe" /><span>Meele Weapons</span></Link></li>
+                <li><Link to="ranged"><img src={bow} alt="Bow" /><span>Ranged Weapons</span></Link></li>
+                <li><Link to="firearms"><img src={firearm} alt="Firearm" /><span>Firearms</span></Link></li>
+                <li><Link to="armors"><img src={heavy_armor} alt="Heavy Armor" /><span>Armors</span></Link></li>
+                <li><Link to="ammunitions"><img src={ammunition} alt="Ammunition" /><span>Ammunitions</span></Link></li>
+                <li><Link to="bombs"><img src={bomb} alt="Bomb" /><span>Bombs</span></Link></li>
+                <li><Link to="potions"><img src={chemical} alt="Chemical" /><span>Potions</span></Link></li>
+                <li><Link to="poisons"><img src={poison} alt="Poison" /><span>Poisons</span></Link></li>
+                <li><Link to="tools"><img src={tools} alt="Tools" /><span>Tools</span></Link></li>
+                <li><Link to="instruments"><img src={harp} alt="Harp" /><span>Instruments</span></Link></li>
+                <li><Link to="foods"><img src={cheese} alt="Cheese" /><span>Food</span></Link></li>
+                <li><Link to="useful"><img src={net} alt="Net" /><span>Useful Gear</span></Link></li>
+                <li><Link to="mounts"><img src={mounts} alt="Mounts" /><span>Mounts</span></Link></li>
+                <li><Link to="siege"><img src={siege_equipment} alt="Siege Equipment" /><span>Siege Equipment</span></Link></li>
+                <li><Link to="vehicles"><img src={vehicles} alt="Vehicles" /><span>Vehicles</span></Link></li>
             </ul>
         </nav>
     )
