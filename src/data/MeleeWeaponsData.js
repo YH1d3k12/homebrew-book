@@ -1,4 +1,4 @@
-const MeleeWeapons = [
+const meleeWeapons = [
     {
         name: "Hand Axe",
         type: "Axes",
@@ -534,4 +534,4 @@ const MeleeWeapons = [
     },
 ];
 
-export default MeleeWeapons;
+export default meleeWeapons;

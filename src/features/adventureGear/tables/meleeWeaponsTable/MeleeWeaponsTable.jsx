@@ -1,4 +1,4 @@
-import WeaponByCategoryTable from "./subtables/WeaponByCategoryTable.jsx";
+import WeaponByCategoryTable from "./WeaponByCategoryTable.jsx";
 
 import data from "../../../../data/MeleeWeaponsData.js";
 import "./meleeWeaponsTable.css";
