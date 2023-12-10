@@ -26,6 +26,19 @@ const meleeWeapons = [
         weight: "1.8kg"
     },
     {
+        name: "Pole Axe",
+        type: "Axes",
+        category: "Martial",
+        cost: "20gp",
+        slashing: "1d10",
+        piercing: "-",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "*3",
+        properties: "Heavy, Reach, Two-Handed",
+        weight: "3.6kg"
+    },
+    {
         name: "Great Axe",
         type: "Axes",
         category: "Martial",
@@ -425,7 +438,7 @@ const meleeWeapons = [
         bludgeoning: "-",
         critRange: "-",
         critDMG: "-",
-        properties: "Heavy, Reach, Two-handed, Forceful",
+        properties: "Heavy, Reach, Two-handed",
         weight: "3.1kg"
     },
     {
@@ -438,7 +451,7 @@ const meleeWeapons = [
         bludgeoning: "-",
         critRange: "-",
         critDMG: "-",
-        properties: "Heavy, Reach, Two-handed, Forceful",
+        properties: "Heavy, Reach, Two-handed",
         weight: "3.6kg"
     },
     {
