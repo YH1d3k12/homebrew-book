@@ -9,21 +9,21 @@ import TechniqueBook from "../pages/TechniqueBook.jsx";
 import TechniquePage from "../pages/TechniquePage.jsx";
 import AdventureGear from "../pages/AdventureGear.jsx";
 
-import MeleeWeaponsTable from "../features/adventureGear/tables/meleeWeaponsTable/MeleeWeaponsTable.jsx";
-import RangedWeaponsTable from "../features/adventureGear/tables/rangedWeaponsTable/RangedWeaponsTable.jsx";
-import FirearmsTable from "../features/adventureGear/tables/firearmsTable/FirearmsTable.jsx";
-import ArmorsTable from "../features/adventureGear/tables/armorsTable/ArmorsTable.jsx";
-import AmmunitionsTable from "../features/adventureGear/tables/ammunitionsTable/AmmunitionsTable.jsx";
-import BombsTable from "../features/adventureGear/tables/bombsTable/BombsTable.jsx";
-import PotionsTable from "../features/adventureGear/tables/potionsTable/PotionsTable.jsx";
-import PoisonsTable from "../features/adventureGear/tables/poisonsTable/PoisonsTable.jsx";
-import ToolsTable from "../features/adventureGear/tables/toolsTable/ToolsTable.jsx";
-import InstrumentsTable from "../features/adventureGear/tables/instrumentsTable/InstrumentsTable.jsx";
-import FoodsTable from "../features/adventureGear/tables/foodsTable/FoodsTable.jsx";
-import UsefulGearTable from "../features/adventureGear/tables/usefulGearTable/UsefulGearTable.jsx";
-import MountsTable from "../features/adventureGear/tables/mountsTable/MountsTable.jsx";
-import SiegeEquipmentTable from "../features/adventureGear/tables/siegeEquipmentTable/SiegeEquipmentTable.jsx";
-import VehiclesTable from "../features/adventureGear/tables/vehiclesTable/VehiclesTable.jsx";
+import MeleeWeaponsTable from "../features/adventureGear/tables/melee/MeleeWeaponsTable.jsx";
+import RangedWeaponsTable from "../features/adventureGear/tables/ranged/RangedWeaponsTable.jsx";
+import FirearmsTable from "../features/adventureGear/tables/firearms/FirearmsTable.jsx";
+import ArmorsTable from "../features/adventureGear/tables/armors/ArmorsTable.jsx";
+import AmmunitionsTable from "../features/adventureGear/tables/ammunitions/AmmunitionsTable.jsx";
+import BombsTable from "../features/adventureGear/tables/bombs/BombsTable.jsx";
+import PotionsTable from "../features/adventureGear/tables/potions/PotionsTable.jsx";
+import PoisonsTable from "../features/adventureGear/tables/poisons/PoisonsTable.jsx";
+import ToolsTable from "../features/adventureGear/tables/tools/ToolsTable.jsx";
+import InstrumentsTable from "../features/adventureGear/tables/instruments/InstrumentsTable.jsx";
+import FoodsTable from "../features/adventureGear/tables/foods/FoodsTable.jsx";
+import UsefulGearTable from "../features/adventureGear/tables/useful/UsefulGearTable.jsx";
+import MountsTable from "../features/adventureGear/tables/mounts/MountsTable.jsx";
+import SiegeEquipmentTable from "../features/adventureGear/tables/siege/SiegeEquipmentTable.jsx";
+import VehiclesTable from "../features/adventureGear/tables/vehicles/VehiclesTable.jsx";
 
 export default function RootNavigation()
 {
