@@ -5,7 +5,7 @@ import "../../../../styles/global.css";
 import "../../../../styles/table.css";
 
 
-const MeleeWeaponsTable = () => {
+const MeleeSection = () => {
     return (
         <>
             <MeleeByCategoryTable data={data} category="Axes" />
@@ -18,4 +18,4 @@ const MeleeWeaponsTable = () => {
 };
 
 
-export default MeleeWeaponsTable;
+export default MeleeSection;

@@ -5,7 +5,7 @@ import "../../../../styles/global.css";
 import "../../../../styles/table.css";
 
 
-const RangedWeaponsTable = () => {
+const RangedSection = () => {
     return (
         <>
             <RangedByCategoryTable data={data} category="Crossbows" />
@@ -16,4 +16,4 @@ const RangedWeaponsTable = () => {
 };
 
 
-export default RangedWeaponsTable;
+export default RangedSection;

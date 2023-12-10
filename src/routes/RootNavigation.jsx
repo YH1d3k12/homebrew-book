@@ -9,9 +9,9 @@ import TechniqueBook from "../pages/TechniqueBook.jsx";
 import TechniquePage from "../pages/TechniquePage.jsx";
 import AdventureGear from "../pages/AdventureGear.jsx";
 
-import MeleeWeaponsTable from "../features/adventureGear/tables/melee/MeleeWeaponsTable.jsx";
-import RangedWeaponsTable from "../features/adventureGear/tables/ranged/RangedWeaponsTable.jsx";
-import FirearmsTable from "../features/adventureGear/tables/firearms/FirearmsTable.jsx";
+import MeleeSection from "../features/adventureGear/tables/melee/MeleeSection.jsx";
+import RangedSection from "../features/adventureGear/tables/ranged/RangedSection.jsx";
+import FirearmsSection from "../features/adventureGear/tables/firearms/FirearmsSection.jsx";
 import ArmorsTable from "../features/adventureGear/tables/armors/ArmorsTable.jsx";
 import AmmunitionsTable from "../features/adventureGear/tables/ammunitions/AmmunitionsTable.jsx";
 import BombsTable from "../features/adventureGear/tables/bombs/BombsTable.jsx";
@@ -39,9 +39,9 @@ export default function RootNavigation()
 					<Route path="/techniquepage" element={<TechniquePage  />} />
 
 					<Route path="/adventuregear" element={<AdventureGear  />}>
-						<Route path="melee" element={<MeleeWeaponsTable  />} />
-						<Route path="ranged" element={<RangedWeaponsTable  />} />
-						<Route path="firearms" element={<FirearmsTable  />} />
+						<Route path="melee" element={<MeleeSection  />} />
+						<Route path="ranged" element={<RangedSection  />} />
+						<Route path="firearms" element={<FirearmsSection  />} />
 						<Route path="armors" element={<ArmorsTable  />} />
 						<Route path="ammunitions" element={<AmmunitionsTable  />} />
 						<Route path="bombs" element={<BombsTable  />} />
