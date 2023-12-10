@@ -1,16 +1,19 @@
 const meleeWeapons = [
     {
         name: "Hand Axe",
+        description: "-",
+        cost: "2gp",
+        magical: false,
+        attunement: false,
+        weight: "0.9kg",
         type: "Axes",
         category: "Simple",
-        cost: "2gp",
         slashing: "1d6",
         piercing: "-",
         bludgeoning: "-",
         critRange: "-",
         critDMG: "*3",
-        properties: "Light, Thrown (range 20/60)",
-        weight: "0.9kg"
+        properties: "Light, Thrown (range 20/60)"
     },
     {
         name: "Battle Axe",

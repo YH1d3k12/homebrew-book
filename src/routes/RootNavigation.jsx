@@ -12,7 +12,7 @@ import AdventureGear from "../pages/AdventureGear.jsx";
 import MeleeSection from "../features/adventureGear/tables/melee/MeleeSection.jsx";
 import RangedSection from "../features/adventureGear/tables/ranged/RangedSection.jsx";
 import FirearmsSection from "../features/adventureGear/tables/firearms/FirearmsSection.jsx";
-import ArmorsTable from "../features/adventureGear/tables/armors/ArmorsTable.jsx";
+import ArmorsTable from "../features/adventureGear/tables/armors/ArmorsSection.jsx";
 import AmmunitionsTable from "../features/adventureGear/tables/ammunitions/AmmunitionsTable.jsx";
 import BombsTable from "../features/adventureGear/tables/bombs/BombsTable.jsx";
 import PotionsTable from "../features/adventureGear/tables/potions/PotionsTable.jsx";

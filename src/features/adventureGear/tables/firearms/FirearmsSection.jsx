@@ -11,6 +11,8 @@ const FirearmsSection = () => {
             <FirearmsByCategoryTable data={data} category="Pistols" />
             <FirearmsByCategoryTable data={data} category="Shotguns" />
             <FirearmsByCategoryTable data={data} category="SMGs" />
+            <FirearmsByCategoryTable data={data} category="Assault Rifles" />
+            <FirearmsByCategoryTable data={data} category="Rifles" />
         </>
     );
 };
