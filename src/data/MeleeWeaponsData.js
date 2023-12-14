@@ -1,6 +1,7 @@
 const meleeWeapons = [
     {
         name: "Hand Axe",
+        rarity: "Common",
         description: "-",
         cost: "2gp",
         magical: false,
@@ -17,6 +18,7 @@ const meleeWeapons = [
     },
     {
         name: "Battle Axe",
+        rarity: "Common",
         description: "-",
         cost: "7gp",
         magical: false,
@@ -33,6 +35,7 @@ const meleeWeapons = [
     },
     {
         name: "Pole Axe",
+        rarity: "Common",
         description: "-",
         cost: "20gp",
         magical: false,
@@ -49,6 +52,7 @@ const meleeWeapons = [
     },
     {
         name: "Great Axe",
+        rarity: "Common",
         description: "-",
         cost: "25gp",
         magical: false,
@@ -65,6 +69,7 @@ const meleeWeapons = [
     },
     {
         name: "Sickle",
+        rarity: "Common",
         description: "-",
         cost: "5sp",
         magical: false,
@@ -81,6 +86,7 @@ const meleeWeapons = [
     },
     {
         name: "Dagger",
+        rarity: "Common",
         description: "-",
         cost: "1gp",
         magical: false,
@@ -97,6 +103,7 @@ const meleeWeapons = [
     },
     {
         name: "Short Sword",
+        rarity: "Common",
         description: "-",
         cost: "7gp",
         magical: false,
