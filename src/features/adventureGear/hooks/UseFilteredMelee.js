@@ -2,85 +2,64 @@ import { useEffect, useState } from "react";
 
 import data from "../../../data/SpellsData.js";
 
-const UseFilteredSpells = (
-    searchByName,
-    searchByType,
-    searchByClass,
-    searchBySource,
-    hasV,
-    hasS,
-    hasM,
-    hasConcentration,
-    hasRitual
+const UseFilteredMelee = (
+    filterByName,
+    filterByRarity,
+    filterByType,
+    filterBySource,
+    isMagical,
+    isAttunement
 ) => {
-    const [spells, setSpells] = useState([]);
+    const [meleeWeapons, setMeleeWeapons] = useState([]);
 
     useEffect(() => {
-        const loadSpells = async () => {
-            let filteredSpells = data;
+        const loadMelee = async () => {
+            let filteredMelee = data;
 
-            if (searchByName) {
-                filteredSpells = filteredSpells.filter(spell =>
-                    spell.name.toLowerCase().includes(searchByName.toLowerCase())
+            if (filterByName) {
+                filteredMelee = filteredMelee.filter(item =>
+                    item.name.toLowerCase().includes(filterByName.toLowerCase())
                 );
             }
 
-            if (searchByType) {
-                filteredSpells = filteredSpells.filter(spell =>
-                    spell.type.toLowerCase().includes(searchByType.toLowerCase())
+            if (filterByRarity) {
+                filteredMelee = filteredMelee.filter(item =>
+                    item.rarity.toLowerCase().includes(filterByRarity.toLowerCase())
                 );
             }
 
-            if (searchByClass) {
-                filteredSpells = filteredSpells.filter(spell =>
-                    spell.available.toLowerCase().includes(searchByClass.toLowerCase())
+            if (filterByType) {
+                filteredMelee = filteredMelee.filter(item =>
+                    item.type.toLowerCase().includes(filterByType.toLowerCase())
                 );
             }
 
-            if (searchBySource) {
-                filteredSpells = filteredSpells.filter(spell =>
-                    spell.source.toLowerCase().includes(searchBySource.toLowerCase())
+            if (filterBySource) {
+                filteredMelee = filteredMelee.filter(item =>
+                    item.source.toLowerCase().includes(filterBySource.toLowerCase())
                 );
             }
 
-            if (hasV) {
-                filteredSpells = filteredSpells.filter(spell =>
-                    spell.components.includes("V")
+            if (isMagical) {
+                filteredMelee = filteredMelee.filter(item =>
+                    item.magical === true
                 );
             }
 
-            if (hasS) {
-                filteredSpells = filteredSpells.filter(spell =>
-                    spell.components.includes("S")
+            if (isAttunement) {
+                filteredMelee = filteredMelee.filter(item =>
+                    item.attunement === true
                 );
             }
 
-            if (hasM) {
-                filteredSpells = filteredSpells.filter(spell =>
-                    spell.components.includes("M")
-                );
-            }
-
-            if (hasConcentration) {
-                filteredSpells = filteredSpells.filter(spell =>
-                    spell.duration.toLowerCase().includes("concentration")
-                );
-            }
-
-            if (hasRitual) {
-                filteredSpells = filteredSpells.filter(spell =>
-                    spell.type.toLocaleLowerCase().includes("ritual")
-                );
-            }
-
-            setSpells(filteredSpells);
+            setMeleeWeapons(filteredMelee);
         };
 
-        loadSpells();
-    }, [searchByName, searchByType, searchByClass, searchBySource, hasV, hasS, hasM, hasConcentration, hasRitual]);
+        loadMelee();
+    }, [filterByName, filterByType, filterBySource]);
 
-    return spells;
+    return meleeWeapons;
 };
 
 
-export default UseFilteredSpells;
+export default UseFilteredMelee;
