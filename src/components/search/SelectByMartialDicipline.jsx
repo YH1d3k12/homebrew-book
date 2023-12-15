@@ -4,7 +4,7 @@ import UseDebounce from "../../../../utilities/UseDebounce";
 import "../../../../styles/search.css";
 
 
-const SearchByClass = ({ value, onChange }) => {
+const SelectByMartialDicipline = ({ value, onChange }) => {
     const [selectedValue, setSelectedValue] = useState(value);
     const debouncedValue = UseDebounce(selectedValue, 400);
 
@@ -18,16 +18,15 @@ const SearchByClass = ({ value, onChange }) => {
             value={selectedValue}
             onChange={(e) => setSelectedValue(e.target.value)}
         >
-            <option value="">Select By Class</option>
-            <option value="Barbarian">Barbarian</option>
-            <option value="Fighter">Fighter</option>
-            <option value="Monk">Monk</option>
-            <option value="Paladin">Paladin</option>
-            <option value="Ranger">Ranger</option>
-            <option value="Rogue">Rogue</option>
+            <option value="">Select By Source</option>
+            <option value="Dragon Arts">Dragon Arts</option>
+            <option value="Psionic Arts">Psionic Arts</option>
+            <option value="Spell Arts">Spell Arts</option>
+            <option value="Standard">Standard</option>
+            <option value="Way of The Voice">Way of The Voice</option>
         </select>
     );
 };
 
 
-export default SearchByClass;
+export default SelectByMartialDicipline;

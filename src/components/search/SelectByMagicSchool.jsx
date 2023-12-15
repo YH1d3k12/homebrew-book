@@ -4,7 +4,7 @@ import UseDebounce from "../../../../utilities/UseDebounce";
 import "../../../../styles/search.css";
 
 
-const SearchByType = ({ value, onChange }) => {
+const SelectByMagicSchool = ({ value, onChange }) => {
     const [selectedValue, setSelectedValue] = useState(value);
     const debouncedValue = UseDebounce(selectedValue, 400);
 
@@ -33,4 +33,4 @@ const SearchByType = ({ value, onChange }) => {
 };
 
 
-export default SearchByType;
+export default SelectByMagicSchool;

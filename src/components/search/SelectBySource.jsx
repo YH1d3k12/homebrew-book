@@ -4,7 +4,7 @@ import UseDebounce from "../../../../utilities/UseDebounce";
 import "../../../../styles/search.css";
 
 
-const SearchBySource = ({ value, onChange }) => {
+const SelectBySource = ({ value, onChange }) => {
     const [selectedValue, setSelectedValue] = useState(value);
     const debouncedValue = UseDebounce(selectedValue, 400);
 
@@ -30,4 +30,4 @@ const SearchBySource = ({ value, onChange }) => {
 };
 
 
-export default SearchBySource;
+export default SelectBySource;

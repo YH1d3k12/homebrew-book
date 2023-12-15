@@ -4,7 +4,7 @@ import UseDebounce from "../../../../utilities/UseDebounce";
 import "../../../../styles/search.css";
 
 
-const SearchByClass = ({ value, onChange }) => {
+const SelectBySpellcastingClass = ({ value, onChange }) => {
     const [selectedValue, setSelectedValue] = useState(value);
     const debouncedValue = UseDebounce(selectedValue, 400);
 
@@ -33,4 +33,4 @@ const SearchByClass = ({ value, onChange }) => {
 };
 
 
-export default SearchByClass;
+export default SelectBySpellcastingClass;
