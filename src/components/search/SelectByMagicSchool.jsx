@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-import UseDebounce from "../../../../utilities/UseDebounce";
-import "../../../../styles/search.css";
+import UseDebounce from "../../utilities/UseDebounce";
+import "../../styles/search.css";
 
 
 const SelectByMagicSchool = ({ value, onChange }) => {
