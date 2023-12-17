@@ -41,6 +41,11 @@
     margin-bottom: 20px;
 }
 
+.melee-weapons-table-checboxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .adventure-gear-table-container div h2 {
     margin-bottom: 20px;
     color: #0e0e0e;

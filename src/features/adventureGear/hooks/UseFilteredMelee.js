@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import data from "../../../data/SpellsData.js";
+import data from "../../../data/MeleeWeaponsData.js";
 
 const UseFilteredMelee = (
     filterByName,
@@ -56,7 +56,7 @@ const UseFilteredMelee = (
         };
 
         loadMelee();
-    }, [filterByName, filterByType, filterBySource]);
+    }, [filterByName, filterByRarity, filterByType, filterBySource, isMagical, isAttunement]);
 
     return meleeWeapons;
 };
