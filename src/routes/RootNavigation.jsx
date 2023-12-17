@@ -9,7 +9,7 @@ import TechniqueBook from "../pages/TechniqueBook.jsx";
 import TechniquePage from "../pages/TechniquePage.jsx";
 import AdventureGear from "../pages/AdventureGear.jsx";
 
-import MeleeSection from "../features/adventureGear/tables/melee/MeleeSection.jsx";
+import MeleeSection from "../features/adventureGear/components/MeleeWeaponsSection/MeleeSection.jsx";
 
 export default function RootNavigation()
 {
