@@ -1,11 +1,3 @@
-:root {
-    --table-header-background-color:#1C1C1C;
-    --table-header-color:#ee5622;
-
-    --table-row-primary-background-color:#cdcdcd;
-    --table-row-secundary-background-color:#b4b4b4;
-}
-
 .content-table {
     width: 100%;
     border-collapse: collapse;
@@ -19,7 +11,7 @@
 .content-table thead tr {
     background-color: var(--table-header-background-color);
     color: var(--table-header-color);
-    
+
     font-size: 0.8rem;
     font-weight: 700;
     text-align: left;
@@ -33,12 +25,12 @@
 
 /**************** Table Body Row *****************/
 .content-table tbody tr {
-    background-color: var(--table-row-primary-background-color);
-    border-bottom: 1px solid #dddddd;
+    background-color: var(--table-body-row-primary-background-color);
+    border-bottom: 1px solid var(--table-body-row-border-color);
 }
 
 .content-table tbody tr:nth-of-type(even) {
-    background-color: var(--table-row-secundary-background-color);
+    background-color: var(--table-body-row-secundary-background-color);
 }
 
 .content-table tbody tr:last-of-type {
