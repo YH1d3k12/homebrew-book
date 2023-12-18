@@ -29,7 +29,14 @@
     /* Adventure Gear Page */
     --adventure-gear-background-color: #2F2F2F;
 
-    /*  */
+    /* Lava River Component */
+    --lava-river-cascade-color: 0deg, #f22b29 0%, #ee5622 35%, #ffd729 45%, #fff4ad 50%, #ffd729 55%, #ee5622 65%, #f22b29 100%;
+
+    /* Navigation */
+    --navigation-background-color: #0e0e0e;
+    --navigation-logo-image-drop-shadow: drop-shadow(1px 1px 2px #fff4ad) drop-shadow(2px 2px 4px #ffd729) drop-shadow(3px 3px 6px #ee5622) drop-shadow(4px 4px 8px #f22b29);
+    --navigation-logo-text-color: #0e0e0e;
+    --navigation-logo-text-shadow: 0 0 10px #fff4ad, 0 0 20px #ffd729, 0 0 40px #ee5622, 0 0 80px #f22b29;
 }
 
 * {
