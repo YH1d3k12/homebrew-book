@@ -8,7 +8,7 @@ const AdventureGear = () => {
     return (
         <div className="adventure-gear-content-wrapper">
             <ItemsSideBar/>
-            <div className="adventure-gear-table-container">
+            <div className="adventure-gear-table-container scroll-y">
                 <Outlet/>
             </div>
         </div>

@@ -730,7 +730,7 @@ const meleeWeapons = [
         magical: false,
         attunement: false,
         // Weapon Attributes.
-        type: "Others",
+        type: "Fists",
         category: "Simple",
         slashing: "-",
         piercing: "-",

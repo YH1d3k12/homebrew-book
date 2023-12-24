@@ -10,9 +10,8 @@ import CheckBox from "../../../../components/search/CheckBox.jsx";
 import MeleeWeaponsTable from "./MeleeWeaponsTable.jsx";
 import UseFilteredMelee from "../../hooks/UseFilteredMelee.js";
 
-import "../../../../styles/global.css";
 import "../../../../styles/table.css";
-
+import "./meleeSection.css";
 
 const MeleeSection = () => {
     const [searchByName, setSearchByName] = useState("");
@@ -30,7 +29,7 @@ const MeleeSection = () => {
             <SelectBySource value={selectBySource} onChange={setSelectBySource}/>
             <SelectByWeaponType value={selectByType} onChange={setSelectByType}/>
             <SelectByRarity value={selectByRarity} onChange={setSelectByRarity}/>
-            <div className="melee-weapons-table-checboxes">
+            <div className="melee-weapons-table-checkboxes">
                 <CheckBox label="Magical" value={isMagical} onChange={setIsMagical}/>
                 <CheckBox label="Attunement" value={isAttunement} onChange={setIsAttunement}/>
             </div>

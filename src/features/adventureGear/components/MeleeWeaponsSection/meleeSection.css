@@ -1,0 +1,18 @@
+.melee-weapons-table tbody tr td:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.melee-weapons-table tbody tr td:first-child img {
+    height: 45px;
+    width: 45px;
+    border: solid 5px #000000;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.melee-weapons-table-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+}
