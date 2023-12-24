@@ -1,7 +1,3 @@
-:root {
-    --adventure-gear-background-color: #2F2F2F;
-}
-
 .adventure-gear-content-wrapper {
     display: grid;
     grid-template-columns: 16vw 84vw;
@@ -23,7 +19,7 @@
 .adventure-gear-table-container::-webkit-scrollbar {
     width: 5px;
 }
-  
+
 .adventure-gear-table-container::-webkit-scrollbar-thumb {
     background-color: #ee5622;
     border-radius: 25px;
