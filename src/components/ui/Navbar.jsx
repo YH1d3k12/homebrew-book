@@ -1,6 +1,6 @@
 import { Link  } from "react-router-dom";
 
-import dragon from "../../assets/images/dragon.png";
+import dragon from "../../assets/images/menu/dragon.png";
 import "./navbar.css"
 
 
