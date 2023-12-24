@@ -11,7 +11,7 @@ const TechniqueCard = () => {
     return (
         <div className="technique-card-content-wrapper">
             <h1>{technique.name}</h1>
-            <div className="technique-card-content">
+            <div className="technique-card-content scroll-y">
                 <p>
                     <strong>Source: </strong>{technique.source}<br/>
                     <strong>Stat Scaling: </strong>{technique.stat}<br/>

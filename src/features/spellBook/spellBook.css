@@ -16,24 +16,6 @@
     border: solid 1px var(--table-content-wrapper-border-color);
 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    overflow-y: auto;
-}
-
-.spell-table-container::-webkit-scrollbar {
-    width: 5px;
-}
-  
-.spell-table-container::-webkit-scrollbar-thumb {
-    background-color: #ee5622;
-    border-radius: 25px;
-}
-
-.spell-table-container::-webkit-scrollbar-track {
-    background-color: #f0f0f0;
-}
-
-.spell-table-container::-webkit-scrollbar-button {
-    display: none;
 }
 
 .spell-table-checkboxes {

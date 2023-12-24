@@ -29,7 +29,7 @@ const SpellBook = () => {
     
     return (
         <div className="spell-book-content-wrapper">
-            <div className="spell-table-container">
+            <div className="spell-table-container scroll-y">
                 <SearchByName value={searchByName} onChange={setSearchByName}/>
                 <SelectByMagicSchool value={selectByMagicSchool} onChange={setSelectByMagicSchool}/>
                 <SelectBySpellcastingClass value={selectBySpellcastingClass} onChange={setSelectBySpellcastingClass}/>

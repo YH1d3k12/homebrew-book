@@ -39,6 +39,17 @@
     --navigation-logo-image-drop-shadow: drop-shadow(1px 1px 2px #fff4ad) drop-shadow(2px 2px 4px #ffd729) drop-shadow(3px 3px 6px #ee5622) drop-shadow(4px 4px 8px #f22b29);
     --navigation-logo-text-color: #0e0e0e;
     --navigation-logo-text-shadow: 0 0 10px #fff4ad, 0 0 20px #ffd729, 0 0 40px #ee5622, 0 0 80px #f22b29;
+
+    /* Scroll */
+    --scroll-scrollbar-thumb: #ee5622;
+    --scroll-scrollbar-track: #f0f0f0;
+
+    /* Spell Card */
+    --spell-content-wrapper-backcground-color:#2F2F2F;
+    --spell-content-wrapper-border-color:#221e22;
+    --spell-title-background-color: #221e22;
+    --spell-title-color: #ee5622;
+    --spell-content-background-color: #cdcdcd;
 }
 
 * {

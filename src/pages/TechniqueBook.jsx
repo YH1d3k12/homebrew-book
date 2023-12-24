@@ -22,7 +22,7 @@ const TechniqueBook = () => {
     
     return (
         <div className="martial-book-content-wrapper">
-            <div className="techniques-table-container">
+            <div className="techniques-table-container scroll-y">
                 <SearchByName value={searchByName} onChange={setSearchByName}/>
                 <SelectByStat value={selectByStat} onChange={setSelectByStat}/>
                 <SelectByMartialDicipline value={selectByMartialDicipline} onChange={setSelectByMartialDicipline}/>
