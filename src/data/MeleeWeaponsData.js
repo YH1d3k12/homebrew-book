@@ -2,6 +2,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Hand Axe",
+        image: "Axe",
         source: "Homebrew",
         rarity: "Common",
         description: "A short-handled axe intended for use with one hand",
@@ -21,6 +22,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Battle Axe",
+        image: "Axe",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -40,6 +42,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Pole Axe",
+        image: "Axe",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -59,6 +62,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Great Axe",
+        image: "Double Axe",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -78,6 +82,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Sickle",
+        image: "Sickle",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -97,6 +102,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Dagger",
+        image: "Dagger",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -116,6 +122,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Short Sword",
+        image: "Sword",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -135,6 +142,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Scimitar",
+        image: "Dagger",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -154,6 +162,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Sword",
+        image: "Sword",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -173,6 +182,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Rapier",
+        image: "Rapier",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -192,6 +202,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Falchion",
+        image: "Rapier",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -210,6 +221,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Longsword",
+        image: "Sword",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -229,6 +241,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Claymore",
+        image: "Sword",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -248,6 +261,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Double Sword",
+        image: "Dagger",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -267,6 +281,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Great Sword",
+        image: "Heavy Blade",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -286,6 +301,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Executioner Sword",
+        image: "Heavy Blade",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -305,6 +321,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Club",
+        image: "Wood Club",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -324,6 +341,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Great Club",
+        image: "Wood Club",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -343,6 +361,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Quarterstaff",
+        image: "Bo",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -362,6 +381,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Light Hammer",
+        image: "Warhammer",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -381,6 +401,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Mace",
+        image: "Mace",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -400,6 +421,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Flail",
+        image: "Flail",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -419,6 +441,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "War Hammer",
+        image: "Warhammer",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -438,6 +461,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Morning Star",
+        image: "Mace",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -457,6 +481,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Maul",
+        image: "Warhammer",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -476,6 +501,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Great Mace",
+        image: "Warhammer",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -495,6 +521,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Spiked Great Mace",
+        image: "Warhammer",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -514,6 +541,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Javelin",
+        image: "Spear",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -533,6 +561,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Spear",
+        image: "Spear",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -552,6 +581,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Pike",
+        image: "Spear",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -571,6 +601,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Lance",
+        image: "Spear",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -590,6 +621,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Trident",
+        image: "Trident",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -609,6 +641,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Naginata",
+        image: "Glaive",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -628,6 +661,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Glaive",
+        image: "Glaive",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -647,6 +681,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Halberd",
+        image: "Glaive",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -666,6 +701,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Dart",
+        image: "Dart",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -685,6 +721,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Net",
+        image: "Net",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -704,6 +741,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Metal Net",
+        image: "Net",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -723,6 +761,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Gauntlet/Knuckles",
+        image: "Fist Weapon",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -742,6 +781,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Spiked Gauntlet/Knuckles",
+        image: "Fist Weapon",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -761,6 +801,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Whip",
+        image: "Whip",
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -780,6 +821,7 @@ const meleeWeapons = [
     {
         // Item Attributes.
         name: "Warpick",
+        image: "Warhammer",
         source: "Homebrew",
         rarity: "Common",
         description: "-",

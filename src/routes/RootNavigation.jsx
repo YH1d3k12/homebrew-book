@@ -9,7 +9,7 @@ import TechniqueBook from "../pages/TechniqueBook.jsx";
 import TechniquePage from "../pages/TechniquePage.jsx";
 import AdventureGear from "../pages/AdventureGear.jsx";
 
-import MeleeSection from "../features/adventureGear/components/MeleeWeaponsSection/MeleeSection.jsx";
+import WeaponsSection from "../features/adventureGear/components/weaponsSection/WeaponsSection.jsx";
 
 export default function RootNavigation()
 {
@@ -25,7 +25,7 @@ export default function RootNavigation()
 					<Route path="/techniquepage" element={<TechniquePage  />} />
 
 					<Route path="/adventuregear" element={<AdventureGear  />}>
-						<Route path="melee" element={<MeleeSection  />} />
+						<Route path="melee" element={<WeaponsSection  />} />
 					</Route>
 				</Route>
 			</Routes>

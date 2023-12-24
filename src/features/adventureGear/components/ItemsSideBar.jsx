@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 
 import axe from "../../../assets/images/weapons/axe.png";
-import bow from "../../../assets/images/weapons/bow.png";
-import firearm from "../../../assets/images/weapons/firearm.png";
 import heavy_armor from "../../../assets/images/armor/heavy_armor.png";
 import ammunition from "../../../assets/images/other/ammunition.png";
 import bomb from "../../../assets/images/weapons/bomb.png";
@@ -23,9 +21,7 @@ const ItemsSideBar = () => {
     return (
         <nav className="items-sidebar">
             <ul>
-                <li><Link to="melee"><img src={axe} alt="Axe" /><span>Meele Weapons</span></Link></li>
-                <li><Link to="ranged"><img src={bow} alt="Bow" /><span>Ranged Weapons</span></Link></li>
-                <li><Link to="firearms"><img src={firearm} alt="Firearm" /><span>Firearms</span></Link></li>
+                <li><Link to="melee"><img src={axe} alt="Axe" /><span>Weapons</span></Link></li>
                 <li><Link to="armors"><img src={heavy_armor} alt="Heavy Armor" /><span>Armors</span></Link></li>
                 <li><Link to="ammunitions"><img src={ammunition} alt="Ammunition" /><span>Ammunitions</span></Link></li>
                 <li><Link to="bombs"><img src={bomb} alt="Bomb" /><span>Bombs</span></Link></li>

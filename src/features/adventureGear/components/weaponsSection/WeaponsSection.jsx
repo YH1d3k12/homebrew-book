@@ -7,13 +7,13 @@ import SelectBySource from "../../../../components/search/SelectBySource.jsx";
 import CheckBox from "../../../../components/search/CheckBox.jsx";
 
 
-import MeleeWeaponsTable from "./MeleeWeaponsTable.jsx";
-import UseFilteredMelee from "../../hooks/UseFilteredMelee.js";
+import MeleeWeaponsTable from "./WeaponsTable.jsx";
+import UseFilteredWeapons from "../../hooks/UseFilteredWeapons.js";
 
 import "../../../../styles/table.css";
-import "./meleeSection.css";
+import "./weaponsSection.css";
 
-const MeleeSection = () => {
+const WeaponsSection = () => {
     const [searchByName, setSearchByName] = useState("");
     const [selectByRarity, setSelectByRarity] = useState("");
     const [selectByType, setSelectByType] = useState("");
@@ -21,7 +21,7 @@ const MeleeSection = () => {
     const [isMagical, setIsMagical] = useState(false);
     const [isAttunement, setIsAttunement] = useState(false);
 
-    const items = UseFilteredMelee(searchByName, selectByRarity, selectByType, selectBySource, isMagical, isAttunement)
+    const items = UseFilteredWeapons(searchByName, selectByRarity, selectByType, selectBySource, isMagical, isAttunement)
 
     return (
         <>
@@ -29,7 +29,7 @@ const MeleeSection = () => {
             <SelectBySource value={selectBySource} onChange={setSelectBySource}/>
             <SelectByWeaponType value={selectByType} onChange={setSelectByType}/>
             <SelectByRarity value={selectByRarity} onChange={setSelectByRarity}/>
-            <div className="melee-weapons-table-checkboxes">
+            <div className="weapons-table-checkboxes">
                 <CheckBox label="Magical" value={isMagical} onChange={setIsMagical}/>
                 <CheckBox label="Attunement" value={isAttunement} onChange={setIsAttunement}/>
             </div>
@@ -39,4 +39,4 @@ const MeleeSection = () => {
 };
 
 
-export default MeleeSection;
+export default WeaponsSection;

@@ -23,6 +23,15 @@ const SelectByWeaponType = ({ value, onChange }) => {
             <option value="Blades">Blades</option>
             <option value="Bludgeons">Bludgeons</option>
             <option value="Polearms">Polearms</option>
+            <option value="Bows">Bows</option>
+            <option value="Crossbows">Crossbows</option>
+            <option value="Pistols">Pistols</option>
+            <option value="Shotguns">Shotguns</option>
+            <option value="SMGs">SMGs</option>
+            <option value="Assault Rifles">Assault Rifles</option>
+            <option value="Rifles">Rifles</option>
+            <option value="Wands">Wands</option>
+            <option value="Staves">Staves</option>
             <option value="Others">Others</option>
         </select>
     );

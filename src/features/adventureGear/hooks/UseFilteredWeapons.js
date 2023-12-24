@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import data from "../../../data/MeleeWeaponsData.js";
 
-const UseFilteredMelee = (
+const UseFilteredWeapons = (
     filterByName,
     filterByRarity,
     filterByType,
@@ -62,4 +62,4 @@ const UseFilteredMelee = (
 };
 
 
-export default UseFilteredMelee;
+export default UseFilteredWeapons;
