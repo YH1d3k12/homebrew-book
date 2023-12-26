@@ -279,6 +279,48 @@ const armorsData = [
         strength: "-",
         stealth: "-"
     },
+    {
+        // Item
+        name: "Vestes do Curandeiro",
+        description: "Curas magicas conjuradas por você curam +2 pontos de vida.",
+        cost: "85gp",
+        magical: true,
+        attunement: true,
+        rarity: "Uncommon",
+        // Armor
+        type: "Cloth",
+        armorClass: "10 + Dex modifier",
+        strength: "-",
+        stealth: "-"
+    },
+    {
+        // Item
+        name: "Manto do Mago de Batalha",
+        description: "Seu SP máximo é reduzido pela metade. \nSua vida máxima aumenta um número igual o dobro de seu SP atual.",
+        cost: "450gp",
+        magical: true,
+        attunement: true,
+        rarity: "Rare",
+        // Armor
+        type: "Cloth",
+        armorClass: "10 + Dex modifier + Spellcasting Attribute modifier (max 2)",
+        strength: "-",
+        stealth: "-"
+    },
+    {
+        // Item
+        name: "Ghillie Suit",
+        description: "Você tem vantagem em testes de furtividade no terreno específicado pelo Ghillie Suit. \nSe ficar parado por mais de 1 minuto no terreno específicado, recebe +5 em testes de furtividade.",
+        cost: "32gp",
+        magical: false,
+        attunement: false,
+        rarity: "Common",
+        // Armor
+        type: "Cloth",
+        armorClass: "10 + Dex modifier",
+        strength: "-",
+        stealth: "-"
+    },
 ];
 
 export default armorsData;
