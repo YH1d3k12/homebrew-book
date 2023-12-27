@@ -1198,6 +1198,146 @@ const meleeWeapons = [
         critDMG: "-",
         properties: "ammunition, range(60/120), Two-Handed, Rapid Fire, Reload 4, Misfire 1"
     },
+    {
+        // Item Attributes.
+        name: "P90",
+        image: "SMG",
+        source: "Homebrew",
+        rarity: "Uncommon",
+        description: "-",
+        cost: "100gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "SMGs",
+        category: "Simple",
+        slashing: "-",
+        piercing: "2d4",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(40/80), Two-Handed, Rapid Fire, Reload 4, Misfire 1"
+    },
+    {
+        // Item Attributes.
+        name: "Assault Rifle",
+        image: "Assault Rifle",
+        source: "Homebrew",
+        rarity: "Uncommon",
+        description: "-",
+        cost: "150gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Assault Rifles",
+        category: "Simple",
+        slashing: "-",
+        piercing: "3d4",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(120/360), Two-Handed, Reload 4, Misfire 1"
+    },
+    {
+        // Item Attributes.
+        name: "Semi Auto Rifle",
+        image: "Assault Rifle",
+        source: "Homebrew",
+        rarity: "Uncommon",
+        description: "-",
+        cost: "150gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Assault Rifles",
+        category: "Simple",
+        slashing: "-",
+        piercing: "1d10",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(150/450), Two-Handed, Reload 4, Misfire 1"
+    },
+    {
+        // Item Attributes.
+        name: "Heavy Machine Gun",
+        image: "Assault Rifle",
+        source: "Homebrew",
+        rarity: "Rare",
+        description: "-",
+        cost: "400gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Assault Rifles",
+        category: "Simple",
+        slashing: "-",
+        piercing: "5d6",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(150/600), Two-Handed, Braced, Reload 10, Misfire 1"
+    },
+    {
+        // Item Attributes.
+        name: "Action Bolt Rifle",
+        image: "Rifle",
+        source: "Homebrew",
+        rarity: "Uncommon",
+        description: "-",
+        cost: "100gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Rifles",
+        category: "Martial",
+        slashing: "-",
+        piercing: "1d10",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(150/600), Two-Handed, Reload 4, Misfire 1"
+    },
+    {
+        // Item Attributes.
+        name: "Sniper Rifle",
+        image: "Rifle",
+        source: "Homebrew",
+        rarity: "Rare",
+        description: "-",
+        cost: "300gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Rifles",
+        category: "Martial",
+        slashing: "-",
+        piercing: "1d12",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(250/1000), Two-Handed, Reload 4, Misfire 1"
+    },
+    {
+        // Item Attributes.
+        name: "Anti Tank Rifle",
+        image: "Rifle",
+        source: "Homebrew",
+        rarity: "Rare",
+        description: "-",
+        cost: "750gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Rifles",
+        category: "Martial",
+        slashing: "-",
+        piercing: "3d12",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(400/2000), Two-Handed, Braced, Reload 3, Misfire 1, Siege Weapon"
+    },
 ];
 
 export default meleeWeapons;
