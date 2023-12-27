@@ -19,11 +19,12 @@ export default function RootNavigation()
 				<Route path="/" element={<Body  />}>
 					<Route path="/" element={<Menu  />} />
 					<Route path="/species" element={<Species  />} />
-					<Route path="/spellbook" element={<SpellBook  />} />
-					<Route path="/spellpage" element={<SpellPage  />} />
-					<Route path="/techniquebook" element={<TechniqueBook  />} />
-					<Route path="/techniquepage" element={<TechniquePage  />} />
-
+					<Route path="/spellbook" element={<SpellBook  />} >
+						<Route path="/spellpage" element={<SpellPage  />} />
+					</Route>
+					<Route path="/techniquebook" element={<TechniqueBook  />} >
+						<Route path="/techniquepage" element={<TechniquePage  />} />
+					</Route>
 					<Route path="/adventuregear" element={<AdventureGear  />}>
 						<Route path="melee" element={<WeaponsSection  />} />
 					</Route>

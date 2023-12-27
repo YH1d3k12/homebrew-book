@@ -1038,6 +1038,166 @@ const meleeWeapons = [
         critDMG: "-",
         properties: "ammunition, range(250/1000), Two-Handed, Strength (12)"
     },
+    {
+        // Item Attributes.
+        name: "Pistol",
+        image: "Pistol",
+        source: "Homebrew",
+        rarity: "Common",
+        description: "-",
+        cost: "40gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Pistols",
+        category: "Simple",
+        slashing: "-",
+        piercing: "1d6",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(60/180), Light, Reload 6, Misfire 1"
+    },
+    {
+        // Item Attributes.
+        name: "High Caliber Revolver",
+        image: "Revolver",
+        source: "Homebrew",
+        rarity: "Uncommon",
+        description: "-",
+        cost: "85gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Pistols",
+        category: "Simple",
+        slashing: "-",
+        piercing: "1d8",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(80/240), Light, Reload 6, Misfire 1"
+    },
+    {
+        // Item Attributes.
+        name: "Automatic Pistol",
+        image: "Pistol",
+        source: "Homebrew",
+        rarity: "Uncommon",
+        description: "-",
+        cost: "105gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Pistols",
+        category: "Simple",
+        slashing: "-",
+        piercing: "2d4",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(40/120), Light, Reload 3, Misfire 1"
+    },
+    {
+        // Item Attributes.
+        name: "Double Barrel",
+        image: "Shotgun",
+        source: "Homebrew",
+        rarity: "Common",
+        description: "-",
+        cost: "60gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Shotguns",
+        category: "Simple",
+        slashing: "-",
+        piercing: "2d8",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(20/40), Two-Handed, Spread, Reload 1, Misfire 1"
+    },
+    {
+        // Item Attributes.
+        name: "Pump Action Shotgun",
+        image: "Shotgun",
+        source: "Homebrew",
+        rarity: "Uncommon",
+        description: "-",
+        cost: "75gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Shotguns",
+        category: "Simple",
+        slashing: "-",
+        piercing: "1d10",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(20/40), Two-Handed, Spread, Reload 4, Misfire 1"
+    },
+    {
+        // Item Attributes.
+        name: "Automatic Shotgun",
+        image: "Shotgun",
+        source: "Homebrew",
+        rarity: "Uncommon",
+        description: "-",
+        cost: "150gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Shotguns",
+        category: "Simple",
+        slashing: "-",
+        piercing: "2d6",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(20/40), Two-Handed, Spread, Reload 4, Misfire 1"
+    },
+    {
+        // Item Attributes.
+        name: "Automatic Shotgun",
+        image: "Shotgun",
+        source: "Homebrew",
+        rarity: "Uncommon",
+        description: "-",
+        cost: "150gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Shotguns",
+        category: "Simple",
+        slashing: "-",
+        piercing: "2d6",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(20/40), Two-Handed, Spread, Reload 4, Misfire 1"
+    },
+    {
+        // Item Attributes.
+        name: "Mp5",
+        image: "SMG",
+        source: "Homebrew",
+        rarity: "Uncommon",
+        description: "-",
+        cost: "100gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "SMGs",
+        category: "Simple",
+        slashing: "-",
+        piercing: "1d6",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(60/120), Two-Handed, Rapid Fire, Reload 4, Misfire 1"
+    },
 ];
 
 export default meleeWeapons;
