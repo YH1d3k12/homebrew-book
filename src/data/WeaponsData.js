@@ -1296,7 +1296,7 @@ const meleeWeapons = [
         bludgeoning: "-",
         critRange: "-",
         critDMG: "-",
-        properties: "ammunition, range(150/600), Two-Handed, Reload 4, Misfire 1"
+        properties: "ammunition, range(200/800), Two-Handed, Reload 4, Misfire 1"
     },
     {
         // Item Attributes.
@@ -1316,7 +1316,7 @@ const meleeWeapons = [
         bludgeoning: "-",
         critRange: "-",
         critDMG: "-",
-        properties: "ammunition, range(250/1000), Two-Handed, Reload 4, Misfire 1"
+        properties: "ammunition, range(250/2000), Two-Handed, Reload 4, Misfire 1"
     },
     {
         // Item Attributes.
@@ -1336,7 +1336,7 @@ const meleeWeapons = [
         bludgeoning: "-",
         critRange: "-",
         critDMG: "-",
-        properties: "ammunition, range(400/2000), Two-Handed, Braced, Reload 3, Misfire 1, Siege Weapon"
+        properties: "ammunition, range(400/8000), Two-Handed, Braced, Reload 3, Misfire 1, Siege Weapon"
     },
 ];
 
