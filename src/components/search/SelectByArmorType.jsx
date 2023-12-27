@@ -19,7 +19,7 @@ const SelectByArmorType = ({ value, onChange }) => {
             onChange={(e) => setSelectedValue(e.target.value)}
         >
             <option value="">All</option>
-            <option value="None">None</option>
+            <option value="Cloth">Cloth</option>
             <option value="Light Armor">Light Armor</option>
             <option value="Light Shield">Light Shield</option>
             <option value="Medium Armor">Medium Armor</option>

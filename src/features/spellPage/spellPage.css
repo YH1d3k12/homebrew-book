@@ -6,4 +6,82 @@
 
     height: 100%;
     width: 100%;
+    padding: 15px;
+
+    background-color: var(--spell-content-wrapper-backcground-color);
+    border: solid 1px var(--spell-content-wrapper-border-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.spell-page-content-wrapper h1 {
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+
+    background-color: var(--spell-title-background-color);
+    color: var(--spell-title-color);
+    font-size: 1.4rem;
+}
+
+.spell-card-content {
+    max-height: calc(100% - 75px);
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+
+    background-color: var(--spell-content-background-color);
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.spell-card-content strong {
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.spell-card-content p {
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .spell-page-content-wrapper h1 {
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+
+    .spell-card-content {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .spell-card-content strong {
+        font-size: 1.05rem;
+    }
+
+    .spell-card-content p {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .spell-page-content-wrapper {
+        width: 70%;
+    }
+
+    .spell-page-content-wrapper h1 {
+        padding: 20px;
+        font-size: 1.8rem;
+    }
+
+    .spell-card-content {
+        padding: 20px;
+        font-size: 1.05rem;
+    }
+
+    .spell-card-content strong {
+        font-size: 1.1rem;
+    }
+
+    .spell-card-content p {
+        margin-bottom: 30px;
+    }
 }
