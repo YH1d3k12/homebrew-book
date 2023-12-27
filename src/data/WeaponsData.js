@@ -838,6 +838,206 @@ const meleeWeapons = [
         critDMG: "-",
         properties: "Heavy, Two-handed, Lethal"
     },
+    {
+        // Item Attributes.
+        name: "Sling",
+        image: "Sling",
+        source: "Homebrew",
+        rarity: "Common",
+        description: "-",
+        cost: "5cp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Others",
+        category: "Simple",
+        slashing: "-",
+        piercing: "-",
+        bludgeoning: "1d4",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(30/120)"
+    },
+    {
+        // Item Attributes.
+        name: "Blowgun",
+        image: "Blowgun",
+        source: "Homebrew",
+        rarity: "Common",
+        description: "-",
+        cost: "5sp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Others",
+        category: "Simple",
+        slashing: "-",
+        piercing: "1d1",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(25/100)"
+    },
+    {
+        // Item Attributes.
+        name: "Hand Crossbow",
+        image: "Crossbow",
+        source: "Homebrew",
+        rarity: "Common",
+        description: "-",
+        cost: "12gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Crossbows",
+        category: "Simple",
+        slashing: "-",
+        piercing: "1d6",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(30/60), Light, Loading"
+    },
+    {
+        // Item Attributes.
+        name: "Light Crossbow",
+        image: "Crossbow",
+        source: "Homebrew",
+        rarity: "Common",
+        description: "-",
+        cost: "20gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Crossbows",
+        category: "Simple",
+        slashing: "-",
+        piercing: "1d8",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(60/240), Loading, Two-Handed"
+    },
+    {
+        // Item Attributes.
+        name: "Heavy Crossbow",
+        image: "Crossbow",
+        source: "Homebrew",
+        rarity: "Common",
+        description: "-",
+        cost: "37gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Crossbows",
+        category: "Simple",
+        slashing: "-",
+        piercing: "1d10",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(80/320), Loading, Two-Handed, Strength (10)"
+    },
+    {
+        // Item Attributes.
+        name: "Auto Crossbow",
+        image: "Crossbow",
+        source: "Homebrew",
+        rarity: "Uncommon",
+        description: "-",
+        cost: "65gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Crossbows",
+        category: "Simple",
+        slashing: "-",
+        piercing: "1d8",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(60/240), Loading (6), Two-Handed"
+    },
+    {
+        // Item Attributes.
+        name: "Double Crossbow",
+        image: "Crossbow",
+        source: "Homebrew",
+        rarity: "Uncommon",
+        description: "-",
+        cost: "110gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Crossbows",
+        category: "Simple",
+        slashing: "-",
+        piercing: "2d8",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(60/240), Loading, Two-Handed, Strength (10)"
+    },
+    {
+        // Item Attributes.
+        name: "Short Bow",
+        image: "Bow",
+        source: "Homebrew",
+        rarity: "Common",
+        description: "-",
+        cost: "7gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Bows",
+        category: "Martial",
+        slashing: "-",
+        piercing: "1d8",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(80/320), Two-Handed"
+    },
+    {
+        // Item Attributes.
+        name: "Long Bow",
+        image: "Bow",
+        source: "Homebrew",
+        rarity: "Common",
+        description: "-",
+        cost: "15gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Bows",
+        category: "Martial",
+        slashing: "-",
+        piercing: "1d10",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(150/600), Two-Handed, Strength (10)"
+    },
+    {
+        // Item Attributes.
+        name: "War Bow",
+        image: "Bow",
+        source: "Homebrew",
+        rarity: "Common",
+        description: "-",
+        cost: "25gp",
+        magical: false,
+        attunement: false,
+        // Weapon Attributes.
+        type: "Bows",
+        category: "Martial",
+        slashing: "-",
+        piercing: "1d12",
+        bludgeoning: "-",
+        critRange: "-",
+        critDMG: "-",
+        properties: "ammunition, range(250/1000), Two-Handed, Strength (12)"
+    },
 ];
 
 export default meleeWeapons;
