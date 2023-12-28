@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import data from "../../../data/MeleeWeaponsData.js";
+import data from "../../../data/WeaponsData.js";
 
 const UseFilteredWeapons = (
     filterByName,
