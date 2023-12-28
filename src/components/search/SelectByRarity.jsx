@@ -18,6 +18,7 @@ const SelectByRarity = ({ value, onChange }) => {
             value={selectedValue}
             onChange={(e) => setSelectedValue(e.target.value)}
         >
+            <option value="">All</option>
             <option value="Common">Common</option>
             <option value="Uncommon">Uncommon</option>
             <option value="Rare">Rare</option>
