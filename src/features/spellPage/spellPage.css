@@ -6,6 +6,11 @@
 
     height: 100%;
     width: 100%;
+}
+
+.spell-card {
+    height: 100%;
+    width: 100%;
     padding: 15px;
 
     background-color: var(--spell-content-wrapper-backcground-color);
@@ -13,7 +18,7 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-.spell-page-content-wrapper h1 {
+.spell-card h1 {
     padding: 10px;
     border-radius: 5px 5px 0px 0px;
 
@@ -43,7 +48,7 @@
 }
 
 @media (min-width: 768px) {
-    .spell-page-content-wrapper h1 {
+    .spell-card h1 {
         padding: 15px;
         font-size: 1.5rem;
     }
@@ -63,11 +68,11 @@
 }
 
 @media (min-width: 1280px) {
-    .spell-page-content-wrapper {
+    .spell-card {
         width: 70%;
     }
 
-    .spell-page-content-wrapper h1 {
+    .spell-card h1 {
         padding: 20px;
         font-size: 1.8rem;
     }
