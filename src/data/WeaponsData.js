@@ -1344,7 +1344,7 @@ const meleeWeapons = [
         image: "Rifle",
         source: "Homebrew",
         rarity: "Varies",
-        description: "Uma arma de fogo barata e mal feita. \nA arma custa apenas 60% do preço original, porém possuí +1 de missfire e -1 para rolagens de ataque e dano.",
+        description: "Uma arma de fogo barata e mal feita. \nA arma custa apenas 80% do preço original, porém possuí +1 de missfire e -1 para rolagens de ataque e dano.",
         cost: "Varies",
         magical: false,
         attunement: false,
@@ -1364,7 +1364,7 @@ const meleeWeapons = [
         image: "Rifle",
         source: "Homebrew",
         rarity: "Varies",
-        description: "Uma arma de fogo feita de lixo. \nA arma custa apenas 40% do preço original, porém possuí +2 de missfire e -2 para rolagens de ataque e dano.",
+        description: "Uma arma de fogo feita de lixo. \nA arma custa apenas 60% do preço original, porém possuí +2 de missfire e -2 para rolagens de ataque e dano.",
         cost: "Varies",
         magical: false,
         attunement: false,
@@ -1377,27 +1377,7 @@ const meleeWeapons = [
         critRange: "-",
         critDMG: "-",
         properties: "-"
-    },
-    {
-        // Item Attributes.
-        name: "Colhedor de Essência",
-        image: "Rifle",
-        source: "Homebrew",
-        rarity: "Varies",
-        description: "Uma arma de fogo feita de lixo. \nA arma custa apenas 40% do preço original, porém possuí +2 de missfire e -2 para rolagens de ataque e dano.",
-        cost: "Varies",
-        magical: false,
-        attunement: false,
-        // Weapon Attributes.
-        type: "-",
-        category: "-",
-        slashing: "-",
-        piercing: "-",
-        bludgeoning: "-",
-        critRange: "-",
-        critDMG: "-",
-        properties: "-"
-    },
+    }
 ];
 
 export default meleeWeapons;
