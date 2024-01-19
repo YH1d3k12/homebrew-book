@@ -15,15 +15,12 @@ const ItemPage = () => {
             <div className="item-card-content scroll-y">
                 <p>
                     <strong>Source: </strong>{item.source}<br/>
-                    <strong>Type: </strong>{item.type}<br/>
-                    <strong>Casting Time: </strong>{item.castingTime}<br/>
-                    <strong>Range: </strong>{item.range}<br/>
-                    <strong>Components: </strong>{item.components}<br/>
-                    <strong>Duration: </strong>{item.duration}<br/>
+                    <strong>Rarity: </strong>{item.rarity}<br/>
+                    <strong>Cost: </strong>{item.cost}<br />
+                    <strong>Magical? </strong>{item.magical ? "yes" : "no"} <br />
+                    <strong>Attunement? </strong>{item.attunement ? "yes" : "no"} <br />
                 </p>
-                <p>{LineBreaker(item.effect)}</p>
-                <p><strong>At Higher Levels: </strong>{item.upCasting}</p>
-                <p><strong>item List: </strong>{item.available}</p>
+                <p>{LineBreaker(item.description)}</p>
             </div>
         </div>
     );
