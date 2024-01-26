@@ -230,7 +230,23 @@ const armorsData = [
         source: "",
         rarity: "Rare",
         description: "Reduz o dano de spell attacks contra você em 5",
-        cost: "150gp",
+        cost: "175gp",
+        magical: true,
+        attunement: false,
+        // Armor Attributes.
+        type: "Light Shield",
+        armorClass: "+1 AC",
+        strength: "-",
+        stealth: "-"
+    },
+    {
+        // Item Attributes.
+        name: "Escudo Rúnico+",
+        image: "",
+        source: "",
+        rarity: "Very Rare",
+        description: "Reduz o dano de spell attacks contra você em 10",
+        cost: "650gp",
         magical: true,
         attunement: false,
         // Armor Attributes.
