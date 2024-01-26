@@ -1,6 +1,6 @@
 .lava-river {
     height: 100%;
-    width: 5px;
+    width: 2px;
     background: linear-gradient(var(--lava-river-cascade-color));
     background-size: 200% 200%;
     animation: moveGradient 10s linear infinite;
@@ -17,11 +17,5 @@
 
     100% {
         background-position: 50% 0%;
-    }
-}
-
-@media (min-width: 640px) {
-    .lava-river {
-        width: 10px;
     }
 }

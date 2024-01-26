@@ -1,5 +1,5 @@
 :root {
-    --menu-buttons-content-wrapper-background-color:#2F2F2F;
+    --menu-buttons-content-wrapper-background-color: #2F2F2F;
 
     --menu-buttons-card-color: #000000;
 }
@@ -28,7 +28,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    
+
     height: 120px;
     width: 120px;
 }
@@ -47,8 +47,8 @@
 }
 
 .button-icon {
-    height: 50%;
-    width: 50%;
+    height: 40%;
+    width: 40%;
     animation-timing-function: ease-in-out;
     animation: heat 4s linear infinite;
 }
@@ -57,15 +57,19 @@
     0% {
         filter: drop-shadow(1px 1px 1px #fff4ad) drop-shadow(2px 2px 2px #ffd729) drop-shadow(3px 3px 4px #ee5622) drop-shadow(4px 4px 6px #f22b29);
     }
+
     40% {
         filter: drop-shadow(1px 1px 2px #fff4ad) drop-shadow(2px 2px 4px #ffd729) drop-shadow(3px 3px 6px #ee5622) drop-shadow(4px 4px 8px #f22b29);
     }
+
     60% {
         filter: drop-shadow(2px 2px 4px #fff4ad) drop-shadow(3px 3px 6px #ffd729) drop-shadow(4px 4px 8px #ee5622) drop-shadow(5px 5px 10px #f22b29);
     }
+
     80% {
         filter: drop-shadow(1px 1px 2px #fff4ad) drop-shadow(2px 2px 4px #ffd729) drop-shadow(3px 3px 6px #ee5622) drop-shadow(4px 4px 8px #f22b29);
     }
+
     100% {
         filter: drop-shadow(1px 1px 1px #fff4ad) drop-shadow(2px 2px 2px #ffd729) drop-shadow(3px 3px 4px #ee5622) drop-shadow(4px 4px 6px #f22b29);
     }
@@ -77,23 +81,23 @@
     color: var(--menu-buttons-card-color);
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
-    text-shadow: 0 0 10px #fff4ad, 0 0 20px #ffd729, 0 0 40px #ee5622, 0 0 80px #f22b29;
+    text-shadow: 0 0 3px #fff4ad, 0 0 5px #ffd729;
     z-index: 3;
 }
-  
+
 .button-card::before {
     content: "";
     position: absolute;
     width: 50%;
     height: 50%;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(255,255,221,1) 10%, rgba(255,215,41,1) 25%, rgba(238,86,34,1) 55%, rgba(242,43,41,1) 70%);
-    box-shadow: 0 0 10px rgba(242,43,41,1), 0 0 20px rgba(242,43,41,1), 0 0 40px rgba(242,43,41,1), 0 0 80px rgba(242,43,41,1), 0 0 160px rgba(242,43,41,1);
+    background: radial-gradient(circle, rgba(255, 255, 221, 1) 10%, rgba(255, 215, 41, 1) 25%, rgba(238, 86, 34, 1) 55%, rgba(242, 43, 41, 1) 70%);
+    box-shadow: 0 0 10px rgba(242, 43, 41, 1), 0 0 20px rgba(242, 43, 41, 1), 0 0 40px rgba(242, 43, 41, 1), 0 0 80px rgba(242, 43, 41, 1), 0 0 160px rgba(242, 43, 41, 1);
     transform: scale(0);
     opacity: 0;
     transition: transform 0.1s, opacity 0.1s;
 }
-  
+
 .button-card:hover::before {
     transform: scale(1);
     opacity: 1;
@@ -110,6 +114,7 @@
         height: 150px;
         width: 150px;
     }
+
     .button-card h2 {
         font-size: 1.2rem;
     }
@@ -120,7 +125,7 @@
         flex-direction: column;
         justify-content: start;
     }
-    
+
     .menu-buttons-row {
         flex-direction: row;
     }
