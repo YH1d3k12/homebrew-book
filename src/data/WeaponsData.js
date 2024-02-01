@@ -1,4 +1,3 @@
-
 import assault_rifle from "../assets/images/weapons/assault_rifle.png";
 import axe from "../assets/images/weapons/axe.png";
 import bo from "../assets/images/weapons/bo.png";
@@ -138,7 +137,7 @@ const weapons = [
         image: dagger,
         source: "Homebrew",
         rarity: "Common",
-        description: "-",
+        description: "A small, versatile blade. Often used for throwing or as a backup weapon.",
         cost: "1gp",
         magical: false,
         attunement: false,
@@ -158,7 +157,7 @@ const weapons = [
         image: sword,
         source: "Homebrew",
         rarity: "Common",
-        description: "-",
+        description: "A one-handed melee weapon with a short, straight blade.",
         cost: "7gp",
         magical: false,
         attunement: false,
@@ -198,7 +197,7 @@ const weapons = [
         image: sword,
         source: "Homebrew",
         rarity: "Common",
-        description: "-",
+        description: "A versatile sword with a straight, double-edged blade.",
         cost: "12gp",
         magical: false,
         attunement: false,
@@ -257,7 +256,7 @@ const weapons = [
         image: sword,
         source: "Homebrew",
         rarity: "Common",
-        description: "-",
+        description: "A two-handed sword with a straight, double-edged blade",
         cost: "32gp",
         magical: false,
         attunement: false,
@@ -714,7 +713,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Halberd",
-        image: "../assets/images/weapons/glaive.png",
+        image: glaive,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -734,7 +733,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Dart",
-        image: "../assets/images/weapons/dart.png",
+        image: dart,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -754,10 +753,10 @@ const weapons = [
     {
         // Item Attributes.
         name: "Net",
-        image: "../assets/images/weapons/net.png",
+        image: net,
         source: "Homebrew",
         rarity: "Common",
-        description: "-",
+        description: "A thrown weapon designed to restrain and entangle a target, limiting its movement.",
         cost: "5sp",
         magical: false,
         attunement: false,
@@ -774,10 +773,10 @@ const weapons = [
     {
         // Item Attributes.
         name: "Metal Net",
-        image: "../assets/images/weapons/net.png",
+        image: net,
         source: "Homebrew",
         rarity: "Common",
-        description: "-",
+        description: "A thrown weapon designed to restrain and entangle a target, limiting its movement.",
         cost: "7gp",
         magical: false,
         attunement: false,
@@ -794,7 +793,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Gauntlet/Knuckles",
-        image: "../assets/images/weapons/fist_weapon.png",
+        image: fist_weapon,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -814,7 +813,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Spiked Gauntlet/Knuckles",
-        image: "../assets/images/weapons/fist_weapon.png",
+        image: fist_weapon,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -834,7 +833,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Whip",
-        image: "../assets/images/weapons/whip.png",
+        image: whip,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -854,7 +853,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Warpick",
-        image: "../assets/images/weapons/warhammer.png",
+        image: warhammer,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -874,7 +873,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Sling",
-        image: "../assets/images/weapons/sling.png",
+        image: sling,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -894,7 +893,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Blowgun",
-        image: "../assets/images/weapons/blowgun.png",
+        image: blowgun,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -914,7 +913,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Hand Crossbow",
-        image: "../assets/images/weapons/crossbow.png",
+        image: crossbow,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -934,7 +933,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Light Crossbow",
-        image: "../assets/images/weapons/crossbow.png",
+        image: crossbow,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -954,7 +953,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Heavy Crossbow",
-        image: "../assets/images/weapons/crossbow.png",
+        image: crossbow,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -974,7 +973,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Auto Crossbow",
-        image: "../assets/images/weapons/crossbow.png",
+        image: crossbow,
         source: "Homebrew",
         rarity: "Uncommon",
         description: "-",
@@ -994,7 +993,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Double Crossbow",
-        image: "../assets/images/weapons/crossbow.png",
+        image: crossbow,
         source: "Homebrew",
         rarity: "Uncommon",
         description: "-",
@@ -1014,7 +1013,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Short Bow",
-        image: "../assets/images/weapons/bow.png",
+        image: bow,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -1034,7 +1033,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Long Bow",
-        image: "../assets/images/weapons/bow.png",
+        image: bow,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -1054,7 +1053,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "War Bow",
-        image: "../assets/images/weapons/bow.png",
+        image: bow,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -1074,7 +1073,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Pistol",
-        image: "../assets/images/weapons/pistol.png",
+        image: pistol,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -1094,7 +1093,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "High Caliber Revolver",
-        image: "../assets/images/weapons/revolver.png",
+        image: revolver,
         source: "Homebrew",
         rarity: "Uncommon",
         description: "-",
@@ -1114,7 +1113,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Automatic Pistol",
-        image: "../assets/images/weapons/pistol.png",
+        image: pistol,
         source: "Homebrew",
         rarity: "Uncommon",
         description: "-",
@@ -1134,7 +1133,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Double Barrel",
-        image: "../assets/images/weapons/shotgun.png",
+        image: shotgun,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -1154,7 +1153,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Pump Action Shotgun",
-        image: "../assets/images/weapons/shotgun.png",
+        image: shotgun,
         source: "Homebrew",
         rarity: "Uncommon",
         description: "-",
@@ -1174,7 +1173,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Automatic Shotgun",
-        image: "../assets/images/weapons/shotgun.png",
+        image: shotgun,
         source: "Homebrew",
         rarity: "Uncommon",
         description: "-",
@@ -1194,7 +1193,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Mp5",
-        image: "../assets/images/weapons/smg.png",
+        image: smg,
         source: "Homebrew",
         rarity: "Uncommon",
         description: "-",
@@ -1214,7 +1213,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "P90",
-        image: "../assets/images/weapons/smg.png",
+        image: smg,
         source: "Homebrew",
         rarity: "Uncommon",
         description: "-",
@@ -1234,7 +1233,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Assault Rifle",
-        image: "../assets/images/weapons/assault_rifle.png",
+        image: assault_rifle,
         source: "Homebrew",
         rarity: "Uncommon",
         description: "-",
@@ -1254,7 +1253,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Semi Auto Rifle",
-        image: "../assets/images/weapons/assault_rifle.png",
+        image: assault_rifle,
         source: "Homebrew",
         rarity: "Uncommon",
         description: "-",
@@ -1274,7 +1273,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Heavy Machine Gun",
-        image: "../assets/images/weapons/assault_rifle.png",
+        image: assault_rifle,
         source: "Homebrew",
         rarity: "Rare",
         description: "-",
@@ -1294,7 +1293,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Action Bolt Rifle",
-        image: "../assets/images/weapons/rifle.png",
+        image: rifle,
         source: "Homebrew",
         rarity: "Uncommon",
         description: "-",
@@ -1314,7 +1313,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Sniper Rifle",
-        image: "../assets/images/weapons/rifle.png",
+        image: rifle,
         source: "Homebrew",
         rarity: "Rare",
         description: "-",
@@ -1334,7 +1333,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Anti Tank Rifle",
-        image: "../assets/images/weapons/rifle.png",
+        image: rifle,
         source: "Homebrew",
         rarity: "Rare",
         description: "-",
@@ -1354,7 +1353,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Low Grade Gun",
-        image: "../assets/images/weapons/rifle.png",
+        image: rifle,
         source: "Homebrew",
         rarity: "Varies",
         description: "Uma arma de fogo barata e mal feita. \nA arma custa apenas 70% do preço original, porém possuí +1 de missfire e -1 para rolagens de ataque e dano.",
@@ -1374,7 +1373,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Scrap Gun",
-        image: "../assets/images/weapons/rifle.png",
+        image: rifle,
         source: "Homebrew",
         rarity: "Varies",
         description: "Uma arma de fogo feita de lixo e sucata. \nA arma custa apenas 50% do preço original, porém possuí +2 de missfire e -2 para rolagens de ataque e dano.",

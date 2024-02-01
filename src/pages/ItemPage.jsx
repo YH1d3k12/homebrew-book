@@ -16,11 +16,11 @@ const ItemPage = () => {
                 <div className="item-card-content scroll-y">
                     {/* Overall item properties */}
                     <p>
-                        <strong>Source: </strong>{item.source}<br/>
+                        {item.source && <><strong>Source: </strong>{item.source}<br/></>}
                         <strong>Rarity: </strong>{item.rarity}<br/>
                         <strong>Cost: </strong>{item.cost}<br />
-                        <strong>Magical? </strong>{item.magical ? "yes" : "no"} <br />
-                        <strong>Attunement? </strong>{item.attunement ? "yes" : "no"} <br />
+                        {item.magical && <><strong>Magical?: </strong>{item.magical ? "yes" : "no"}<br/></>}
+                        {item.attunement && <><strong>Attunement?: </strong>{item.attunement ? "yes" : "no"}<br/></>}
                     </p>
                     {/* Specific item properties. If it exist create an element */}
                     <p>

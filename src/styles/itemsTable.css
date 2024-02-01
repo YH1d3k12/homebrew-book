@@ -1,10 +1,10 @@
-.weapons-table tbody tr td:first-child {
+.items-table tbody tr td:first-child {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.weapons-table tbody tr td:first-child img {
+.items-table tbody tr td:first-child img {
     height: 45px;
     width: 45px;
     border: solid 5px #000000;
@@ -12,7 +12,7 @@
     margin-right: 10px;
 }
 
-.weapons-table-checkboxes {
+.items-table-checkboxes {
     display: flex;
     flex-wrap: wrap;
 }

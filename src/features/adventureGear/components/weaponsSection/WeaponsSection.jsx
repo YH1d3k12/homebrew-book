@@ -11,7 +11,7 @@ import MeleeWeaponsTable from "./WeaponsTable.jsx";
 import UseFilteredWeapons from "../../hooks/UseFilteredWeapons.js";
 
 import "../../../../styles/table.css";
-import "./weaponsSection.css";
+import "../../../../styles/table.css";
 
 const WeaponsSection = () => {
     const [searchByName, setSearchByName] = useState("");

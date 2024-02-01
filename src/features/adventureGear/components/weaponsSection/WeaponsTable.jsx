@@ -10,7 +10,7 @@ const WeaponsTable = ({ data }) => {
     
     return (
         <div>
-            <table className="content-table weapons-table">
+            <table className="content-table items-table">
                 <thead>
                     <tr>
                         <th>Name</th>
