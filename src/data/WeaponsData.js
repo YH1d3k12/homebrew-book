@@ -1,8 +1,41 @@
+
+import assault_rifle from "../assets/images/weapons/assault_rifle.png";
+import axe from "../assets/images/weapons/axe.png";
+import bo from "../assets/images/weapons/bo.png";
+import bow from "../assets/images/weapons/bow.png";
+import crossbow from "../assets/images/weapons/crossbow.png";
+import dagger from "../assets/images/weapons/dagger.png";
+import dart from "../assets/images/weapons/dart.png";
+import double_axe from "../assets/images/weapons/double_axe.png";
+import fist_weapon from "../assets/images/weapons/fist_weapon.png";
+import flail from "../assets/images/weapons/flail.png";
+import glaive from "../assets/images/weapons/glaive.png";
+import heavy_blade from "../assets/images/weapons/heavy_blade.png";
+import katana from "../assets/images/weapons/katana.png";
+import mace from "../assets/images/weapons/mace.png";
+import net from "../assets/images/weapons/net.png";
+import pistol from "../assets/images/weapons/pistol.png";
+import rapier from "../assets/images/weapons/rapier.png";
+import revolver from "../assets/images/weapons/revolver.png";
+import rifle from "../assets/images/weapons/rifle.png";
+import shotgun from "../assets/images/weapons/shotgun.png";
+import sickle from "../assets/images/weapons/sickle.png";
+import sling from "../assets/images/weapons/sling.png";
+import smg from "../assets/images/weapons/smg.png";
+import spear from "../assets/images/weapons/spear.png";
+import staff from "../assets/images/weapons/staff.png";
+import sword from "../assets/images/weapons/sword.png";
+import trident from "../assets/images/weapons/trident.png";
+import wand from "../assets/images/weapons/wand.png";
+import warhammer from "../assets/images/weapons/warhammer.png";
+import wood_club from "../assets/images/weapons/wood_club.png";
+import whip from "../assets/images/weapons/whip.png";
+
 const weapons = [
     {
         // Item Attributes.
         name: "Hand Axe",
-        image: "../assets/images/weapons/axe.png",
+        image: axe,
         source: "Homebrew",
         rarity: "Common",
         description: "A short-handled axe intended for use with one hand",
@@ -22,7 +55,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Battle Axe",
-        image: "../assets/images/weapons/axe.png",
+        image: axe,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -42,7 +75,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Pole Axe",
-        image: "../assets/images/weapons/axe.png",
+        image: axe,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -62,7 +95,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Great Axe",
-        image: "../assets/images/weapons/double_axe.png",
+        image: double_axe,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -82,7 +115,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Sickle",
-        image: "../assets/images/weapons/sickle.png",
+        image: sickle,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -102,7 +135,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Dagger",
-        image: "../assets/images/weapons/dagger.png",
+        image: dagger,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -122,7 +155,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Short Sword",
-        image: "../assets/images/weapons/sword.png",
+        image: sword,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -142,7 +175,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Scimitar",
-        image: "../assets/images/weapons/dagger.png",
+        image: dagger,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -162,7 +195,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Sword",
-        image: "../assets/images/weapons/sword.png",
+        image: sword,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -182,7 +215,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Rapier",
-        image: "../assets/images/weapons/rapier.png",
+        image: rapier,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -202,7 +235,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Falchion",
-        image: "../assets/images/weapons/rapier.png",
+        image: rapier,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -221,7 +254,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Longsword",
-        image: "../assets/images/weapons/sword.png",
+        image: sword,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -241,7 +274,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Claymore",
-        image: "../assets/images/weapons/sword.png",
+        image: sword,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -261,7 +294,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Double Sword",
-        image: "../assets/images/weapons/dagger.png",
+        image: dagger,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -281,7 +314,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Great Sword",
-        image: "../assets/images/weapons/heavy_blade.png",
+        image: heavy_blade,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -301,7 +334,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Executioner Sword",
-        image: "../assets/images/weapons/heavy_blade.png",
+        image: heavy_blade,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -321,7 +354,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Club",
-        image: "../assets/images/weapons/wood_club.png",
+        image: wood_club,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -341,7 +374,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Great Club",
-        image: "../assets/images/weapons/wood_club.png",
+        image: wood_club,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -361,7 +394,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Quarterstaff",
-        image: "../assets/images/weapons/bo.png",
+        image: bo,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -381,7 +414,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Light Hammer",
-        image: "../assets/images/weapons/warhammer.png",
+        image: warhammer,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -401,7 +434,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Mace",
-        image: "../assets/images/weapons/mace.png",
+        image: mace,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -421,7 +454,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Flail",
-        image: "../assets/images/weapons/flail.png",
+        image: flail,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -441,7 +474,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "War Hammer",
-        image: "../assets/images/weapons/warhammer.png",
+        image: warhammer,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -461,7 +494,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Morning Star",
-        image: "../assets/images/weapons/mace.png",
+        image: mace,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -481,7 +514,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Maul",
-        image: "../assets/images/weapons/warhammer.png",
+        image: warhammer,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -501,7 +534,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Great Mace",
-        image: "../assets/images/weapons/warhammer.png",
+        image: warhammer,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -521,7 +554,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Spiked Great Mace",
-        image: "../assets/images/weapons/warhammer.png",
+        image: warhammer,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -541,7 +574,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Javelin",
-        image: "../assets/images/weapons/spear.png",
+        image: spear,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -561,7 +594,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Spear",
-        image: "../assets/images/weapons/spear.png",
+        image: spear,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -581,7 +614,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Pike",
-        image: "../assets/images/weapons/spear.png",
+        image: spear,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -601,7 +634,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Lance",
-        image: "../assets/images/weapons/spear.png",
+        image: spear,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -621,7 +654,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Trident",
-        image: "../assets/images/weapons/trident.png",
+        image: trident,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -641,7 +674,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Naginata",
-        image: "../assets/images/weapons/glaive.png",
+        image: glaive,
         source: "Homebrew",
         rarity: "Common",
         description: "-",
@@ -661,7 +694,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Glaive",
-        image: "../assets/images/weapons/glaive.png",
+        image: glaive,
         source: "Homebrew",
         rarity: "Common",
         description: "-",

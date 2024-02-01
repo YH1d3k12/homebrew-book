@@ -5,7 +5,7 @@ const WeaponsTable = ({ data }) => {
     const navigate = useNavigate();
 
     const HandleItemClick = (item) => {
-        navigate("/", { state: { item } });
+        navigate("/item", { state: { item } });
     };
     
     return (
@@ -27,7 +27,7 @@ const WeaponsTable = ({ data }) => {
                         <tr key={item.id}>
                             <td>
                                 <img
-                                    src={`../../${item.image}`}
+                                    src={item.image}
                                     alt={"weapon icon"}
                                 />
                                 <a onClick={() => HandleItemClick(item)}>{item.name}</a>

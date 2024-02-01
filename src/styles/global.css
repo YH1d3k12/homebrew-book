@@ -50,6 +50,13 @@
     --spell-title-background-color: #221e22;
     --spell-title-color: #ee5622;
     --spell-content-background-color: #cdcdcd;
+
+    /* Item Card */
+    --item-content-wrapper-backcground-color:#2F2F2F;
+    --item-content-wrapper-border-color:#221e22;
+    --item-title-background-color: #221e22;
+    --item-title-color: #ee5622;
+    --item-content-background-color: #cdcdcd;
 }
 
 * {

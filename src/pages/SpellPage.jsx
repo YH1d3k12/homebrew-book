@@ -13,7 +13,6 @@ const SpellPage = () => {
             <div className="spell-card">
                 <h1>{spell.name}</h1>
                 <div className="spell-card-content">
-                    <h2><strong>Spell: </strong>{spell.enchantment}</h2>
                     <p>
                         <strong>Source: </strong>{spell.source}<br/>
                         <strong>Type: </strong>{spell.type}<br/>

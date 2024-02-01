@@ -6,6 +6,11 @@
 
     height: 100%;
     width: 100%;
+}
+
+.item-card {
+    height: 100%;
+    width: 100%;
     padding: 15px;
 
     background-color: var(--item-content-wrapper-backcground-color);
@@ -63,7 +68,7 @@
 }
 
 @media (min-width: 1280px) {
-    .item-page-content-wrapper {
+    .item-card {
         width: 70%;
     }
 
