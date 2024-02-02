@@ -1,14 +1,14 @@
-.adventure-gear-content-wrapper {
+.item-book-content-wrapper {
     display: grid;
     grid-template-columns: 16vw 84vw;
 
     height: 100%;
     width: 100%;
 
-    background-color: var(--adventure-gear-background-color);
+    background-color: var(--item-book-background-color);
 }
 
-.adventure-gear-table-container {
+.item-book-table-container {
     height: 100%;
     width: 100%;
     padding: 20px;
