@@ -11,7 +11,7 @@ import MeleeWeaponsTable from "./WeaponsTable.jsx";
 import UseFilteredWeapons from "../../hooks/UseFilteredWeapons.js";
 
 import "../../../../styles/table.css";
-import "../../../../styles/table.css";
+import "../../../../styles/itemsTable.css";
 
 const WeaponsSection = () => {
     const [searchByName, setSearchByName] = useState("");
@@ -29,7 +29,7 @@ const WeaponsSection = () => {
             <SelectBySource value={selectBySource} onChange={setSelectBySource}/>
             <SelectByWeaponType value={selectByType} onChange={setSelectByType}/>
             <SelectByRarity value={selectByRarity} onChange={setSelectByRarity}/>
-            <div className="weapons-table-checkboxes">
+            <div className="items-table-checkboxes">
                 <CheckBox label="Magical" value={isMagical} onChange={setIsMagical}/>
                 <CheckBox label="Attunement" value={isAttunement} onChange={setIsAttunement}/>
             </div>

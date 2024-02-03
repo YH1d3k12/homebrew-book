@@ -893,7 +893,7 @@ const weapons = [
     {
         // Item Attributes.
         name: "Blowgun",
-        image: blowgun,
+        image: dart,
         source: "Homebrew",
         rarity: "Common",
         description: "-",

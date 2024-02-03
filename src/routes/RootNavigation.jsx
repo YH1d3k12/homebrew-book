@@ -7,10 +7,10 @@ import SpellBook  from "../pages/SpellBook.jsx";
 import SpellPage  from "../pages/SpellPage.jsx";
 import TechniqueBook from "../pages/TechniqueBook.jsx";
 import TechniquePage from "../pages/TechniquePage.jsx";
-import AdventureGear from "../pages/AdventureGear.jsx";
+import ItemBook from "../pages/ItemBook.jsx";
 import ItemPage from "../pages/ItemPage.jsx";
 
-import WeaponsSection from "../features/adventureGear/components/weaponsSection/WeaponsSection.jsx";
+import WeaponsSection from "../features/itemBook/components/weaponsSection/WeaponsSection.jsx";
 
 export default function RootNavigation()
 {
@@ -24,7 +24,7 @@ export default function RootNavigation()
 					<Route path="/spellpage" element={<SpellPage  />} />
 					<Route path="/techniquebook" element={<TechniqueBook  />} />
 					<Route path="/techniquepage" element={<TechniquePage  />} />
-					<Route path="/adventuregear" element={<AdventureGear  />}>
+					<Route path="/adventuregear" element={<ItemBook  />}>
 						<Route path="melee" element={<WeaponsSection  />} />
 					</Route>
 					<Route path="/item" element={<ItemPage  />} />

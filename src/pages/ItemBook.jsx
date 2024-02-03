@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 
-import ItemsSideBar from "../features/itemBook/components/ItemsSideBar";
+import ItemsSideBar from "../features/itemBook/components/ItemsSideBar.jsx";
 
 import "../features/itemBook/itemBook.css"
 
