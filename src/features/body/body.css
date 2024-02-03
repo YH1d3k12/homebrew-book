@@ -1,7 +1,11 @@
 .body {
     display: grid;
-    grid-template-rows: 12vh 88vh;
+    grid-template-rows: 15vh 85vh;
     height: 100vh;
     width: 100vw;
+    
     background-color: var(--body-background-color);
+    background-image: url("../../assets/images/space.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }

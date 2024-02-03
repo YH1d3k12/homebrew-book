@@ -1,10 +1,18 @@
 /* Este css é para as variáveis de cor global e utilidades */
-
+@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
     /* HTML Body */
     --body-background-color: #1C1C1C;
+    --body-overlay-background-color: #0e0e0eb0;
+
+    /* Navigation */
+    --navigation-background-color: #0e0e0eCC;
+    --navigation-border-color: #f0f0f0BF;
+    /* --navigation-logo-image-drop-shadow: drop-shadow(1px 1px 2px #fff4ad) drop-shadow(2px 2px 4px #ffd729) drop-shadow(3px 3px 6px #ee5622) drop-shadow(4px 4px 8px #f22b29); */
+    --navigation-logo-text-color: #f0f0f0;
+    /* --navigation-logo-text-shadow: 0 0 10px #fff4ad, 0 0 20px #ffd729, 0 0 40px #ee5622, 0 0 80px #f22b29; */
 
     /* Checkboxes */
     --checkbox-color: #f0f0f0;
@@ -41,12 +49,6 @@
     /* Lava River Component */
     --lava-river-cascade-color: 0deg, #f22b29 0%, #ee5622 35%, #ffd729 45%, #fff4ad 50%, #ffd729 55%, #ee5622 65%, #f22b29 100%;
 
-    /* Navigation */
-    --navigation-background-color: #0e0e0e;
-    --navigation-logo-image-drop-shadow: drop-shadow(1px 1px 2px #fff4ad) drop-shadow(2px 2px 4px #ffd729) drop-shadow(3px 3px 6px #ee5622) drop-shadow(4px 4px 8px #f22b29);
-    --navigation-logo-text-color: #0e0e0e;
-    --navigation-logo-text-shadow: 0 0 10px #fff4ad, 0 0 20px #ffd729, 0 0 40px #ee5622, 0 0 80px #f22b29;
-
     /* Scroll */
     --scroll-scrollbar-thumb: #ee5622;
     --scroll-scrollbar-track: #f0f0f0;
@@ -64,7 +66,7 @@
     padding: 0;
     border: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Asul", serif;
     text-decoration: none;
     list-style: none;
 }

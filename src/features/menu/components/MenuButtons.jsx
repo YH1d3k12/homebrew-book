@@ -39,13 +39,13 @@ const MenuButtons = () => {
                 <div className="button-card">
                     <Link to="/techniquebook">
                         <img className="button-icon" src={martial_skills} alt="Martial Skills"/>
-                        <h2>Martial Skills</h2>
+                        <h2>Skills</h2>
                     </Link>
                 </div>
                 <div className="button-card">
                     <Link to="/adventuregear">
                         <img className="button-icon" src={adventure_gear} alt="Adventure Gear"/>
-                        <h2>Adventure Gear</h2>
+                        <h2>Items</h2>
                     </Link>
                 </div>
             </div>
@@ -77,7 +77,7 @@ const MenuButtons = () => {
                 <div className="button-card">
                     <Link to="/">
                         <img className="button-icon" src={magic_items} alt="Magic Items"/>
-                        <h2>Magic Items</h2>
+                        <h2>Worlds</h2>
                     </Link>
                 </div>
             </div>
