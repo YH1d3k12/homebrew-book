@@ -5,6 +5,8 @@
 
     height: 100%;
     width: 100%;
+
+    background-color: var(--body-overlay-background-color);
 }
 
 .spell-table-container {
@@ -14,7 +16,8 @@
 
     background-color: var(--table-content-wrapper-backcground-color);
     border: solid 1px var(--table-content-wrapper-border-color);
-
+    
+    backdrop-filter: blur(40px);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 

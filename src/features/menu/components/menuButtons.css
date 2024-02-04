@@ -78,11 +78,12 @@
 }
 
 .button-card h2 {
-    margin: 10px 0px;
+    margin: 20px 0px;
 
     color: var(--menu-buttons-card-text-color);
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
+    text-transform: uppercase;
     letter-spacing: 5px;
     z-index: 3;
 }
@@ -114,10 +115,6 @@
         height: 150px;
         width: 150px;
     }
-
-    .button-card h2 {
-        font-size: 1.2rem;
-    }
 }
 
 @media (min-width: 768px) {
@@ -134,10 +131,6 @@
         height: 120px;
         width: 120px;
     }
-
-    .button-card h2 {
-        font-size: 1rem;
-    }
 }
 
 @media (min-width: 1024px) {
@@ -147,7 +140,7 @@
     }
 
     .button-card h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -155,10 +148,6 @@
     .button-card {
         height: 180px;
         width: 180px;
-    }
-
-    .button-card h2 {
-        font-size: 1.5rem;
     }
 }
 
@@ -169,6 +158,6 @@
     }
 
     .button-card h2 {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 }
