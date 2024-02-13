@@ -114,10 +114,10 @@ const techniques = [
         range: "5ft",
         equipment: "-",
         duration: "Instantaneous",
-        effect: "Deceive the enemy's defense with a fake attack. The target must make a Wisdom saving throw. On a failure, you add 1D4 to your next attack and damage roll againts the target until the end of the current turn.",
+        effect: "Deceive the enemy's defense with a fake attack. The target must make a Wisdom saving throw. On a failure, you add 1d4 to your next attack and damage roll againts the target until the end of the current turn.",
         description: "Deceive the enemy's defense with a fake attack.",
         upCasting: "The bonus attack and damage dice increases to (1d6) when you reach 5th level, 11th level to (1d8) and 17th level to (1d10).",
-        available: "Fighter, Monk, Paladin, Ranger and Rogue"
+        available: "Barbarian, Fighter, Monk, Paladin, Ranger and Rogue"
     },
     {
         id: 9,
