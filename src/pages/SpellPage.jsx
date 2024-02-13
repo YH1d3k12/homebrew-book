@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+
 
 import LineBreaker from "../utilities/LineBreaker";
 import "../features/spellPage/spellPage.css";
@@ -12,7 +12,7 @@ const SpellPage = () => {
         <div className="spell-page-content-wrapper">
             <div className="spell-card">
                 <h1>{spell.name}</h1>
-                <div className="spell-card-content">
+                <div className="spell-card-content scroll-y">
                     <p>
                         <strong>Source: </strong>{spell.source}<br/>
                         <strong>Type: </strong>{spell.type}<br/>
