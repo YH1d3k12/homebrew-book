@@ -3,9 +3,9 @@
 }
 
 .scroll-y::-webkit-scrollbar {
-    width: 5px;
+    width: 3px;
 }
-  
+
 .scroll-y::-webkit-scrollbar-thumb {
     background-color: var(--scroll-scrollbar-thumb);
     border-radius: 25px;

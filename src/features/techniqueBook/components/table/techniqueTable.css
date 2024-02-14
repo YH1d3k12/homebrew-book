@@ -1,17 +1,3 @@
-:root {
-    --table-content-wrapper-border-color:#1C1C1C;
-
-    --table-button-background-color:#2F2F2F;
-    --table-button-color: #f0f0f0;
-    --table-button-border-color:#1C1C1C;
-
-    --table-button-focus-background-color:#1C1C1C;
-    --table-button-focus-color:#ee5622;
-    --table-button-focus-border-color:#2F2F2F;
-
-    --spell-name-hover-effect:#ee5622;
-}
-
 /**************** Table Header *****************/
 .technique-table-head-third,
 .technique-table-head-fourth,
@@ -26,7 +12,7 @@
 }
 
 .technique-table-body-first a:hover {
-    color: var(--spell-name-hover-effect);
+    color: var(--technique-table-technique-name-hover-text-color);
     cursor: pointer;
 }
 
@@ -56,6 +42,7 @@
 }
 
 @media (min-width: 480px) {
+
     .technique-table-head-third,
     .technique-table-body-third {
         display: table-cell;
@@ -63,6 +50,7 @@
 }
 
 @media (min-width: 768px) {
+
     .technique-table-head-fourth,
     .technique-table-body-fourth {
         display: table-cell;
@@ -70,6 +58,7 @@
 }
 
 @media (min-width: 1280px) {
+
     .technique-table-head-fifth,
     .technique-table-body-fifth {
         display: table-cell;
@@ -77,6 +66,7 @@
 }
 
 @media (min-width: 1536px) {
+
     .technique-table-body-first,
     .technique-table-body-second,
     .technique-table-body-third,

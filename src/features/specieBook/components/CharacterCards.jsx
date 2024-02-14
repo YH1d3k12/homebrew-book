@@ -6,7 +6,7 @@ import "./characterCards.css";
 
 const CharacterCards = () => {
     return (
-        <div className="character-cards-content-wrapper">
+        <div className="character-cards-content-wrapper scroll-y">
             {species.map((specie) => (
                 <Link to="" className="character-card">
                     <div className="character-card-lines"></div>

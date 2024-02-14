@@ -3,62 +3,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    /* HTML Body */
-    --body-background-color: #1C1C1C;
-    --body-overlay-background-color: #0e0e0eb0;
+    /* Standard System Colors */
+    --black: #1C1C1C;
+    --raisin-black: #221e22;
+    --charcoal-lighter: #0e0e0e27;
+    --charcoal: #0e0e0eb0;
+    --charcoal-darker: #0e0e0eCC;
+    --very-light-gray: #DDDDDD;
+    --light-gray: #CDCDCD;
+    --medium-gray: #B4B4B4;
+    --silver-gray: #c7bfbf;
+    --dark-gray: #2F2F2F;
+    --orange: #ee5622;
+    --white-lighter: #f0f0f0BF;
+    --white: #f0f0f0;
 
-    /* Navigation */
-    --navigation-background-color: #0e0e0eCC;
-    --navigation-border-color: #f0f0f0BF;
-    /* --navigation-logo-image-drop-shadow: drop-shadow(1px 1px 2px #fff4ad) drop-shadow(2px 2px 4px #ffd729) drop-shadow(3px 3px 6px #ee5622) drop-shadow(4px 4px 8px #f22b29); */
-    --navigation-logo-text-color: #f0f0f0;
-    /* --navigation-logo-text-shadow: 0 0 10px #fff4ad, 0 0 20px #ffd729, 0 0 40px #ee5622, 0 0 80px #f22b29; */
+    /* Pages */
 
-    /* Checkboxes */
-    --checkbox-color: #f0f0f0;
-
-    /* Table Tabs */
-    --table-tab-background-color: #0e0e0e27;
-    --table-tab-color: #f0f0f0;
-    --table-tab-border-color: #1C1C1C;
-
-    /* Table Tabs Focus */
-    --table-tab-focus-background-color: #1C1C1C;
-    --table-tab-focus-color: #ee5622;
-    --table-tab-focus-border-color: #2F2F2F;
-
-    /* Table Header */
-    --table-header-background-color: #1C1C1C;
-    --table-header-color: #ee5622;
-
-    /* Table Body Rows */
-    --table-body-row-primary-background-color: #cdcdcd;
-    --table-body-row-secundary-background-color: #b4b4b4;
-    --table-body-row-border-color: #dddddd;
+    /* Body */
+    --body-background-color: var(--black);
 
     /* Item Book */
-    --item-book-background-color: #2F2F2F;
+    --item-book-content-wrapper-background-color: var(--charcoal);
 
-    /* Item Card */
-    --item-content-wrapper-backcground-color: #2F2F2F;
-    --item-content-wrapper-border-color: #221e22;
-    --item-title-background-color: #221e22;
-    --item-title-color: #ee5622;
-    --item-content-background-color: #cdcdcd;
+    /* Item Page */
+    --item-page-content-wrapper-background-color: var(--charcoal);
+    --item-page-item-card-background-color: var(--dark-gray);
+    --item-page-item-card-border-color: var(--raisin-black);
+    --item-page-title-background-color: var(--raisin-black);
+    --item-page-title-color: var(--orange);
+    --item-page-item-card-content-background-color: var(--light-gray);
 
-    /* Lava River Component */
-    --lava-river-cascade-color: 0deg, #f22b29 0%, #ee5622 35%, #ffd729 45%, #fff4ad 50%, #ffd729 55%, #ee5622 65%, #f22b29 100%;
+    /* Menu */
+    --menu-content-wrapper-background-color: var(--charcoal);
+
+    /* Rules Page */
+    --rules-page-content-wrapper-background-color: var(--charcoal);
+    --rules-page-container-background-color: var(--charcoal-lighter);
+    --rules-page-container-border-color: var(--black);
+    --rules-page-container-text-color: var(--silver-gray);
+    --rules-page-container-strong-text-color: var(--white);
+
+    /* Specie Book */
+    --specie-book-content-wrapper-background-color: var(--charcoal);
+
+    /* Spell Book */
+    --spell-book-content-wrapper-background-color: var(--charcoal);
+
+    /* Spell Page */
+    --spell-page-content-wrapper-background-color: var(--charcoal);
+    --spell-page-spell-card-background-color: var(--dark-gray);
+    --spell-page-spell-card-border-color: var(--raisin-black);
+    --spell-page-spell-title-background-color: var(--raisin-black);
+    --spell-page-spell-title-text-color: var(--orange);
+    --spell-page-spell-content-background-color: var(--light-gray);
+
+    /* Martial Book */
+    --martial-book-content-wrapper-background-color: var(--charcoal);
+
+    /* Technique Page */
+    --technique-page-content-wrapper-background-color: var(--charcoal);
+    --technique-page-technique-card-background-color: var(--dark-gray);
+    --technique-page-technique-card-border-color: var(--raisin-black);
+    --technique-page-technique-title-background-color: var(--raisin-black);
+    --technique-page-technique-title-text-color: var(--orange);
+    --technique-page-technique-content-background-color: var(--light-gray);
+
+    /* Components */
+
+    /* Table Tabs */
+    --table-tab-background-color: var(--charcoal-lighter);
+    --table-tab-color: var(--white);
+    --table-tab-border-color: var(--black);
+    --table-tab-focus-background-color: var(--black);
+    --table-tab-focus-color: var(--orange);
+    --table-tab-focus-border-color: var(--dark-gray);
+
+    /* Table Container */
+    --table-container-background-color: var(--charcoal-lighter);
+    --table-container-border-color: var(--black);
+
+    /* Table Header */
+    --table-header-background-color: var(--black);
+    --table-header-color: var(--orange);
+
+    /* Table Body Rows */
+    --table-body-row-primary-background-color: var(--light-gray);
+    --table-body-row-secundary-background-color: var(--medium-gray);
+    --table-body-row-border-color: var(--very-light-gray);
+
+    /* Specific Tables */
+    --spell-table-spell-name-hover-text-color: var(--orange);
+    --technique-table-technique-name-hover-text-color: var(--orange);
+
+    /* NavBar */
+    --navbar-navigation-container-background-color: var(--charcoal-darker);
+    --navbar-navigation-logo-text-color: var(--white);
+
+    /* Items Side Bar */
+    --items-sidebar-background-color: var(--black);
+    --items-sidebar-text-color: var(--white);
+    --items-sidebar-hover-background-color: var(--orange);
+
+    /* Menu Buttons */
+    --menu-buttons-button-card-text-color: var(--white);
+
+    /* Character Cards */
+    --character-cards-content-wrapper-background-color: var(--dark-gray);
+    --character-cards-line-background-color: #0e0e0e;
+    --character-cards-background-color: var(--black);
+    --character-cards-detail-color: #0e0e0e;
+
+    /* Checkboxes */
+    --checkbox-color: var(--white);
 
     /* Scroll */
-    --scroll-scrollbar-thumb: #ee5622;
-    --scroll-scrollbar-track: #f0f0f0;
-
-    /* Spell Card */
-    --spell-content-wrapper-backcground-color: #2F2F2F;
-    --spell-content-wrapper-border-color: #221e22;
-    --spell-title-background-color: #221e22;
-    --spell-title-color: #ee5622;
-    --spell-content-background-color: #cdcdcd;
+    --scroll-scrollbar-thumb: var(--orange);
+    --scroll-scrollbar-track: var(--white);
 }
 
 * {

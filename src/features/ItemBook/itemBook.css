@@ -5,7 +5,7 @@
     height: 100%;
     width: 100%;
 
-    background-color: var(--body-overlay-background-color);
+    background-color: var(--item-book-content-wrapper-background-color);
 }
 
 .item-book-table-container {

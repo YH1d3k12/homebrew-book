@@ -1,9 +1,3 @@
-:root {
-    --menu-buttons-content-wrapper-background-color: #2F2F2F;
-
-    --menu-buttons-card-text-color: #f0f0f0;
-}
-
 .menu-buttons-content-wrapper {
     display: flex;
     flex-direction: row;
@@ -12,8 +6,6 @@
     height: 100%;
     width: 80%;
     padding: 15px;
-
-    /* background-color: var(--menu-buttons-content-wrapper-background-color); */
 }
 
 .menu-buttons-row {
@@ -80,7 +72,7 @@
 .button-card h2 {
     margin: 20px 0px;
 
-    color: var(--menu-buttons-card-text-color);
+    color: var(--menu-buttons-button-card-text-color);
     font-size: 0.9rem;
     font-weight: 500;
     text-transform: uppercase;

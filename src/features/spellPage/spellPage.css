@@ -6,8 +6,8 @@
 
     height: 100%;
     width: 100%;
-    
-    background-color: var(--body-overlay-background-color);
+
+    background-color: var(--spell-page-content-wrapper-background-color);
 }
 
 .spell-card {
@@ -15,8 +15,8 @@
     width: 100%;
     padding: 15px;
 
-    background-color: var(--spell-content-wrapper-backcground-color);
-    border: solid 1px var(--spell-content-wrapper-border-color);
+    background-color: var(--spell-page-spell-card-background-color);
+    border: solid 1px var(--spell-page-spell-card-border-color);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -24,8 +24,8 @@
     padding: 10px;
     border-radius: 5px 5px 0px 0px;
 
-    background-color: var(--spell-title-background-color);
-    color: var(--spell-title-color);
+    background-color: var(--spell-page-spell-title-background-color);
+    color: var(--spell-page-spell-title-text-color);
     font-size: 1.4rem;
 }
 
@@ -34,7 +34,7 @@
     padding: 10px;
     border-radius: 0px 0px 5px 5px;
 
-    background-color: var(--spell-content-background-color);
+    background-color: var(--spell-page-spell-content-background-color);
     font-size: 0.9rem;
     font-weight: 400;
     text-align: justify;

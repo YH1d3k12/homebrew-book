@@ -19,7 +19,7 @@ import "./itemsSideBar.css";
 
 const ItemsSideBar = () => {
     return (
-        <nav className="items-sidebar">
+        <nav className="items-sidebar scroll-y">
             <ul>
                 <li><Link to="melee"><img src={axe} alt="Axe" /><span>Weapons</span></Link></li>
                 <li><Link to="armors"><img src={heavy_armor} alt="Heavy Armor" /><span>Armors</span></Link></li>
