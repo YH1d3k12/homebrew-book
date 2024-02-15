@@ -21,9 +21,9 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-.feat-table-checkboxes {
-    display: flex;
-    flex-wrap: wrap;
+.feat-table-body-first a:hover {
+    color: var(--feat-table-feat-name-hover-text-color);
+    cursor: pointer;
 }
 
 @media (min-width: 480px) {

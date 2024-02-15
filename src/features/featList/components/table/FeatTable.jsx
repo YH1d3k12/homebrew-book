@@ -23,7 +23,7 @@ const FeatTable = ({data}) => {
             <tbody>
                 {sortedData.map((feat) => (
                     <tr key={feat.id}>
-                        <td>
+                        <td className="feat-table-body-first">
                             <a onClick={() => handleSpellClick(feat)}>{feat.name}</a>
                         </td>
                         <td>{feat.requirement}</td>

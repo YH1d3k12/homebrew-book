@@ -104,6 +104,7 @@
     --table-body-row-border-color: var(--very-light-gray);
 
     /* Specific Tables */
+    --feat-table-feat-name-hover-text-color: var(--orange);
     --spell-table-spell-name-hover-text-color: var(--orange);
     --technique-table-technique-name-hover-text-color: var(--orange);
 
