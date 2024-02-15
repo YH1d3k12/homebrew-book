@@ -57,7 +57,7 @@ const MenuButtons = () => {
                     </Link>
                 </div>
                 <div className="button-card">
-                    <Link to="/">
+                    <Link to="/rules">
                         <img className="button-icon" src={rules} alt="Rules"/>
                         <h2>Rules</h2>
                     </Link>

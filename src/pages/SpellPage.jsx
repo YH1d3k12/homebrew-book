@@ -1,4 +1,4 @@
-
+import { useLocation } from "react-router-dom";
 
 import LineBreaker from "../utilities/LineBreaker";
 import "../features/spellPage/spellPage.css";

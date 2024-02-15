@@ -6,7 +6,7 @@
     width: 100%;
 
     padding: 15px;
-    background-color: var(--navigation-background-color);
+    background-color: var(--navbar-navigation-container-background-color);
 }
 
 .navigation-logo {
@@ -15,7 +15,7 @@
     justify-content: center;
     margin-left: 10%;
 
-    color: var(--navigation-logo-text-color);
+    color: var(--navbar-navigation-logo-text-color);
     cursor: pointer;
 }
 

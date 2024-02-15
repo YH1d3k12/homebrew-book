@@ -9,7 +9,7 @@ import TechniqueBook from "../pages/TechniqueBook.jsx";
 import TechniquePage from "../pages/TechniquePage.jsx";
 import ItemBook from "../pages/ItemBook.jsx";
 import ItemPage from "../pages/ItemPage.jsx";
-import RulesPage from "..pages/RulesPage.jsx";
+import RulesPage from "../pages/RulesPage.jsx";
 
 import WeaponsSection from "../features/itemBook/components/weaponsSection/WeaponsSection.jsx";
 

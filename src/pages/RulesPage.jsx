@@ -1,3 +1,5 @@
+import "../features/rulesPage/rulesPage.css";
+
 const RulesPage = () => {
     return (
         <div className="rules-content-wrapper">
