@@ -5,8 +5,8 @@ import data from "../../../data/FeatsData.js";
 const UseFilteredFeats = (
     searchByName,
     searchBySource,
-    searchByType,
-    searchByCategory
+    searchByFeatType,
+    searchByFeatCategory
 ) => {
     const [feats, setFeats] = useState([]);
 
@@ -26,15 +26,15 @@ const UseFilteredFeats = (
                 );
             }
 
-            if (searchByType) {
+            if (searchByFeatType) {
                 filteredFeats = filteredFeats.filter(spell =>
-                    spell.type.toLowerCase().includes(searchByType.toLowerCase())
+                    spell.type.toLowerCase().includes(searchByFeatType.toLowerCase())
                 );
             }
 
-            if (searchByCategory) {
+            if (searchByFeatCategory) {
                 filteredFeats = filteredFeats.filter(spell =>
-                    spell.type.toLowerCase().includes(searchByCategory.toLowerCase())
+                    spell.type.toLowerCase().includes(searchByFeatCategory.toLowerCase())
                 );
             }
 
@@ -42,7 +42,7 @@ const UseFilteredFeats = (
         };
 
         loadSpells();
-    }, [searchByName, searchBySource, searchByType, searchByCategory]);
+    }, [searchByName, searchBySource, searchByFeatType, searchByFeatCategory]);
 
     return feats;
 };

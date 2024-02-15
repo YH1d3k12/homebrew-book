@@ -132,7 +132,7 @@ const featsData = [
         source: "Homebrew",
         requirement: "Wisdom 13 or higher",
         repeatable: "No",
-        description: "You have the ability to talk and understand animals.\n Critters (small animals) with an intelligence of 4 or less are friendly towards you.",
+        description: "You have the ability to speak with animals.\n Critters (small animals) with an intelligence of 4 or less are friendly towards you.",
         category: "Utility",
         type: 0
     },
@@ -365,5 +365,267 @@ const featsData = [
         description: "You gain a +1 bonus to your Armor Class while not wearing any armor.",
         category: "Defensive",
         type: 0
-    }
+    },
+    {
+        id: 37,
+        name: "Demolitions Expert",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Bombs and grenades used by you have a +1 bonus to their DC and attack roll.\n Your explosives deal double damage when targeting structures.\n You can examine an explosive device and determine its properties, blast radius, and potential effects with a successful DC:15 Intelligence (Investigation) check (you are considered proficient in the investigation roll).",
+        category: "Utility",
+        type: 0
+    },
+    {
+        id: 38,
+        name: "Escape Artist",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Once per short rest, you can automatically succeed on an ability check or saving throw to avoid or escape a grapple or restrain.\n You also have advantage on checks to escape from bindings, ropes, or similar restraints.",
+        category: "Defensive",
+        type: 0
+    },
+    {
+        id: 39,
+        name: "Juggler",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You can make attack rolls at long range with throwing weapons without disadvantage.\n You also have a +2 bonus to damage rolls with throwing weapons.",
+        category: "Offensive",
+        type: 0
+    },
+    {
+        id: 40,
+        name: "Well Fit",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You don't suffer from disadvantage on Stealth checks due to wearing armor.\n You always appear well-groomed and put together, gaining advantage on Charisma checks involving social interactions related to your attire and beauty.",
+        category: "Utility",
+        type: 0
+    },
+    {
+        id: 41,
+        name: "Airhead",
+        source: "Homebrew",
+        requirement: "Requires a negative Intelligence modifier",
+        repeatable: "No",
+        description: "Your thoughts can't be read or sensed because there aren't any.\n  Creatures have disadvantage on Insight checks made to determine your intentions.",
+        category: "Utility",
+        type: 0
+    },
+    {
+        id: 42,
+        name: "Dumb Luck",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Once per day, when you roll a natural 1 on a d20, you can treat it as a critical success, reflecting your sheer comical luck in turning an unfortunate situation into an unexpected triumph.\n As a reaction, you can spend your daily use of Dumb Luck to turn a creature's critical success on a d20 roll into a critical failure, showcasing your uncanny ability to reverse fate in the most unexpected ways.",
+        category: "Utility",
+        type: 0
+    },
+    {
+        id: 43,
+        name: "Unlucky",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Hostile creatures inexplicably target you more often than others.\n When a roll is made to determine the target of a negative phenomenon or attack, you always find yourself in the crosshairs if you are within range.",
+        category: "Flavor",
+        type: 0
+    },
+    {
+        id: 44,
+        name: "Disastrous",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Once per short rest, when you critically fail a melee attack roll, you can get yourself and every large or smaller creature within 5 feet of you prone.\n Once per day, you can use your disastrous tendencies to make a grand and clumsy entrance. As an action, you can cause a harmless but attention-grabbing mishap, such as knocking over a stack of barrels or tripping over a table. All creatures within 30 feet who can see or hear you must make a Wisdom saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or be distracted for up to 5 minutes in social encounters or 1 turn in combat.\n While distracted, ally creatures have advantage on attack rolls and ability checks against those creatures.",
+        category: "Flavor",
+        type: 0
+    },
+    {
+        id: 45,
+        name: "Naive Perception",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You have advantage against charming effects.\n You have disadvantage on Insight checks to discern romantic or flirtatious intentions directed towards you, often misinterpreting friendly gestures as mere kindness.",
+        category: "Flavor",
+        type: 0
+    },
+    {
+        id: 46,
+        name: "Drug Addict",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You have resistance to and advantage against the effects of poisons and drugs.\n If you fail to consume drugs within a three-day span, you become anxious and gain disadvantage on ability checks until you consume the substance again.",
+        category: "Flavor",
+        type: 0
+    },
+    {
+        id: 47,
+        name: "Great Genes",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Increase one stat of your choice by 1.\n Double the HP and SP bonuses granted by your character specie.\n You have advantage on Charisma-based social interactions when interacting with members of your own species.",
+        category: "Flavor",
+        type: 1
+    },
+    {
+        id: 48,
+        name: "Hard Hearing",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You have resistance to thunder damage.\n You have advantage on saving throws against effects that require your hearing.\n You have disadvantage on Perception checks involving hearing, reflecting the challenges posed by your impaired sense.",
+        category: "Flavor",
+        type: 0
+    },
+    {
+        id: 49,
+        name: "Painless",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Your nervous system doesn't detect pain, granting you resistance to psychic damage, and you can't be affected by effects caused by severe pain (such as power word pain).\n You can only note that you are being attacked if the attack deals 5 points of damage or more. This requires a successful DC 15 Perception check, reflecting your limited awareness of minor threats.",
+        category: "Flavor",
+        type: 0
+    },
+    {
+        id: 50,
+        name: "Silver Tongue",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Your passive Deception and Persuasion scores are 8 + the respective ability score modifier, rather than 5 + the modifier.",
+        category: "Utility",
+        type: 0
+    },
+    {
+        id: 51,
+        name: "Strong",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Your passive Athletics scores are 8 + the respective ability score modifier, rather than 5 + the modifier.",
+        category: "Utility",
+        type: 0
+    },
+    {
+        id: 52,
+        name: "Strong Will",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Increase your Wisdom or Charisma by 1.\n You have advantage on saving throws against charming effects.\n  If you are charmed, you can choose to grant yourself disadvantage on attacks, ability checks, or saving throws, or give a creature advantage on saving throws imposed by you. This reflects your ability to maintain control even when influenced by external forces.",
+        category: "Defensive",
+        type: 1
+    },
+    {
+        id: 53,
+        name: "Minor Score Increase",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "Yes",
+        description: "Increase one stat of your choice by 1.",
+        category: "Utility",
+        type: 0
+    },
+    {
+        id: 54,
+        name: "Archery",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You can make attack rolls at long range with bows without disadvantage.\n You ignore half-cover when making ranged attacks with bows.",
+        category: "Offensive",
+        type: 0
+    },
+    {
+        id: 55,
+        name: "Crossbow Expert",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You can make attack rolls at long range with crossbows without disadvantage.\n You ignore the loading property of crossbows.",
+        category: "Offensive",
+        type: 0
+    },
+    {
+        id: 56,
+        name: "Gunner",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You can make attack rolls at long range with firearms without disadvantage.\n You ignore the loading property of firearms.",
+        category: "Offensive",
+        type: 0
+    },
+    {
+        id: 57,
+        name: "Close Quarters Shooter",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "When making a ranged attack while you are within 5 feet of a hostile creature, you do not have disadvantage on the attack roll. Your ranged attacks ignore half cover and three-quarters cover against targets within 30 feet of you.",
+        category: "Offensive",
+        type: 0
+    },
+    {
+        id: 58,
+        name: "Low Magic Metabolism",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Potion effects last twice as long on you.",
+        category: "Utility",
+        type: 0
+    },
+    {
+        id: 59,
+        name: "Expert Driver",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Gain proficiency with land vehicles, expertise if you already have it.\n Travel speed with land vehicles is doubled.\n As a bonus action, you can 'Dash' with a vehicle you are driving, showcasing your expert control and swift handling.",
+        category: "Movement",
+        type: 0
+    },
+    {
+        id: 60,
+        name: "Lingering Magic",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "When your concentration on a spell is broken, the spell still remains for an additional round.",
+        category: "Utility",
+        type: 0
+    },
+    {
+        id: 61,
+        name: "Telepathic Link",
+        source: "Homebrew",
+        requirement: "Intelligence 13 or higher",
+        repeatable: "No",
+        description: "You can establish a telepathic link with a willing creature you can see within 30 feet. This link allows silent communication, sharing thoughts and feelings effortlessly. The telepathic connection doesn't require a shared language.",
+        category: "Utility",
+        type: 0
+    },
+    {
+        id: 62,
+        name: "Memorized Spells",
+        source: "Homebrew",
+        requirement: "Being a spellcasting class or subclass",
+        repeatable: "Yes",
+        description: "Choose two spells from your available spell list. You always have these spells prepared, and they don't count toward the number of spells you know or have prepared. This reflects your character's ability to effortlessly call upon these particular spells without the need for preparation.",
+        category: "Utility",
+        type: 0
+    },
 ]
+
+export default featsData;

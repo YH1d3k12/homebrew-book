@@ -23,6 +23,17 @@
     /* Body */
     --body-background-color: var(--black);
 
+    /* Feat List */
+    --feat-list-content-wrapper-background-color: var(--charcoal);
+
+    /* Feat Page */
+    --feat-page-content-wrapper-background-color: var(--charcoal);
+    --feat-page-feat-card-background-color: var(--dark-gray);
+    --feat-page-feat-card-border-color: var(--raisin-black);
+    --feat-page-feat-title-background-color: var(--raisin-black);
+    --feat-page-feat-title-text-color: var(--orange);
+    --feat-page-feat-content-background-color: var(--light-gray);
+
     /* Item Book */
     --item-book-content-wrapper-background-color: var(--charcoal);
 
