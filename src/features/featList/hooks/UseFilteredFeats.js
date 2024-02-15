@@ -1,86 +1,51 @@
 import { useEffect, useState } from "react";
 
-import data from "../../../data/SpellsData.js";
+import data from "../../../data/FeatsData.js";
 
-const UseFilteredSpells = (
+const UseFilteredFeats = (
     searchByName,
-    searchByType,
-    searchByClass,
     searchBySource,
-    hasV,
-    hasS,
-    hasM,
-    hasConcentration,
-    hasRitual
+    searchByType,
+    searchByCategory
 ) => {
-    const [spells, setSpells] = useState([]);
+    const [feats, setFeats] = useState([]);
 
     useEffect(() => {
         const loadSpells = async () => {
-            let filteredSpells = data;
+            let filteredFeats = data;
 
             if (searchByName) {
-                filteredSpells = filteredSpells.filter(spell =>
+                filteredFeats = filteredFeats.filter(spell =>
                     spell.name.toLowerCase().includes(searchByName.toLowerCase())
                 );
             }
 
-            if (searchByType) {
-                filteredSpells = filteredSpells.filter(spell =>
-                    spell.type.toLowerCase().includes(searchByType.toLowerCase())
-                );
-            }
-
-            if (searchByClass) {
-                filteredSpells = filteredSpells.filter(spell =>
-                    spell.available.toLowerCase().includes(searchByClass.toLowerCase())
-                );
-            }
-
             if (searchBySource) {
-                filteredSpells = filteredSpells.filter(spell =>
+                filteredFeats = filteredFeats.filter(spell =>
                     spell.source.toLowerCase().includes(searchBySource.toLowerCase())
                 );
             }
 
-            if (hasV) {
-                filteredSpells = filteredSpells.filter(spell =>
-                    spell.components.includes("V")
+            if (searchByType) {
+                filteredFeats = filteredFeats.filter(spell =>
+                    spell.type.toLowerCase().includes(searchByType.toLowerCase())
                 );
             }
 
-            if (hasS) {
-                filteredSpells = filteredSpells.filter(spell =>
-                    spell.components.includes("S")
+            if (searchByCategory) {
+                filteredFeats = filteredFeats.filter(spell =>
+                    spell.type.toLowerCase().includes(searchByCategory.toLowerCase())
                 );
             }
 
-            if (hasM) {
-                filteredSpells = filteredSpells.filter(spell =>
-                    spell.components.includes("M")
-                );
-            }
-
-            if (hasConcentration) {
-                filteredSpells = filteredSpells.filter(spell =>
-                    spell.duration.toLowerCase().includes("concentration")
-                );
-            }
-
-            if (hasRitual) {
-                filteredSpells = filteredSpells.filter(spell =>
-                    spell.type.toLocaleLowerCase().includes("ritual")
-                );
-            }
-
-            setSpells(filteredSpells);
+            setFeats(filteredFeats);
         };
 
         loadSpells();
-    }, [searchByName, searchByType, searchByClass, searchBySource, hasV, hasS, hasM, hasConcentration, hasRitual]);
+    }, [searchByName, searchBySource, searchByType, searchByCategory]);
 
-    return spells;
+    return feats;
 };
 
 
-export default UseFilteredSpells;
+export default UseFilteredFeats;

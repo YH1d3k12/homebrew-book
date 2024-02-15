@@ -36,7 +36,7 @@ const RulesPage = () => {
                     <strong>Snearing: </strong>Você pode fazer um grapple usando o modificador de acerto da arma e, com seu alcance.<br /><br />
                     <strong>Lethal: </strong>Num acerto crítico o menor dado de dano rolado da arma é maximizado.<br /><br />
                     <strong>Unarmed: </strong>O usuário ainda pode usar suas mãos de maneira convencional para agarrar objetos e interações. Caso o usuário possua dano desarmado maior que o da arma, o tamanho de seu dado de dano desarmado aumenta em 1 (para o máximo de 1d12).<br /><br />
-                    <strong>Forceful: </strong>Mesmo errando o ataque por uma margem de erro igual sua proficiência, causa dano concussivo igual seu modificador de força. (ex: uma criatura com 15 de AC é acertada com 13 caso sua proficiência for igual a 2).<br /><br />
+                    <strong>Forceful: </strong>Mesmo errando o ataque por uma margem de erro igual sua proficiência, causa 1 de dano concussivo. (ex: uma criatura com 15 de AC é acertada com 13 caso sua proficiência for igual a 2).<br /><br />
                     <strong>Extra Damage: </strong>Num acerto a arma causa dano adicional especificado entre ().<br /><br />
                     <strong>Crit Range: </strong>Determina a margem de acerto crítico ao atacar usando a arma.<br /><br />
                     <strong>Crit Damage: </strong>Determina o multiplicador de dano base da arma. Ex (Uma arma que causa 2d6 de dano base com multiplicador de 3 vai causar 6d6, quaisquer bônus de dano como Divine Smite ou Sneak Attack são multiplicados de maneira normal).<br /><br />
