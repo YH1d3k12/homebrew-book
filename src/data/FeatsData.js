@@ -626,6 +626,16 @@ const featsData = [
         category: "Utility",
         type: 0
     },
+    {
+        id: 63,
+        name: "Reactive",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Increase your Dexterity or Wisdom score by 1.\n Once per round, you can take one additional reaction. You can use this feature a number of times equal to your proficiency bonus before a long rest.",
+        category: "Utility",
+        type: 1
+    }
 ]
 
 export default featsData;
