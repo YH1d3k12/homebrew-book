@@ -51,7 +51,7 @@ const MenuButtons = () => {
             </div>
             <div className="menu-buttons-row">
                 <div className="button-card">
-                    <Link to="/">
+                    <Link to="/feats">
                         <img className="button-icon" src={feats} alt="Feats"/>
                         <h2>Feats</h2>
                     </Link>

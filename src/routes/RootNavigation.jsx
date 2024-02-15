@@ -2,6 +2,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Body from "../pages/Body.jsx";
 import Menu from "../pages/Menu.jsx";
+import FeatList from "../pages/FeatList.jsx";
+import FeatPage from "../pages/FeatPage.jsx";
 import SpecieBook from "../pages/SpecieBook.jsx";
 import SpellBook  from "../pages/SpellBook.jsx";
 import SpellPage  from "../pages/SpellPage.jsx";
@@ -20,6 +22,8 @@ export default function RootNavigation()
 			<Routes>
 				<Route path="/" element={<Body  />}>
 					<Route path="/" element={<Menu  />} />
+					<Route path="/feats" element={<FeatList  />} />
+					<Route path="/featpage" element={<FeatPage  />} />
 					<Route path="/species" element={<SpecieBook  />} />
 					<Route path="/spellbook" element={<SpellBook  />} />
 					<Route path="/spellpage" element={<SpellPage  />} />
