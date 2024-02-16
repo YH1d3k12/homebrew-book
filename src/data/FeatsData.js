@@ -635,6 +635,86 @@ const featsData = [
         description: "Increase your Dexterity or Wisdom score by 1.\n Once per round, you can take one additional reaction. You can use this feature a number of times equal to your proficiency bonus before a long rest.",
         category: "Utility",
         type: 1
+    },
+    {
+        id: 64,
+        name: "Sacred Missiles",
+        source: "Homebrew",
+        requirement: "Level two paladin",
+        repeatable: "No",
+        description: "You can use Divine Smite on ranged attack rolls. However, you must decide to use Divine Smite before the attack is made. This reflects your ability to infuse your ranged attacks with divine power for added impact.",
+        category: "Offensive",
+        type: 0
+    },
+    {
+        id: 65,
+        name: "Thuggish",
+        source: "Homebrew",
+        requirement: "Level two rogue",
+        repeatable: "No",
+        description: "You can deal sneak attack damage with weapons that lack the finesse property, as long as they are not heavy.",
+        category: "Offensive",
+        type: 0
+    },
+    {
+        id: 66,
+        name: "Faithful",
+        source: "Homebrew",
+        requirement: "Having channel divinity feature",
+        repeatable: "No",
+        description: "You gain one additional use of Channel Divinity.",
+        category: "Utility",
+        type: 0
+    },
+    {
+        id: 67,
+        name: "Medium",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You can feel the presence of nearby undead, fiends, and celestials within 30 feet of you. However, you can't determine the origin or exact location of these creatures.",
+        category: "Utility",
+        type: 0
+    },
+    {
+        id: 68,
+        name: "Whispers from Beyond",
+        source: "Homebrew",
+        requirement: "The minor feat 'Medium'",
+        repeatable: "No",
+        description: "Increase your Intelligence, Wisdom or Charisma score by 1.\n You can cast Speak with Dead once per long rest without expending material components.\n You can see into the Ethereal Plane up to 30 feet.",
+        category: "Utility",
+        type: 1
+    },
+    {
+        id: 69,
+        name: "Whispers from Beyond",
+        source: "Homebrew",
+        requirement: "The feat 'Whispers from Beyond'",
+        repeatable: "No",
+        description: "Increase your Intelligence, Wisdom or Charisma score by 1.\n You can cast Astral Projection on yourself once per long rest without expending material components.\n The range you can see into the Ethereal Plane increases by 30ft.",
+        category: "Utility",
+        type: 1
+    },
+    {
+        id: 70,
+        name: "Relentless",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Increase your Constitution score by 1.\n Once per long rest, when you would drop to 0 hit points but not be killed outright, you drop to 1 hit point instead.",
+        category: "Defensive",
+        type: 1
+    },
+    {
+        id: 71,
+        name: "Titanic Force",
+        source: "Homebrew",
+        requirement: "Level 8 Character",
+        repeatable: "No",
+        description: "Increase your hit point maximum by 10.\n Increase your damage rolls on melee attacks by +1 for each 60 hit points in your maximum hit point total, with a minimum bonus of +1.",
+        category: "Offensive",
+        type: 1
     }
 ]
 

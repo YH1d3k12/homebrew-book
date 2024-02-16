@@ -25,7 +25,7 @@ const FeatList = () => {
                 <SelectBySource value={selectBySource} onChange={setSelectBySource}/>
                 <SelectFeatByType value={selectByFeatType} onChange={setSelectByFeatType}/>
                 <SelectFeatByCategory value={selectByFeatCategory} onChange={setSelectByFeatCategory}/>
-                 <FeatTable 
+                <FeatTable 
                     data={feats}>
                 </FeatTable>
             </div>
