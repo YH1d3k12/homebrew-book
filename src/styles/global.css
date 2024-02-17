@@ -121,10 +121,10 @@
     --menu-buttons-button-card-text-color: var(--white);
 
     /* Character Cards */
-    --character-cards-content-wrapper-background-color: var(--dark-gray);
-    --character-cards-line-background-color: #0e0e0e;
+    --character-cards-content-wrapper-background-color: var(--charcoal);
+    --character-cards-line-background-color: var(--charcoal-darker);
     --character-cards-background-color: var(--black);
-    --character-cards-detail-color: #0e0e0e;
+    --character-cards-detail-color: var(--silver-gray);
 
     /* Checkboxes */
     --checkbox-color: var(--white);
