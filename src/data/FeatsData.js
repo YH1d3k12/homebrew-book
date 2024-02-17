@@ -32,7 +32,7 @@ const featsData = [
         source: "Homebrew",
         requirement: "Dexterity 13 or higher",
         repeatable: "No",
-        description: "Attack rolls equal to your armor class miss, and you are not affected by forceful weapon property.\n Once per long rest you can half the damage of an attack roll (not spells) against you (no reaction required).",
+        description: "Attack rolls equal to your armor class miss, and you are not affected by forceful weapon property while wearing light armor or none.",
         category: "Defensive",
         type: 0
     },
@@ -62,7 +62,7 @@ const featsData = [
         source: "Homebrew",
         requirement: "-",
         repeatable: "No",
-        description: "You have +5 to initiative checks.",
+        description: "You have a bonus to initiative checks equal to your proficiency bonus.",
         category: "Utility",
         type: 0
     },
@@ -432,7 +432,7 @@ const featsData = [
         source: "Homebrew",
         requirement: "-",
         repeatable: "No",
-        description: "Hostile creatures inexplicably target you more often than others.\n When a roll is made to determine the target of a negative phenomenon or attack, you always find yourself in the crosshairs if you are within range.",
+        description: "When an ally creature within 5 feet of you would receive a critical hit, you become the target instead.\n When a roll is made to determine the target of a negative phenomenon or attack, you always find yourself in the crosshairs if you are within range. This reflects your uncanny ability to attract misfortune toward yourself.",
         category: "Flavor",
         type: 0
     },
