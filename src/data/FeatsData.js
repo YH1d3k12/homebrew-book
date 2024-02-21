@@ -2,7 +2,18 @@
 Type 0: Minor Feat.
 Type 1: Feat.
 
-Categories: Crafting, Defensive, Flavor, Offensive, Utility, Movement.
+Categories: 
+    Ability:
+    Buff:
+    Class Enhancement:
+    Crafting: 
+    Defensive:
+    Healing:
+    Offensive:
+    Utility:
+    Movement:
+    Skill:
+    Spellcasting:
 */
 
 const featsData = [
@@ -13,7 +24,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "Gain proficiency in religion, expertise if you already have it.\n You learn one cleric or warlock cantrip. Your spellcasting ability is WIS or CHA for cleric or INT or CHA for warlock.\n You can change the cantrip with another cantrip from the same spell list after a long rest.",
-        category: "Utility",
+        category: "Skill, Spellcasting",
         type: 0
     },
     {
@@ -23,7 +34,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "Gain proficiency in arcana, expertise if you already have it.\n You learn one wizard cantrip, INT is your spellcasting ability for it.\n You learn Detect Magic and can cast it without spending SP once per long rest.",
-        category: "Utility",
+        category: "Skill, Spellcasting",
         type: 0
     },
     {
@@ -43,7 +54,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "Gain proficiency with fishing tools, expertise if you already have it.\n You can craft improvised fishing equipment (provided you have the resources to do so).\n You can find enough food for 10 medium creatures from water bodies with a successful DC 10 fishing (survival) check.\n Fish and SeaFood sell for 25% more.",
-        category: "Flavor",
+        category: "Crafting, Utility, Skill",
         type: 0
     },
     {
@@ -53,7 +64,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "Gain proficiency with alchemist's tools, expertise if you already have it.\n Crafting bombs and chemicals costs -25% less and takes half of the time.\n Learn 3 common or uncommon bombs or chemical recipes.",
-        category: "Crafting",
+        category: "Crafting, Skill",
         type: 0
     },
     {
@@ -63,7 +74,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "You have a bonus to initiative checks equal to your proficiency bonus.",
-        category: "Utility",
+        category: "Buff",
         type: 0
     },
     {
@@ -123,7 +134,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "Being prone does not grant advantage on melee attack rolls against you, nor do you suffer disadvantage on your own melee attack rolls.",
-        category: "Utility",
+        category: "Defensive, Offensive",
         type: 0
     },
     {
@@ -133,7 +144,7 @@ const featsData = [
         requirement: "Wisdom 13 or higher",
         repeatable: "No",
         description: "You have the ability to speak with animals.\n Critters (small animals) with an intelligence of 4 or less are friendly towards you.",
-        category: "Utility",
+        category: "Ability, Utility",
         type: 0
     },
     {
@@ -153,12 +164,12 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "Gain proficiency in nature, expertise if you already have it.\n You learn one druid cantrip, WIS is your spellcasting ability for it.\n You can speak, read and write in druidic.",
-        category: "Utility",
+        category: "Utility, Skill, Spellcasting",
         type: 0
     },
     {
         id: 16,
-        name: "Eagle Eye",
+        name: "Keen Sight",
         source: "Homebrew",
         requirement: "-",
         repeatable: "No",
@@ -173,37 +184,37 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "Moving through overgrown plants, mud, rocky, and similar difficult terrains does not incur extra movement cost.\n In forest areas, you can successfully gather enough food for up to 10 medium creatures with a DC 10 Survival check.",
-        category: "Utility",
+        category: "Utility, Movement",
         type: 0
     },
     {
         id: 18,
-        name: "Outdoorsman",
+        name: "Diehard",
         source: "Homebrew",
         requirement: "-",
         repeatable: "No",
-        description: "Moving through overgrown plants, mud, wetlands, and similar difficult terrains does not incur extra movement cost.\n In forest areas, you can successfully gather enough food for up to 10 medium creatures with a DC 10 Survival check.",
-        category: "Utility",
-        type: 0
+        description: "You gain a +2 bonus to death saving throws.\n As long as you have not failed any death saving throws, you do not suffer the negative conditions of being at 0 hit points and may continue to take actions and move normally.",
+        category: "Defensive",
+        type: 1
     },
     {
         id: 19,
-        name: "Fast Healer",
+        name: "Fast Healing",
         source: "Homebrew",
         requirement: "-",
         repeatable: "No",
         description: "Whenever you spend a hit die for healing, whether through a class feature or other means, you can choose to maximize the roll. You can do this a number of times equal to your proficiency bonus before completing a long rest.",
-        category: "Defensive",
+        category: "Healing",
         type: 0
     },
     {
         id: 20,
-        name: "Fast Learner",
+        name: "Broad Skillset",
         source: "Homebrew",
         requirement: "-",
-        repeatable: "No",
-        description: "Gain a 20% increase in earned experience points. Note: This feat is unavailable for use in milestone campaigns.",
-        category: "Utility",
+        repeatable: "Yes, up to 3 times",
+        description: "You gain +1 to all ability checks made with skills you are not proficient in. This reflects your broad knowledge and adaptability in various situations.",
+        category: "Skill",
         type: 0
     },
     {
@@ -212,8 +223,8 @@ const featsData = [
         source: "Homebrew",
         requirement: "-",
         repeatable: "No",
-        description: "Gain proficiency with wood carver’s tools, expertise if you already have it.\n Crafting custom arrows costs -25% less and takes half of the time.\n Learn 3 common or uncommon custom arrow recipes.",
-        category: "Crafting",
+        description: "Gain proficiency with wood carver's tools, expertise if you already have it.\n Crafting custom arrows costs -25% less and takes half of the time.\n Learn 3 common or uncommon custom arrow recipes.",
+        category: "Crafting, Skill",
         type: 0
     },
     {
@@ -223,7 +234,7 @@ const featsData = [
         requirement: "Charisma (13/14/15) or higher",
         repeatable: "Yes, up to 3 times",
         description: "Buying and selling prices are (10%/20%/30%) better.",
-        category: "Flavor",
+        category: "Utility",
         type: 0
     },
     {
@@ -233,7 +244,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "Gain proficiency with herbalism kit, expertise if you already have it.\n Crafting potions costs -25% less and takes half of the time.\n Learn 3 common or uncommon potion recipes.",
-        category: "Crafting",
+        category: "Crafting, Skill",
         type: 0
     },
     {
@@ -253,7 +264,7 @@ const featsData = [
         requirement: "Dexterity 13 or higher",
         repeatable: "No",
         description: "Gain proficiency with acrobatics, expertise if you already have it.\n You can move through the space of hostile creatures, treating it as difficult terrain.",
-        category: "Movement",
+        category: "Skill, Movement",
         type: 0
     },
     {
@@ -263,7 +274,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "Your passive Stealth and Performance scores (while being disguised) are 8 + the respective ability score modifier, rather than 5 + the modifier.",
-        category: "Utility",
+        category: "Skill",
         type: 0
     },
     {
@@ -273,7 +284,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "With the appropriate tools, you can excavate a 5ft cube of dirt or stone in 5 minutes.\n You have advantage on Wisdom (Survival) checks to navigate and avoid getting lost in subterranean environments.\n You have an innate understanding of geological formations. Gain proficiency in Intelligence (Nature) checks related to identifying minerals and predicting the stability of underground structures.\n Raw ores and gems sell for 15% more.",
-        category: "Flavor",
+        category: "Utility, Skill",
         type: 0
     },
     {
@@ -283,7 +294,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "You have three d4 dice that you can use to add or subtract from an attack roll, saving throw, or ability check made by you or another creature.\n You can use only one d4 per roll, and you regain all expended dice after completing a long rest.",
-        category: "Utility",
+        category: "Ability",
         type: 0
     },
     {
@@ -293,7 +304,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "Gain proficiency with jeweler's tools, expertise if you already have it.\n Spending 1 hour polishing a gemstone increases its selling price by 40%.",
-        category: "Crafting",
+        category: "Crafting, Skill",
         type: 0
     },
     {
@@ -303,17 +314,17 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "Gain proficiency in Stealth, Sleight of Hand, or Deception.\n You can write, read, and speak in Thieves' Cant.",
-        category: "Utility",
+        category: "Utility, Skill",
         type: 0
     },
     {
         id: 31,
-        name: "Longstrider",
+        name: "Travel Guide",
         source: "Homebrew",
         requirement: "-",
         repeatable: "No",
-        description: "Your walking speed increases by 5ft.\n Your party's travel speed increases by 10%.",
-        category: "Movement",
+        description: "Gain proficiency in Survival, expertise if you already have it.\n Your party's travel speed increases by 10%.\n You have advantage on Survival checks to navigate and avoid getting lost in the wilderness.",
+        category: "Movement, Skill",
         type: 0
     },
     {
@@ -353,7 +364,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "You gain a swimming speed equal to your walking speed and have advantage on swimming-related ability checks.\n You can hold your breath for twice as long as normal.",
-        category: "Movement",
+        category: "Movement, Utility",
         type: 0
     },
     {
@@ -373,7 +384,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "Bombs and grenades used by you have a +1 bonus to their DC and attack roll.\n Your explosives deal double damage when targeting structures.\n You can examine an explosive device and determine its properties, blast radius, and potential effects with a successful DC:15 Intelligence (Investigation) check (you are considered proficient in the investigation roll).",
-        category: "Utility",
+        category: "Offensive, Utility",
         type: 0
     },
     {
@@ -383,7 +394,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "Once per short rest, you can automatically succeed on an ability check or saving throw to avoid or escape a grapple or restrain.\n You also have advantage on checks to escape from bindings, ropes, or similar restraints.",
-        category: "Defensive",
+        category: "Ability, Defensive",
         type: 0
     },
     {
@@ -403,7 +414,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "You don't suffer from disadvantage on Stealth checks due to wearing armor.\n You always appear well-groomed and put together, gaining advantage on Charisma checks involving social interactions related to your attire and beauty.",
-        category: "Utility",
+        category: "Movement, Utility",
         type: 0
     },
     {
@@ -412,7 +423,7 @@ const featsData = [
         source: "Homebrew",
         requirement: "Requires a negative Intelligence modifier",
         repeatable: "No",
-        description: "Your thoughts can't be read or sensed because there aren't any.\n  Creatures have disadvantage on Insight checks made to determine your intentions.",
+        description: "Your thoughts can't be read or sensed because there aren't any.\n Creatures have disadvantage on Insight checks made to determine your intentions.",
         category: "Utility",
         type: 0
     },
@@ -423,7 +434,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "Once per day, when you roll a natural 1 on a d20, you can treat it as a critical success, reflecting your sheer comical luck in turning an unfortunate situation into an unexpected triumph.\n As a reaction, you can spend your daily use of Dumb Luck to turn a creature's critical success on a d20 roll into a critical failure, showcasing your uncanny ability to reverse fate in the most unexpected ways.",
-        category: "Utility",
+        category: "Ability",
         type: 0
     },
     {
@@ -433,7 +444,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "When an ally creature within 5 feet of you would receive a critical hit, you become the target instead.\n When a roll is made to determine the target of a negative phenomenon or attack, you always find yourself in the crosshairs if you are within range. This reflects your uncanny ability to attract misfortune toward yourself.",
-        category: "Flavor",
+        category: "Utility",
         type: 0
     },
     {
@@ -443,7 +454,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "Once per short rest, when you critically fail a melee attack roll, you can get yourself and every large or smaller creature within 5 feet of you prone.\n Once per day, you can use your disastrous tendencies to make a grand and clumsy entrance. As an action, you can cause a harmless but attention-grabbing mishap, such as knocking over a stack of barrels or tripping over a table. All creatures within 30 feet who can see or hear you must make a Wisdom saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or be distracted for up to 5 minutes in social encounters or 1 turn in combat.\n While distracted, ally creatures have advantage on attack rolls and ability checks against those creatures.",
-        category: "Flavor",
+        category: "Ability",
         type: 0
     },
     {
@@ -452,8 +463,8 @@ const featsData = [
         source: "Homebrew",
         requirement: "-",
         repeatable: "No",
-        description: "You have advantage against charming effects.\n You have disadvantage on Insight checks to discern romantic or flirtatious intentions directed towards you, often misinterpreting friendly gestures as mere kindness.",
-        category: "Flavor",
+        description: "You have advantage against charming effects.\n You have disadvantage on Insight checks to discern social intentions directed towards you.",
+        category: "Defensive",
         type: 0
     },
     {
@@ -463,7 +474,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "You have resistance to and advantage against the effects of poisons and drugs.\n If you fail to consume drugs within a three-day span, you become anxious and gain disadvantage on ability checks until you consume the substance again.",
-        category: "Flavor",
+        category: "Defensive",
         type: 0
     },
     {
@@ -482,20 +493,20 @@ const featsData = [
         source: "Homebrew",
         requirement: "-",
         repeatable: "No",
-        description: "You have resistance to thunder damage.\n You have advantage on saving throws against effects that require your hearing.\n You have disadvantage on Perception checks involving hearing, reflecting the challenges posed by your impaired sense.",
+        description: "You have advantage on saving throws against effects that require your hearing.\n You have disadvantage on Perception checks involving hearing, reflecting the challenges posed by your impaired sense.",
         category: "Flavor",
         type: 0
     },
-    {
-        id: 49,
-        name: "Painless",
-        source: "Homebrew",
-        requirement: "-",
-        repeatable: "No",
-        description: "Your nervous system doesn't detect pain, granting you resistance to psychic damage, and you can't be affected by effects caused by severe pain (such as power word pain).\n You can only note that you are being attacked if the attack deals 5 points of damage or more. This requires a successful DC 15 Perception check, reflecting your limited awareness of minor threats.",
-        category: "Flavor",
-        type: 0
-    },
+    // {
+    //     id: 49,
+    //     name: "Painless",
+    //     source: "Homebrew",
+    //     requirement: "-",
+    //     repeatable: "No",
+    //     description: "Your nervous system doesn't detect pain, granting you resistance to psychic damage, and you can't be affected by effects caused by severe pain (such as power word pain).\n You can only note that you are being attacked if the attack deals 5 points of damage or more. This requires a successful DC 15 Perception check, reflecting your limited awareness of minor threats.",
+    //     category: "Flavor",
+    //     type: 0
+    // },
     {
         id: 50,
         name: "Silver Tongue",
@@ -542,7 +553,7 @@ const featsData = [
         source: "Homebrew",
         requirement: "-",
         repeatable: "No",
-        description: "You can make attack rolls at long range with bows without disadvantage.\n You ignore half-cover when making ranged attacks with bows.",
+        description: "You can make attack rolls at long range with bows without disadvantage.\n You ignore half and three-quarters cover when making ranged attacks with bows.",
         category: "Offensive",
         type: 0
     },
@@ -688,7 +699,7 @@ const featsData = [
     },
     {
         id: 69,
-        name: "Whispers from Beyond",
+        name: "Ethereal Walker",
         source: "Homebrew",
         requirement: "The feat 'Whispers from Beyond'",
         repeatable: "No",

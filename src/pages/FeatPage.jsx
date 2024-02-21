@@ -16,7 +16,7 @@ const FeatPage = () => {
                 <div className="feat-card-content scroll-y">
                     {/* Overall feat properties */}
                     <p>
-                        <strong>Type</strong>{feat.type == 0 ? "Minor Feat" : "Feat"}<br/>
+                        <strong>Type: </strong>{feat.type == 0 ? "Minor Feat" : "Feat"}<br/>
                         <strong>Source: </strong>{feat.source}<br/>
                         <strong>Requirements: </strong>{feat.requirement}<br/>
                         <strong>Repeatable?: </strong>{feat.repeatable}<br/>
