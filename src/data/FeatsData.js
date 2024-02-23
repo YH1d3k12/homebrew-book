@@ -787,6 +787,36 @@ const featsData = [
         description: "When you have more than one source of advantage on an attack roll, you gain a bonus to damage rolls. Each additional source of advantage grants a +2 bonus to damage rolls.",
         category: "Passive, Offensive",
         type: 1
+    },
+    {
+        id: 78,
+        name: "Vendetta",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "When you or an ally creature within sight takes a critical hit, is knocked unconscious, or is killed, you gain a +5 bonus to the next attack roll and +10 bonus to the next damage roll against the attacker (This effect lasts for 1 minute or until applied). This surge of retributive fury empowers your strikes in response to harm inflicted upon you or your allies.",
+        category: "Passive, Conditional, Offensive",
+        type: 1
+    },
+    {
+        id: 79,
+        name: "Tenacious",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "If an effect allows you to break free from it as an action, you can do so as a bonus action instead.\n Once per day, you can grant yourself a +5 bonus to strength and constitution saving throws for the next minute as a bonus action or reaction.",
+        category: "Active, Passive, Defensive",
+        type: 1
+    },
+    {
+        id: 80,
+        name: "Horde Slayer",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Excessive damage dealt to an enemy is transferred to a creature of your choice within 5 feet of the original target if the attack would hit that creature.\n Your attacks ignore swarm and horde enemies' resistance to singular attacks.",
+        category: "Passive, Offensive",
+        type: 1
     }
 ]
 
