@@ -488,16 +488,16 @@ const featsData = [
         category: "Passive, Utility",
         type: 1
     },
-    // {
-    //     id: 48,
-    //     name: "Hard Hearing",
-    //     source: "Homebrew",
-    //     requirement: "-",
-    //     repeatable: "No",
-    //     description: "You have advantage on saving throws against effects that require your hearing.\n You have disadvantage on Perception checks involving hearing, reflecting the challenges posed by your impaired sense.",
-    //     category: "Flavor",
-    //     type: 0
-    // },
+    {
+        id: 48,
+        name: "Guardian",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Ally creatures within 5 feet of you receive a +1 bonus to their AC as long as you are conscious.\n  When an enemy targets an ally within 5 feet of you with an attack, you can use your reaction to interpose yourself, becoming the target of the attack instead.",
+        category: "Active, Passive, Defensive",
+        type: 1
+    },
     // {
     //     id: 49,
     //     name: "Painless",
