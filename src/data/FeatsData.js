@@ -796,7 +796,7 @@ const featsData = [
         repeatable: "No",
         description: "When you or an ally creature within sight takes a critical hit, is knocked unconscious, or is killed, you gain a +5 bonus to the next attack roll and +10 bonus to the next damage roll against the attacker (This effect lasts for 1 minute or until applied). This surge of retributive fury empowers your strikes in response to harm inflicted upon you or your allies.",
         category: "Passive, Conditional, Offensive",
-        type: 1
+        type: 0
     },
     {
         id: 79,
@@ -816,6 +816,46 @@ const featsData = [
         repeatable: "No",
         description: "Excessive damage dealt to an enemy is transferred to a creature of your choice within 5 feet of the original target if the attack would hit that creature.\n Your attacks ignore swarm and horde enemies' resistance to singular attacks.",
         category: "Passive, Offensive",
+        type: 1
+    },
+    {
+        id: 81,
+        name: "Musician",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Increase your Charisma score by 1.\n Gain proficiency in one instrument of your choice.\n You gain two uses of Bardic Inspiration (d6). The size of the Bardic Inspiration die may increase based on your Bard level. You regain the use of this feature after finishing a long rest. ",
+        category: "Active, Passive, Utility, Skill",
+        type: 1
+    },
+    {
+        id: 82,
+        name: "Fighting Surge",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Increase your Strength or Dexterity score by 1.\n On your turn, you can take one additional action on top of your regular action and a possible bonus action. Once you use this feature, you must finish a long rest before you can use it again.",
+        category: "Active, Utility",
+        type: 1
+    },
+    {
+        id: 83,
+        name: "Wild Side",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Your Strength, Dexterity or Constitution score increases by 1. \n The size of the damage dice for natural weapons increases by 1 (i.e. d4 becomes d6, d6 becomes d8, etc...) to a maximum of d12.\n Your natural weapons now have the finesse and light properties, and can add either your Strength or Dexterity modifier to the damage of off-hand natural weapon attacks.",
+        category: "Active, Utility",
+        type: 1
+    },
+    {
+        id: 84,
+        name: "Wild Fury",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Your Strength, Dexterity or Constitution score increases by 1. \n You can enter a state of bestial fury as a reaction until the start of your next turn. While in this state, you have disadvantage on attack rolls, but you double the damage dealt by your natural weapons attacks. You can enter this state a number of times per day equal to your proficiency bonus.",
+        category: "Active, Utility",
         type: 1
     }
 ]
