@@ -744,7 +744,7 @@ const featsData = [
         source: "Homebrew",
         requirement: "-",
         repeatable: "No",
-        description: "You gain a +1 bonus to your critical hit range when your current hit points are equal to or below 10% of your maximum hit points.",
+        description: "You gain a +1 bonus to your critical hit range when your current hit points are equal to or below 25% of your maximum hit points.",
         category: "Passive, Conditional, Offensive",
         type: 0
     },
@@ -754,7 +754,7 @@ const featsData = [
         source: "Homebrew",
         requirement: "-",
         repeatable: "No",
-        description: "You gain a +10ft bonus to your movement when your current hit points are equal to or below 10% of your maximum hit points.",
+        description: "You gain a +10ft bonus to your movement when your current hit points are equal to or below 25% of your maximum hit points.",
         category: "Passive, Conditional, Offensive",
         type: 0
     },
