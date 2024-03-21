@@ -15,8 +15,8 @@
     width: 100%;
     padding: 15px;
 
-    background-color: var(--technique-content-wrapper-backcground-color);
-    border: solid 1px var(--technique-content-wrapper-border-color);
+    background-color: var(--technique-page-technique-card-background-color);
+    border: solid 1px var(--technique-page-technique-card-border-color);
 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }

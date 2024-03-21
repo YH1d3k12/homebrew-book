@@ -38,8 +38,8 @@
     --item-book-content-wrapper-background-color: var(--charcoal);
 
     /* Item Page */
-    --item-page-content-wrapper-background-color: var(--charcoal);
-    --item-page-item-card-background-color: var(--dark-gray);
+    --item-page-content-wrapper-background-color: var(--charcoal-lighter);
+    --item-page-item-card-background-color: var(--charcoal);
     --item-page-item-card-border-color: var(--raisin-black);
     --item-page-title-background-color: var(--raisin-black);
     --item-page-title-color: var(--orange);
@@ -59,22 +59,22 @@
     --specie-book-content-wrapper-background-color: var(--charcoal);
 
     /* Spell Book */
-    --spell-book-content-wrapper-background-color: var(--charcoal);
+    --spell-book-content-wrapper-background-color: var(--charcoal-lighter);
 
     /* Spell Page */
-    --spell-page-content-wrapper-background-color: var(--charcoal);
-    --spell-page-spell-card-background-color: var(--dark-gray);
+    --spell-page-content-wrapper-background-color: var(--charcoal-lighter);
+    --spell-page-spell-card-background-color: var(--charcoal);
     --spell-page-spell-card-border-color: var(--raisin-black);
     --spell-page-spell-title-background-color: var(--raisin-black);
     --spell-page-spell-title-text-color: var(--orange);
     --spell-page-spell-content-background-color: var(--light-gray);
 
     /* Martial Book */
-    --martial-book-content-wrapper-background-color: var(--charcoal);
+    --martial-book-content-wrapper-background-color: var(--charcoal-lighter);
 
     /* Technique Page */
-    --technique-page-content-wrapper-background-color: var(--charcoal);
-    --technique-page-technique-card-background-color: var(--dark-gray);
+    --technique-page-content-wrapper-background-color: var(--charcoal-lighter);
+    --technique-page-technique-card-background-color: var(--charcoal);
     --technique-page-technique-card-border-color: var(--raisin-black);
     --technique-page-technique-title-background-color: var(--raisin-black);
     --technique-page-technique-title-text-color: var(--orange);
@@ -91,7 +91,7 @@
     --table-tab-focus-border-color: var(--dark-gray);
 
     /* Table Container */
-    --table-container-background-color: var(--charcoal-lighter);
+    --table-container-background-color: var(--charcoal);
     --table-container-border-color: var(--black);
 
     /* Table Header */
@@ -113,7 +113,7 @@
     --navbar-navigation-logo-text-color: var(--white);
 
     /* Items Side Bar */
-    --items-sidebar-background-color: var(--black);
+    --items-sidebar-background-color: var(--charcoal);
     --items-sidebar-text-color: var(--white);
     --items-sidebar-hover-background-color: var(--orange);
 
