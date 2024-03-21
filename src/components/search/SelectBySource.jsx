@@ -22,6 +22,7 @@ const SelectBySource = ({ value, onChange }) => {
             <option value="Player's Handbook">Player's Handbook</option>
             <option value="Xanathar's Guide to Everything">Xanathar's Guide</option>
             <option value="Explorer's Guide to Wildemount">Explorer's Guide</option>
+            <option value="Eberron">Eberron</option>
             <option value="Tasha's Cauldron of Everything">Tasha's Cauldron</option>
             <option value="Homebrew">Homebrew</option>
             <option value="Modified">Modified</option>

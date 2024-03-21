@@ -857,6 +857,56 @@ const featsData = [
         description: "Your Strength, Dexterity or Constitution score increases by 1. \n You can enter a state of bestial fury as a reaction until the start of your next turn. While in this state, you have disadvantage on attack rolls, but you double the damage dealt by your natural weapons attacks. You can enter this state a number of times per day equal to your proficiency bonus.",
         category: "Active, Utility",
         type: 1
+    },
+    {
+        id: 85,
+        name: "Aberrant Dragonmark",
+        source: "Eberron",
+        requirement: "No other dragonmark",
+        repeatable: "No",
+        description: "You have manifested an aberrant dragonmark. Determine its appearance and the flaw associated with it. You gain the following benefits:\n Increase your Constitution score by 1, to a maximum of 20.\n You learn a cantrip of your choice from the sorcerer spell list. In addition, choose a 1st-level spell from the sorcerer spell list. You learn that spell and can cast it through your mark. Once you cast it, you must finish a short or long rest before you can cast it again through the mark. Constitution is your spellcasting ability for these spells.\n When you cast the 1st-level spell through your mark, you can expend one of your Hit Dice and roll it. If you roll an even number, you gain a number of temporary hit points equal to the number rolled. If you roll an odd number, one random creature within 30 feet of you (not including you) takes force damage equal to the number rolled. If no other creatures are in range, you take the damage.",
+        category: "Active, Spellcasting",
+        type: 1
+    },
+    {
+        id: 86,
+        name: "Actor",
+        source: "Player's Handbook",
+        requirement: "-",
+        repeatable: "No",
+        description: "Skilled at mimicry and dramatics, you gain the following benefits:\n Increase your Charisma score by 1, to a maximum of 20.\n You have an advantage on Charisma (Deception) and Charisma (Performance) checks when trying to pass yourself off as a different person.\n You can mimic the speech of another person or the sounds made by other creatures. You must have heard the person speaking, or heard the creature make the sound, for at least 1 minute. A successful Wisdom (Insight) check contested by your Charisma (Deception) check allows a listener to determine that the effect is faked.",
+        category: "Passive, Utility",
+        type: 1
+    },
+    {
+        id: 87,
+        name: "Alert",
+        source: "Player's Handbook",
+        requirement: "-",
+        repeatable: "No",
+        description: "Always on the lookout for danger, you gain the following benefits:\n You can't be surprised while you are conscious.\n You gain a +5 bonus to initiative.\n Other creatures don't gain advantage on attack rolls against you as a result of being unseen by you.",
+        category: "Passive, Utility",
+        type: 1
+    },
+    {
+        id: 88,
+        name: "Artificer Initiate",
+        source: "Tasha's Cauldron of Everything",
+        requirement: "-",
+        repeatable: "Yes",
+        description: "You've learned some of an artificer's inventiveness:\n You learn one cantrip of your choice from the Artificer spell list, and you learn one 1st-level spell of your choice from that list. Intelligence is your spellcasting ability for these spells.\n You can cast this feat's 1st-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have.\n You gain proficiency with one type of artisan's tools of your choice, and you can use that type of tool as a spellcasting focus for any spell you cast that uses Intelligence as its spellcasting ability.",
+        category: "Active, Spellcasting, Skill",
+        type: 1
+    },
+    {
+        id: 89,
+        name: "Athlete",
+        source: "Player's Handbook",
+        requirement: "-",
+        repeatable: "No",
+        description: "You have undergone extensive physical training to gain the following benefits:\n Increase your Strength or Dexterity score by 1, to a maximum of 20.\n When you are prone, standing up uses only 5 feet of your movement.\n Climbing doesn't cost you extra movement.\n You can make a running long jump or a running high jump after moving only 5 feet on foot, rather than 10 feet.",
+        category: "Passive, Utility, Movement",
+        type: 1
     }
 ]
 
