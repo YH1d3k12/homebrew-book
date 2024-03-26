@@ -194,7 +194,7 @@ const featsData = [
         source: "Homebrew",
         requirement: "-",
         repeatable: "yes, up to two times",
-        description: "Increase your Constitution score by 1.\n You gain a +2/5 bonus to death saving throws.\n As long as you have not failed any death saving throws, you do not suffer the negative conditions of being at 0 hit points and may continue to take actions and move normally.",
+        description: "Increase your Constitution score by 1.\n As long as you have not failed any death saving throws, you do not suffer the negative conditions of being at 0 hit points and may continue to take actions and move normally. \n At the second level of this feat, you only gain a failed death save from taking damage if you fail a Constitution saving throw with a DC equal to the damage taken.",
         category: "Passive, Defensive",
         type: 1
     },
@@ -252,11 +252,11 @@ const featsData = [
         id: 24,
         name: "Healthy",
         source: "Homebrew",
-        requirement: "Constitution 13 or higher",
+        requirement: "-",
         repeatable: "No",
-        description: "You have advantage on saving throws against disease and poison.\n When a disease requires a saving throw that would normally cause damage, you take no damage on a successful save and only half damage on a failure.",
+        description: "Increase your Constitution score by 1.\n You have advantage on saving throws against disease and poison.\n When a disease requires a saving throw that would normally cause damage, you take no damage on a successful save and only half damage on a failure.",
         category: "Passive, Defensive",
-        type: 0
+        type: 1
     },
     {
         id: 25,
@@ -315,7 +315,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "Gain proficiency in Stealth, Sleight of Hand, or Deception.\n You can write, read, and speak in Thieves' Cant.",
-        category: "Passive,Skill, Utility",
+        category: "Passive, Skill, Utility",
         type: 0
     },
     {
@@ -445,7 +445,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "When an ally creature within 5 feet of you would receive a critical hit, you become the target instead.\n When a roll is made to determine the target of a negative phenomenon or attack, you always find yourself in the crosshairs if you are within range. This reflects your uncanny ability to attract misfortune toward yourself.",
-        category: "Passive, Utility",
+        category: "Passive, Double Edge, Utility",
         type: 0
     },
     {
@@ -464,8 +464,8 @@ const featsData = [
         source: "Homebrew",
         requirement: "-",
         repeatable: "No",
-        description: "You have advantage against charming effects.\n You have disadvantage on Insight checks to discern social intentions directed towards you.",
-        category: "Passive, Defensive",
+        description: "You have advantage against charming effects.\n You have disadvantage on Insight checks to discern social intentions or deception directed towards you.",
+        category: "Passive, Defensive, Double Edge",
         type: 0
     },
     {
@@ -475,7 +475,7 @@ const featsData = [
         requirement: "-",
         repeatable: "No",
         description: "You have resistance to and advantage against the effects of poisons and drugs.\n If you fail to consume drugs within a three-day span, you become anxious and gain disadvantage on ability checks until you consume the substance again.",
-        category: "Passive, Defensive",
+        category: "Passive, Defensive, Double Edge",
         type: 0
     },
     {
@@ -498,16 +498,16 @@ const featsData = [
         category: "Active, Passive, Defensive",
         type: 1
     },
-    // {
-    //     id: 49,
-    //     name: "Painless",
-    //     source: "Homebrew",
-    //     requirement: "-",
-    //     repeatable: "No",
-    //     description: "Your nervous system doesn't detect pain, granting you resistance to psychic damage, and you can't be affected by effects caused by severe pain (such as power word pain).\n You can only note that you are being attacked if the attack deals 5 points of damage or more. This requires a successful DC 15 Perception check, reflecting your limited awareness of minor threats.",
-    //     category: "Flavor",
-    //     type: 0
-    // },
+    {
+        id: 49,
+        name: "High Magic Tolerance",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "All magical effects from spells, potions, features and item are only half as effective on you.\n * You take half the damage or healing from magical sources.\n * Lingering effects, such as conditions, buffs or debuffs, imposed by magical effects last only half of the normal duration on you.\n * Item solid bonusses are halved on you (rounded up).",
+        category: "Passive, Double Edge",
+        type: 0
+    },
     {
         id: 50,
         name: "Silver Tongue",
@@ -590,12 +590,12 @@ const featsData = [
     },
     {
         id: 58,
-        name: "Low Magic Metabolism",
+        name: "Low Magic Tolarence",
         source: "Homebrew",
         requirement: "-",
         repeatable: "No",
-        description: "Potion effects last twice as long on you.",
-        category: "Passive, Utility",
+        description: "All magical effects from spells, potions and features last twice as long on you.",
+        category: "Passive, Double Edge",
         type: 0
     },
     {
@@ -652,7 +652,7 @@ const featsData = [
         id: 64,
         name: "Sacred Missiles",
         source: "Homebrew",
-        requirement: "Level two paladin",
+        requirement: "2nd level paladin",
         repeatable: "No",
         description: "You can use Divine Smite on ranged attack rolls. However, you must decide to use Divine Smite before the attack is made. This reflects your ability to infuse your ranged attacks with divine power for added impact.",
         category: "Active, Class Feature, Offensive",
@@ -662,7 +662,7 @@ const featsData = [
         id: 65,
         name: "Thuggish",
         source: "Homebrew",
-        requirement: "Level two rogue",
+        requirement: "2nd level rogue",
         repeatable: "No",
         description: "You can deal sneak attack damage with weapons that lack the finesse property, as long as they are not heavy.",
         category: "Passive, Class Feature, Offensive",
@@ -722,7 +722,7 @@ const featsData = [
         id: 71,
         name: "Titanic Force",
         source: "Homebrew",
-        requirement: "Level 8 Character",
+        requirement: "8th level character",
         repeatable: "No",
         description: "Increase your hit point maximum by 10.\n Increase your damage rolls on melee attacks by +1 for each 60 hit points in your maximum hit point total, with a minimum bonus of +1.",
         category: "Passive, Offensive",
@@ -816,7 +816,7 @@ const featsData = [
         repeatable: "No",
         description: "Excessive damage dealt to an enemy is transferred to a creature of your choice within 5 feet of the original target if the attack would hit that creature.\n Your attacks ignore swarm and horde enemies' resistance to singular attacks.",
         category: "Passive, Offensive",
-        type: 1
+        type: 0
     },
     {
         id: 81,
@@ -824,7 +824,7 @@ const featsData = [
         source: "Homebrew",
         requirement: "-",
         repeatable: "No",
-        description: "Increase your Charisma score by 1.\n Gain proficiency in one instrument of your choice.\n You gain two uses of Bardic Inspiration (d6). The size of the Bardic Inspiration die may increase based on your Bard level. You regain the use of this feature after finishing a long rest. ",
+        description: "Increase your Charisma score by 1.\n Gain proficiency in one instrument of your choice.\n You gain two uses of Bardic Inspiration (d6). The size of the Bardic Inspiration die may increase based on your Bard level. You regain the use of this feature after finishing a long rest.",
         category: "Active, Passive, Utility, Skill",
         type: 1
     },
@@ -844,7 +844,7 @@ const featsData = [
         source: "Homebrew",
         requirement: "-",
         repeatable: "No",
-        description: "Your Strength, Dexterity or Constitution score increases by 1. \n The size of the damage dice for natural weapons increases by 1 (i.e. d4 becomes d6, d6 becomes d8, etc...) to a maximum of d12.\n Your natural weapons now have the finesse and light properties, and can add either your Strength or Dexterity modifier to the damage of off-hand natural weapon attacks.",
+        description: "Your Strength, Dexterity or Constitution score increases by 1.\n The size of the damage dice for natural weapons increases by 1 (i.e. d4 becomes d6, d6 becomes d8, etc...) to a maximum of d12.\n Your natural weapons now have the finesse and light properties, and can add either your Strength or Dexterity modifier to the damage of off-hand natural weapon attacks.",
         category: "Active, Utility",
         type: 1
     },
@@ -854,7 +854,7 @@ const featsData = [
         source: "Homebrew",
         requirement: "-",
         repeatable: "No",
-        description: "Your Strength, Dexterity or Constitution score increases by 1. \n You can enter a state of bestial fury as a reaction until the start of your next turn. While in this state, you have disadvantage on attack rolls, but you double the damage dealt by your natural weapons attacks. You can enter this state a number of times per day equal to your proficiency bonus.",
+        description: "Your Strength, Dexterity or Constitution score increases by 1.\n You can enter a state of bestial fury as a reaction until the start of your next turn. While in this state, you have disadvantage on attack rolls, but you double the damage dealt by your natural weapons attacks. You can enter this state a number of times per day equal to your proficiency bonus.",
         category: "Active, Utility",
         type: 1
     },
@@ -864,7 +864,7 @@ const featsData = [
         source: "Eberron",
         requirement: "No other dragonmark",
         repeatable: "No",
-        description: "You have manifested an aberrant dragonmark. Determine its appearance and the flaw associated with it. You gain the following benefits:\n Increase your Constitution score by 1, to a maximum of 20.\n You learn a cantrip of your choice from the sorcerer spell list. In addition, choose a 1st-level spell from the sorcerer spell list. You learn that spell and can cast it through your mark. Once you cast it, you must finish a short or long rest before you can cast it again through the mark. Constitution is your spellcasting ability for these spells.\n When you cast the 1st-level spell through your mark, you can expend one of your Hit Dice and roll it. If you roll an even number, you gain a number of temporary hit points equal to the number rolled. If you roll an odd number, one random creature within 30 feet of you (not including you) takes force damage equal to the number rolled. If no other creatures are in range, you take the damage.",
+        description: "You have manifested an aberrant dragonmark. Determine its appearance and the flaw associated with it. You gain the following benefits:\n Increase your Constitution score by 1.\n You learn a cantrip of your choice from the sorcerer spell list. In addition, choose a 1st-level spell from the sorcerer spell list. You learn that spell and can cast it through your mark. Once you cast it, you must finish a short or long rest before you can cast it again through the mark. Constitution is your spellcasting ability for these spells.\n When you cast the 1st-level spell through your mark, you can expend one of your Hit Dice and roll it. If you roll an even number, you gain a number of temporary hit points equal to the number rolled. If you roll an odd number, one random creature within 30 feet of you (not including you) takes force damage equal to the number rolled. If no other creatures are in range, you take the damage.",
         category: "Active, Spellcasting",
         type: 1
     },
@@ -874,7 +874,7 @@ const featsData = [
         source: "Player's Handbook",
         requirement: "-",
         repeatable: "No",
-        description: "Skilled at mimicry and dramatics, you gain the following benefits:\n Increase your Charisma score by 1, to a maximum of 20.\n You have an advantage on Charisma (Deception) and Charisma (Performance) checks when trying to pass yourself off as a different person.\n You can mimic the speech of another person or the sounds made by other creatures. You must have heard the person speaking, or heard the creature make the sound, for at least 1 minute. A successful Wisdom (Insight) check contested by your Charisma (Deception) check allows a listener to determine that the effect is faked.",
+        description: "Skilled at mimicry and dramatics, you gain the following benefits:\n Increase your Charisma score by 1.\n You have an advantage on Charisma (Deception) and Charisma (Performance) checks when trying to pass yourself off as a different person.\n You can mimic the speech of another person or the sounds made by other creatures. You must have heard the person speaking, or heard the creature make the sound, for at least 1 minute. A successful Wisdom (Insight) check contested by your Charisma (Deception) check allows a listener to determine that the effect is faked.",
         category: "Passive, Utility",
         type: 1
     },
@@ -896,7 +896,7 @@ const featsData = [
         repeatable: "Yes",
         description: "You've learned some of an artificer's inventiveness:\n You learn one cantrip of your choice from the Artificer spell list, and you learn one 1st-level spell of your choice from that list. Intelligence is your spellcasting ability for these spells.\n You can cast this feat's 1st-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have.\n You gain proficiency with one type of artisan's tools of your choice, and you can use that type of tool as a spellcasting focus for any spell you cast that uses Intelligence as its spellcasting ability.",
         category: "Active, Spellcasting, Skill",
-        type: 1
+        type: 0
     },
     {
         id: 89,
@@ -904,10 +904,60 @@ const featsData = [
         source: "Player's Handbook",
         requirement: "-",
         repeatable: "No",
-        description: "You have undergone extensive physical training to gain the following benefits:\n Increase your Strength or Dexterity score by 1, to a maximum of 20.\n When you are prone, standing up uses only 5 feet of your movement.\n Climbing doesn't cost you extra movement.\n You can make a running long jump or a running high jump after moving only 5 feet on foot, rather than 10 feet.",
+        description: "You have undergone extensive physical training to gain the following benefits:\n Increase your Strength or Dexterity score by 1.\n When you are prone, standing up uses only 5 feet of your movement.\n Climbing doesn't cost you extra movement.\n You can make a running long jump or a running high jump after moving only 5 feet on foot, rather than 10 feet.",
         category: "Passive, Utility, Movement",
         type: 1
-    }
+    },
+    {
+        id: 90,
+        name: "Charger",
+        source: "Modified",
+        requirement: "-",
+        repeatable: "No",
+        description: "Increase your Strength or Constitution score by 1\n Once per turn, when you move at least 10 feet in a straight line before making a melee attack against a creature, you can apply one of the following effects on a successful hit:\n * Deal one additional damage dice.\n * Shove the creature up to 10 feet away.",
+        category: "Passive, Offensive",
+        type: 1
+    },
+    {
+        id: 91,
+        name: "Artificer Adept",
+        source: "Homebrew",
+        requirement: "You must have the 'Artifice Initiate' minor feat and be a 4th level character",
+        repeatable: "No",
+        description: "You learn one cantrip of your choice from the Artificer spell list, following the same rules as Artificer Initiate.\n You gain the 'Infuse Item' Artificer Feature, you learn two Artificer infusions, with a limit of one infused item at a time.\n Gain expertise in the chosen tool from the Artificer Initiate minor feat.",
+        category: "Active, Spellcasting, Skill",
+        type: 1
+    },
+    {
+        id: 92,
+        name: "Crusher",
+        source: "Tasha's Cauldron of Everything",
+        requirement: "4th level character",
+        repeatable: "No",
+        description: "Increase your Strength or Constitution by 1.\n Once per turn, when you hit a creature with an attack that deals bludgeoning damage, you can move it 5 feet to an unoccupied space, provided the target is no more than one size larger than you.\n When you score a critical hit that deals bludgeoning damage to a creature, attack rolls against that creature are made with advantage until the start of your next turn.",
+        category: "Passive, Offensive",
+        type: 1
+    },
+    {
+        id: 93,
+        name: "Victory Rush",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Winning a combat encounter or defeating a powerful foe in battle (determined by the DM) allows your character to recover hit points equal to a roll of their hit dice plus their Constitution modifier.",
+        category: "Passive, Conditional, Healing",
+        type: 0
+    },
+    // {
+    //     id: 94,
+    //     name: "Firm Stand",
+    //     source: "Homebrew",
+    //     requirement: "-",
+    //     repeatable: "No",
+    //     description: "Once per day, you can use this feature before the beggining of your turn to regain hit points equal to your Constitution modifier (minimum of 1 hit point) at the start of each of your turns for the next minute.",
+    //     category: "Active, Healing",
+    //     type: 1
+    // },
 ]
 
 export default featsData;
