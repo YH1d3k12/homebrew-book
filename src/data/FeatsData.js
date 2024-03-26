@@ -204,7 +204,7 @@ const featsData = [
         source: "Homebrew",
         requirement: "-",
         repeatable: "No",
-        description: "When you spend a hit die for healing, whether through a class feature or other means, you can choose to maximize the roll. You can use this feature a number of times equal to your proficiency bonus before completing a long rest.",
+        description: "When you spend a hit dice for healing, whether through a class feature or other means, you can choose to maximize the roll. You can use this feature a number of times equal to your proficiency bonus before completing a long rest.",
         category: "Active, Healing",
         type: 0
     },
@@ -948,14 +948,34 @@ const featsData = [
         category: "Passive, Conditional, Healing",
         type: 0
     },
+    {
+        id: 94,
+        name: "Dual Wielder",
+        source: "Player's Handbook",
+        requirement: "-",
+        repeatable: "No",
+        description: "You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.\n You can use two-weapon fighting even when the one handed melee weapons you are wielding aren't light.\n You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.",
+        category: "Passive, Defensive, Offensive",
+        type: 1
+    },
+    {
+        id: 95,
+        name: "Dungeon Delver",
+        source: "Player's Handbook",
+        requirement: "-",
+        repeatable: "No",
+        description: "Alert to the hidden traps and secret doors found in many dungeons, you gain the following benefits:\n * You have advantage on Wisdom (Perception) and Intelligence (Investigation) checks made to detect the presence of secret doors.\n * You have advantage on saving throws made to avoid or resist traps.\n * You have resistance to the damage dealt by traps.\n * Travelling at a fast pace doesn't impose the normal -5 penalty on your passive Wisdom (Perception) score.",
+        category: "Passive, Defensive, Utility",
+        type: 1
+    },
     // {
-    //     id: 94,
-    //     name: "Firm Stand",
-    //     source: "Homebrew",
+    //     id: 96,
+    //     name: "Dungeon Delver",
+    //     source: "Player's Handbook",
     //     requirement: "-",
     //     repeatable: "No",
-    //     description: "Once per day, you can use this feature before the beggining of your turn to regain hit points equal to your Constitution modifier (minimum of 1 hit point) at the start of each of your turns for the next minute.",
-    //     category: "Active, Healing",
+    //     description: "Alert to the hidden traps and secret doors found in many dungeons, you gain the following benefits:\n * You have advantage on Wisdom (Perception) and Intelligence (Investigation) checks made to detect the presence of secret doors.\n * You have advantage on saving throws made to avoid or resist traps.\n * You have resistance to the damage dealt by traps.\n * Travelling at a fast pace doesn't impose the normal -5 penalty on your passive Wisdom (Perception) score.",
+    //     category: "Passive, Defensive, Utility",
     //     type: 1
     // },
 ]
