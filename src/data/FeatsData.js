@@ -9,6 +9,7 @@ Categories:
     Class Enhancement: needs a class.
     Crafting: anything related to the creation of items.
     Defensive: provides something useful to the survivality of one's character
+    Double Edge
     Healing: provides some form of healing.
     Offensive: provides damaging capabilities.
     Utility: provides something useful to do.
@@ -200,7 +201,7 @@ const featsData = [
     },
     {
         id: 19,
-        name: "Fast Healing",
+        name: "Recovery",
         source: "Homebrew",
         requirement: "-",
         repeatable: "No",
@@ -968,16 +969,66 @@ const featsData = [
         category: "Passive, Defensive, Utility",
         type: 1
     },
-    // {
-    //     id: 96,
-    //     name: "Dungeon Delver",
-    //     source: "Player's Handbook",
-    //     requirement: "-",
-    //     repeatable: "No",
-    //     description: "Alert to the hidden traps and secret doors found in many dungeons, you gain the following benefits:\n * You have advantage on Wisdom (Perception) and Intelligence (Investigation) checks made to detect the presence of secret doors.\n * You have advantage on saving throws made to avoid or resist traps.\n * You have resistance to the damage dealt by traps.\n * Travelling at a fast pace doesn't impose the normal -5 penalty on your passive Wisdom (Perception) score.",
-    //     category: "Passive, Defensive, Utility",
-    //     type: 1
-    // },
+    {
+        id: 96,
+        name: "Eldritch Adept",
+        source: "Tasha's Cauldron of Everything",
+        requirement: "Spellcasting or Pact Magic feature",
+        repeatable: "Yes",
+        description: "Studying occult lore, you learn one Eldritch Invocation option of your choice from the warlock class. Your spellcasting ability for the invocation is Intelligence, Wisdom, or Charisma (choose when you select this feat). If the invocation has a prerequisite of any kind, you can choose that invocation only if you’re a warlock who meets the prerequisite.\n Whenever you gain a level or spend a week, you can replace the invocation with another one from the warlock class.",
+        category: "Utility",
+        type: 1
+    },
+    {
+        id: 97,
+        name: "Elemental Adept",
+        source: "Player's Handbook",
+        requirement: "The ability to cast at least one spell",
+        repeatable: "Yes, each time you do so, you must choose a different damage type.",
+        description: "When you gain this feat, choose one of the following damage types: acid, cold, fire, lightning, or thunder.\n Spells you cast ignore resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.",
+        category: "Passive, Offensive",
+        type: 1
+    },
+    {
+        id: 98,
+        name: "Fey Touched",
+        source: "Modified",
+        requirement: "-",
+        repeatable: "No",
+        description: "Your exposure to the Feywild's magic has changed you.\n You learn the Misty Step spell and can cast it without expending a spell slot a number of times equal to your proficiency bonus before completing a long rest.",
+        category: "Active, Spellcasting, Movement",
+        type: 1
+    },
+    {
+        id: 99,
+        name: "Fighting Initiate",
+        source: "Modified",
+        requirement: "-",
+        repeatable: "Yes",
+        description: "Your martial training has helped you develop a particular style of fighting. As a result, you learn one Fighting Style option of your choice from the fighter class. If you already have a style, the one you choose must be different.\n You also gain proficiency in three weapons of your choice.",
+        category: "Passive, Skill, Utility",
+        type: 1
+    },
+    {
+        id: 100,
+        name: "Heavy Weapon Master",
+        source: "Modified",
+        requirement: "4th level character",
+        repeatable: "No",
+        description: "You've mastered leveraging the weight of heavy weapons to enhance your combat prowess. You gain the following benefits:\n * When you score a critical hit with a heavy melee weapon on your turn, you can choose to either move the target 15 feet away in any direction or shove them prone.\n * Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage.",
+        category: "Active, Passive, Offensive",
+        type: 1
+    },
+    {
+        id: 101,
+        name: "Sharpshooter",
+        source: "Modified",
+        requirement: "4th level character",
+        repeatable: "No",
+        description: "Increase your Dexterity score by 1.\n If you haven't expended any movement at the beginning of your turn, you gain a +2 bonus to attack and +5 bonus to damage on ranged attacks made during that turn.",
+        category: "Conditional, Offensive",
+        type: 1
+    },
 ]
 
 export default featsData;
