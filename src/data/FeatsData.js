@@ -1025,8 +1025,18 @@ const featsData = [
         source: "Modified",
         requirement: "4th level character",
         repeatable: "No",
-        description: "Increase your Dexterity score by 1.\n If you haven't expended any movement at the beginning of your turn, you gain a +2 bonus to attack and +5 bonus to damage on ranged attacks made during that turn.",
+        description: "Increase your Dexterity score by 1.\n If you haven't expended any movement at the beginning of your turn, you gain a +2 bonus to attack and +5 bonus to damage on ranged attacks made during that turn.\n You can also spend a bonus action to gain the same benefits.",
         category: "Conditional, Offensive",
+        type: 1
+    },
+    {
+        id: 102,
+        name: "Physician",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You are an able physician, allowing you to mend wounds quickly and get your allies back in the fight. You gain the following benefits:\n * When you use a healer's kit to stabilize a dying creature, you can also make that creature regain 1 hit point.\n As an action. you can spend one use of a healer's kit to tend to a creature and restore 1d6 + 4 hit points to it, plus additional hit points equal to the creature's maximum number of Hit Dice. The creature can't regain hit points from this feat again until it finishes a short or long rest.",
+        category: "Active, Healing",
         type: 1
     },
 ]
