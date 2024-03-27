@@ -1,0 +1,15 @@
+.item-book-content-wrapper {
+    display: grid;
+    grid-template-columns: 16vw 84vw;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: var(--item-book-content-wrapper-background-color);
+}
+
+.item-book-table-container {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}

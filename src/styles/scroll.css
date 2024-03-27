@@ -1,0 +1,20 @@
+.scroll-y {
+    overflow-y: auto;
+}
+
+.scroll-y::-webkit-scrollbar {
+    width: 3px;
+}
+
+.scroll-y::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-scrollbar-thumb);
+    border-radius: 25px;
+}
+
+.scroll-y::-webkit-scrollbar-track {
+    background-color: var(--scroll-scrollbar-track);
+}
+
+.scroll-y::-webkit-scrollbar-button {
+    display: none;
+}

@@ -1,0 +1,149 @@
+/* Este css é para as variáveis de cor global e utilidades */
+@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    /* Standard System Colors */
+    --black: #1C1C1C;
+    --raisin-black: #221e22;
+    --charcoal-lighter: #0e0e0e27;
+    --charcoal: #0e0e0eb0;
+    --charcoal-darker: #0e0e0eCC;
+    --very-light-gray: #DDDDDD;
+    --light-gray: #CDCDCD;
+    --medium-gray: #B4B4B4;
+    --silver-gray: #c7bfbf;
+    --dark-gray: #2F2F2F;
+    --orange: #ee5622;
+    --white-lighter: #f0f0f0BF;
+    --white: #f0f0f0;
+
+    /* Pages */
+
+    /* Body */
+    --body-background-color: var(--black);
+
+    /* Feat List */
+    --feat-list-content-wrapper-background-color: var(--charcoal);
+
+    /* Feat Page */
+    --feat-page-content-wrapper-background-color: var(--charcoal);
+    --feat-page-feat-card-background-color: var(--dark-gray);
+    --feat-page-feat-card-border-color: var(--raisin-black);
+    --feat-page-feat-title-background-color: var(--raisin-black);
+    --feat-page-feat-title-text-color: var(--orange);
+    --feat-page-feat-content-background-color: var(--light-gray);
+
+    /* Item Book */
+    --item-book-content-wrapper-background-color: var(--charcoal);
+
+    /* Item Page */
+    --item-page-content-wrapper-background-color: var(--charcoal-lighter);
+    --item-page-item-card-background-color: var(--charcoal);
+    --item-page-item-card-border-color: var(--raisin-black);
+    --item-page-title-background-color: var(--raisin-black);
+    --item-page-title-color: var(--orange);
+    --item-page-item-card-content-background-color: var(--light-gray);
+
+    /* Menu */
+    --menu-content-wrapper-background-color: var(--charcoal);
+
+    /* Rules Page */
+    --rules-page-content-wrapper-background-color: var(--charcoal);
+    --rules-page-container-background-color: var(--charcoal-lighter);
+    --rules-page-container-border-color: var(--black);
+    --rules-page-container-text-color: var(--silver-gray);
+    --rules-page-container-strong-text-color: var(--white);
+
+    /* Specie Book */
+    --specie-book-content-wrapper-background-color: var(--charcoal);
+
+    /* Spell Book */
+    --spell-book-content-wrapper-background-color: var(--charcoal-lighter);
+
+    /* Spell Page */
+    --spell-page-content-wrapper-background-color: var(--charcoal-lighter);
+    --spell-page-spell-card-background-color: var(--charcoal);
+    --spell-page-spell-card-border-color: var(--raisin-black);
+    --spell-page-spell-title-background-color: var(--raisin-black);
+    --spell-page-spell-title-text-color: var(--orange);
+    --spell-page-spell-content-background-color: var(--light-gray);
+
+    /* Martial Book */
+    --martial-book-content-wrapper-background-color: var(--charcoal-lighter);
+
+    /* Technique Page */
+    --technique-page-content-wrapper-background-color: var(--charcoal-lighter);
+    --technique-page-technique-card-background-color: var(--charcoal);
+    --technique-page-technique-card-border-color: var(--raisin-black);
+    --technique-page-technique-title-background-color: var(--raisin-black);
+    --technique-page-technique-title-text-color: var(--orange);
+    --technique-page-technique-content-background-color: var(--light-gray);
+
+    /* Components */
+
+    /* Table Tabs */
+    --table-tab-background-color: var(--charcoal-lighter);
+    --table-tab-color: var(--white);
+    --table-tab-border-color: var(--black);
+    --table-tab-focus-background-color: var(--black);
+    --table-tab-focus-color: var(--orange);
+    --table-tab-focus-border-color: var(--dark-gray);
+
+    /* Table Container */
+    --table-container-background-color: var(--charcoal);
+    --table-container-border-color: var(--black);
+
+    /* Table Header */
+    --table-header-background-color: var(--black);
+    --table-header-color: var(--orange);
+
+    /* Table Body Rows */
+    --table-body-row-primary-background-color: var(--light-gray);
+    --table-body-row-secundary-background-color: var(--medium-gray);
+    --table-body-row-border-color: var(--very-light-gray);
+
+    /* Specific Tables */
+    --feat-table-feat-name-hover-text-color: var(--orange);
+    --spell-table-spell-name-hover-text-color: var(--orange);
+    --technique-table-technique-name-hover-text-color: var(--orange);
+
+    /* NavBar */
+    --navbar-navigation-container-background-color: var(--charcoal-darker);
+    --navbar-navigation-logo-text-color: var(--white);
+
+    /* Items Side Bar */
+    --items-sidebar-background-color: var(--charcoal);
+    --items-sidebar-text-color: var(--white);
+    --items-sidebar-hover-background-color: var(--orange);
+
+    /* Menu Buttons */
+    --menu-buttons-button-card-text-color: var(--white);
+
+    /* Character Cards */
+    --character-cards-content-wrapper-background-color: var(--charcoal);
+    --character-cards-line-background-color: var(--charcoal-darker);
+    --character-cards-background-color: var(--black);
+    --character-cards-detail-color: var(--silver-gray);
+
+    /* Checkboxes */
+    --checkbox-color: var(--white);
+
+    /* Scroll */
+    --scroll-scrollbar-thumb: var(--orange);
+    --scroll-scrollbar-track: var(--white);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: "Asul", serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.text-center {
+    text-align: center;
+}

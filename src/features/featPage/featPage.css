@@ -1,0 +1,94 @@
+.feat-page-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: var(--feat-page-content-wrapper-background-color);
+}
+
+.feat-card {
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+
+    background-color: var(--feat-page-feat-card-background-color);
+    border: solid 1px var(--feat-page-feat-card-border-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.feat-card h1 {
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+
+    background-color: var(--feat-page-feat-title-background-color);
+    color: var(--feat-page-feat-title-text-color);
+    font-size: 1.4rem;
+}
+
+.feat-card-content {
+    max-height: calc(100% - 75px);
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+
+    background-color: var(--feat-page-feat-content-background-color);
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.feat-card-content strong {
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.feat-card-content p {
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .feat-card h1 {
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+
+    .feat-card-content {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .feat-card-content strong {
+        font-size: 1.05rem;
+    }
+
+    .feat-card-content p {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .feat-card {
+        width: 70%;
+    }
+
+    .feat-card h1 {
+        padding: 20px;
+        font-size: 1.8rem;
+    }
+
+    .feat-card-content {
+        padding: 20px;
+        font-size: 1.05rem;
+    }
+
+    .feat-card-content strong {
+        font-size: 1.1rem;
+    }
+
+    .feat-card-content p {
+        margin-bottom: 30px;
+    }
+}

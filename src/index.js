@@ -1,6 +1,8 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import './styles/index.css';
+
+import "./styles/global.css";
+import "./styles/scroll.css"
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

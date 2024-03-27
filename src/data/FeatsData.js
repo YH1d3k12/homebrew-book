@@ -1,0 +1,1044 @@
+/* 
+Type 0: Minor Feat.
+Type 1: Feat.
+
+Categories:
+    Active, Passive, Conditional.
+
+
+    Class Enhancement: needs a class.
+    Crafting: anything related to the creation of items.
+    Defensive: provides something useful to the survivality of one's character
+    Double Edge
+    Healing: provides some form of healing.
+    Offensive: provides damaging capabilities.
+    Utility: provides something useful to do.
+    Movement: ability of locomotion.
+    Skill: proficiency.
+    Spellcasting: some form of sorcery.
+*/
+
+const featsData = [
+    {
+        id: 1,
+        name: "Acolyte",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Gain proficiency in religion, expertise if you already have it.\n You learn one cleric or warlock cantrip. Your spellcasting ability is WIS or CHA for cleric or INT or CHA for warlock.\n You can change the cantrip with another cantrip from the same spell list after a long rest.",
+        category: "Passive, Skill, Spellcasting",
+        type: 0
+    },
+    {
+        id: 2,
+        name: "Arcanist",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Gain proficiency in arcana, expertise if you already have it.\n You learn one wizard cantrip, INT is your spellcasting ability for it.\n You learn Detect Magic and can cast it without spending SP once per long rest.",
+        category: "Active, Passive, Skill, Spellcasting",
+        type: 0
+    },
+    {
+        id: 3,
+        name: "As a Leaf",
+        source: "Homebrew",
+        requirement: "Dexterity 13 or higher",
+        repeatable: "No",
+        description: "Attack rolls equal to your armor class miss, and you are not affected by forceful weapon property while wearing light armor or none.",
+        category: "Passive, Defensive",
+        type: 0
+    },
+    {
+        id: 4,
+        name: "Angler",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Gain proficiency with fishing tools, expertise if you already have it.\n You can craft improvised fishing equipment (provided you have the resources to do so).\n You can find enough food for 10 medium creatures from water bodies with a successful DC 10 fishing (survival) check.\n Fish and SeaFood sell for 25% more.",
+        category: "Passive, Crafting, Skill, Utility",
+        type: 0
+    },
+    {
+        id: 5,
+        name: "Alchemist",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Gain proficiency with alchemist's tools, expertise if you already have it.\n Crafting bombs and chemicals costs -25% less and takes half of the time.\n Learn 3 common or uncommon bombs or chemical recipes.",
+        category: "Passive, Crafting, Skill",
+        type: 0
+    },
+    {
+        id: 6,
+        name: "Born Ready",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You have a bonus to initiative checks equal to your proficiency bonus.",
+        category: "Passive, Utility",
+        type: 0
+    },
+    {
+        id: 7,
+        name: "Blunt Force",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Once per turn, when you hit a creature with an attack that deals bludgeoning damage, you can move it 5 feet to an unoccupied space, provided the target is no more than one size larger than you.",
+        category: "Passive, Offensive",
+        type: 0
+    },
+    {
+        id: 8,
+        name: "Buckler Master",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Wielding a buckle shield does not impose a penalty on attack rolls when using two-handed or dual-wielding weapons.",
+        category: "Passive, Offensive",
+        type: 0
+    },
+    {
+        id: 9,
+        name: "Brave",
+        source: "Homebrew",
+        requirement: "Wisdom or Charisma 15 or higher",
+        repeatable: "No",
+        description: "You can't be frightened.",
+        category: "Passive, Defensive",
+        type: 0
+    },
+    {
+        id: 10,
+        name: "Cardio Training",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "When you take the Dash action or a similar action, such as Aggressive Sprint, you gain an additional 10 feet of movement until the end of the current turn.",
+        category: "Passive, Movement",
+        type: 0
+    },
+    {
+        id: 11,
+        name: "Cat Eyes",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You gain or increase your Darkvision range by 30ft. You can only see shades of gray.",
+        category: "Passive, Utility",
+        type: 0
+    },
+    {
+        id: 12,
+        name: "Crawler",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Being prone does not grant advantage on melee attack rolls against you, nor do you suffer disadvantage on your own melee attack rolls.",
+        category: "Passive, Defensive, Offensive",
+        type: 0
+    },
+    {
+        id: 13,
+        name: "Critter Friendly",
+        source: "Homebrew",
+        requirement: "Wisdom 13 or higher",
+        repeatable: "No",
+        description: "You have the ability to speak with animals.\n Critters (small animals) with an intelligence of 4 or less are friendly towards you.",
+        category: "Passive, Utility",
+        type: 0
+    },
+    {
+        id: 14,
+        name: "Climber",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You have climbing speed equal to your walking speed.\n You also have advantage on climbing related ability checks.",
+        category: "Passive, Movement, Skill",
+        type: 0
+    },
+    {
+        id: 15,
+        name: "Druidic",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Gain proficiency in nature, expertise if you already have it.\n You learn one druid cantrip, WIS is your spellcasting ability for it.\n You can speak, read and write in druidic.",
+        category: "Passive, Skill, Spellcasting, Utility",
+        type: 0
+    },
+    {
+        id: 16,
+        name: "Keen Sight",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You can discern details with exceptional clarity within 30ft of you, including small handwritten letters across the room.\n You also have advantage on perception checks related to sight",
+        category: "Passive, Skill, Utility",
+        type: 0
+    },
+    {
+        id: 17,
+        name: "Outdoorsman",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Moving through overgrown plants, mud, rocky, and similar difficult terrains does not incur extra movement cost.\n In forest areas, you can successfully gather enough food for up to 10 medium creatures with a DC 10 Survival check.",
+        category: "Passive, Movement, Utility",
+        type: 0
+    },
+    {
+        id: 18,
+        name: "Diehard",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "yes, up to two times",
+        description: "Increase your Constitution score by 1.\n As long as you have not failed any death saving throws, you do not suffer the negative conditions of being at 0 hit points and may continue to take actions and move normally. \n At the second level of this feat, you only gain a failed death save from taking damage if you fail a Constitution saving throw with a DC equal to the damage taken.",
+        category: "Passive, Defensive",
+        type: 1
+    },
+    {
+        id: 19,
+        name: "Recovery",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "When you spend a hit dice for healing, whether through a class feature or other means, you can choose to maximize the roll. You can use this feature a number of times equal to your proficiency bonus before completing a long rest.",
+        category: "Active, Healing",
+        type: 0
+    },
+    {
+        id: 20,
+        name: "Broad Skillset",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "Yes, up to 3 times",
+        description: "You gain +1 to all ability checks made with skills you are not proficient in. This reflects your broad knowledge and adaptability in various situations.",
+        category: "Passive, Skill",
+        type: 0
+    },
+    {
+        id: 21,
+        name: "Fletcher",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Gain proficiency with wood carver's tools, expertise if you already have it.\n Crafting custom arrows costs -25% less and takes half of the time.\n Learn 3 common or uncommon custom arrow recipes.",
+        category: "Passive, Crafting, Skill",
+        type: 0
+    },
+    {
+        id: 22,
+        name: "Haggle",
+        source: "Homebrew",
+        requirement: "Charisma (13/14/15) or higher",
+        repeatable: "Yes, up to 3 times",
+        description: "Buying and selling prices are (10%/20%/30%) better.",
+        category: "Passive, Utility",
+        type: 0
+    },
+    {
+        id: 23,
+        name: "Herbalist",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Gain proficiency with herbalism kit, expertise if you already have it.\n Crafting potions costs -25% less and takes half of the time.\n Learn 3 common or uncommon potion recipes.",
+        category: "Passive, Crafting, Skill",
+        type: 0
+    },
+    {
+        id: 24,
+        name: "Healthy",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Increase your Constitution score by 1.\n You have advantage on saving throws against disease and poison.\n When a disease requires a saving throw that would normally cause damage, you take no damage on a successful save and only half damage on a failure.",
+        category: "Passive, Defensive",
+        type: 1
+    },
+    {
+        id: 25,
+        name: "Nimble",
+        source: "Homebrew",
+        requirement: "Dexterity 13 or higher",
+        repeatable: "No",
+        description: "Gain proficiency with acrobatics, expertise if you already have it.\n You can move through the space of hostile creatures, treating it as difficult terrain.",
+        category: "Passive, Skill, Movement",
+        type: 0
+    },
+    {
+        id: 26,
+        name: "Inconspicuous",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Your passive Stealth and Performance scores (while being disguised) are 8 + the respective ability score modifier, rather than 5 + the modifier.",
+        category: "Passive, Skill",
+        type: 0
+    },
+    {
+        id: 27,
+        name: "Miner",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "With the appropriate tools, you can excavate a 5ft cube of dirt or stone in 5 minutes.\n You have advantage on Wisdom (Survival) checks to navigate and avoid getting lost in subterranean environments.\n You have an innate understanding of geological formations. Gain proficiency in Intelligence (Nature) checks related to identifying minerals and predicting the stability of underground structures.\n Raw ores and gems sell for 15% more.",
+        category: "Passive, Skill, Utility",
+        type: 0
+    },
+    {
+        id: 28,
+        name: "Minor Luck",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You have three d4 dice that you can use to add or subtract from an attack roll, saving throw, or ability check made by you or another creature.\n You can use only one d4 per roll, and you regain all expended dice after completing a long rest.",
+        category: "Active, Utility",
+        type: 0
+    },
+    {
+        id: 29,
+        name: "Jeweler",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Gain proficiency with jeweler's tools, expertise if you already have it.\n Spending 1 hour polishing a gemstone increases its selling price by 40%.",
+        category: "Passive, Crafting, Skill",
+        type: 0
+    },
+    {
+        id: 30,
+        name: "Street Smarts",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Gain proficiency in Stealth, Sleight of Hand, or Deception.\n You can write, read, and speak in Thieves' Cant.",
+        category: "Passive, Skill, Utility",
+        type: 0
+    },
+    {
+        id: 31,
+        name: "Travel Guide",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Gain proficiency in Survival, expertise if you already have it.\n Your party's travel speed increases by 10%.\n You have advantage on Survival checks to navigate and avoid getting lost in the wilderness.",
+        category: "Passive, Movement, Skill",
+        type: 0
+    },
+    {
+        id: 32,
+        name: "Pike Square",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You can make attacks of opportunity against creatures that enter your melee reach if you are wielding a polearm or a weapon with the reach or greater reach property.",
+        category: "Active, Offensive",
+        type: 0
+    },
+    {
+        id: 33,
+        name: "Overwhelm",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Attacks with heavy weapons ignore the additional AC provided by non-magical shields. The shield's magical bonus to AC is only ignored if your weapon is also magical.",
+        category: "Passive, Offensive",
+        type: 0
+    },
+    {
+        id: 34,
+        name: "Quick Draw",
+        source: "Homebrew",
+        requirement: "Dexterity 13 or higher",
+        repeatable: "No",
+        description: "During the initiative roll, if you are not surprised, you can use your reaction to make a single attack roll with a firearm against a creature you can see. If the attack hits, the target's initiative is reduced by your proficiency bonus.\n You also have +1 to initiative checks.",
+        category: "Active, Passive, Offensive",
+        type: 0
+    },
+    {
+        id: 35,
+        name: "Swimmer",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You gain a swimming speed equal to your walking speed and have advantage on swimming-related ability checks.\n You can hold your breath for twice as long as normal.",
+        category: "Passive, Movement, Skill, Utility",
+        type: 0
+    },
+    {
+        id: 36,
+        name: "Thick Skinned",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You gain a +1 bonus to your Armor Class while not wearing any armor.",
+        category: "Passive, Defensive",
+        type: 0
+    },
+    {
+        id: 37,
+        name: "Demolitions Expert",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Bombs and grenades used by you have a +1 bonus to their DC and attack roll.\n Your explosives deal double damage when targeting structures.\n You can examine an explosive device and determine its properties, blast radius, and potential effects with a successful DC:15 Intelligence (Investigation) check (you are considered proficient in the investigation roll).",
+        category: "Passive, Offensive, Utility",
+        type: 0
+    },
+    {
+        id: 38,
+        name: "Escape Artist",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Once per short rest, you can automatically succeed on an ability check or saving throw to avoid or escape a grapple or restrain.\n You also have advantage on checks to escape from bindings, ropes, or similar restraints.",
+        category: "Active, Passive, Defensive",
+        type: 0
+    },
+    {
+        id: 39,
+        name: "Juggler",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You can make attack rolls at long range with throwing weapons without disadvantage.\n You also have a +2 bonus to damage rolls with throwing weapons.",
+        category: "Passive, Offensive",
+        type: 0
+    },
+    {
+        id: 40,
+        name: "Well Fit",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You don't suffer from disadvantage on Stealth checks due to wearing armor.\n You always appear well-groomed and put together, gaining advantage on Charisma checks involving social interactions related to your attire and beauty.",
+        category: "Passive, Movement, Utility",
+        type: 0
+    },
+    {
+        id: 41,
+        name: "Airhead",
+        source: "Homebrew",
+        requirement: "Requires a negative Intelligence modifier",
+        repeatable: "No",
+        description: "Your thoughts can't be read or sensed because there aren't any.\n Creatures have disadvantage on Insight checks made to determine your intentions.",
+        category: "Passive, Defensive, Utility",
+        type: 0
+    },
+    {
+        id: 42,
+        name: "Dumb Luck",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Once per day, when you roll a natural 1 on a d20, you can treat it as a critical success, reflecting your sheer comical luck in turning an unfortunate situation into an unexpected triumph.\n As a reaction, you can spend your daily use of Dumb Luck to turn a creature's critical success on a d20 roll into a critical failure, showcasing your uncanny ability to reverse fate in the most unexpected ways.",
+        category: "Active, Utility",
+        type: 0
+    },
+    {
+        id: 43,
+        name: "Unlucky",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "When an ally creature within 5 feet of you would receive a critical hit, you become the target instead.\n When a roll is made to determine the target of a negative phenomenon or attack, you always find yourself in the crosshairs if you are within range. This reflects your uncanny ability to attract misfortune toward yourself.",
+        category: "Passive, Double Edge, Utility",
+        type: 0
+    },
+    {
+        id: 44,
+        name: "Disastrous",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Once per short rest, when you critically fail a melee attack roll, you can get yourself and every large or smaller creature within 5 feet of you prone.\n Once per day, you can use your disastrous tendencies to make a grand and clumsy entrance. As an action, you can cause a harmless but attention-grabbing mishap, such as knocking over a stack of barrels or tripping over a table. All creatures within 30 feet who can see or hear you must make a Wisdom saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or be distracted for up to 5 minutes in social encounters or 1 turn in combat.\n While distracted, ally creatures have advantage on attack rolls and ability checks against those creatures.",
+        category: "Active, Utility",
+        type: 0
+    },
+    {
+        id: 45,
+        name: "Naive Perception",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You have advantage against charming effects.\n You have disadvantage on Insight checks to discern social intentions or deception directed towards you.",
+        category: "Passive, Defensive, Double Edge",
+        type: 0
+    },
+    {
+        id: 46,
+        name: "Drug Addict",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You have resistance to and advantage against the effects of poisons and drugs.\n If you fail to consume drugs within a three-day span, you become anxious and gain disadvantage on ability checks until you consume the substance again.",
+        category: "Passive, Defensive, Double Edge",
+        type: 0
+    },
+    {
+        id: 47,
+        name: "Great Genes",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Increase one stat of your choice by 1.\n Double the HP and SP bonuses granted by your character specie.\n You have advantage on Charisma-based social interactions when interacting with members of your own species.",
+        category: "Passive, Utility",
+        type: 1
+    },
+    {
+        id: 48,
+        name: "Guardian",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Ally creatures within 5 feet of you receive a +1 bonus to their AC as long as you are conscious.\n  When an enemy targets an ally within 5 feet of you with an attack, you can use your reaction to interpose yourself, becoming the target of the attack instead.",
+        category: "Active, Passive, Defensive",
+        type: 1
+    },
+    {
+        id: 49,
+        name: "High Magic Tolerance",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "All magical effects from spells, potions, features and item are only half as effective on you.\n * You take half the damage or healing from magical sources.\n * Lingering effects, such as conditions, buffs or debuffs, imposed by magical effects last only half of the normal duration on you.\n * Item solid bonusses are halved on you (rounded up).",
+        category: "Passive, Double Edge",
+        type: 0
+    },
+    {
+        id: 50,
+        name: "Silver Tongue",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Your passive Deception and Persuasion scores are 8 + the respective ability score modifier, rather than 5 + the modifier.",
+        category: "Passive, Skill",
+        type: 0
+    },
+    {
+        id: 51,
+        name: "Strong",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Your passive Athletics scores are 8 + the respective ability score modifier, rather than 5 + the modifier.",
+        category: "Passive, Skill",
+        type: 0
+    },
+    {
+        id: 52,
+        name: "Strong Will",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Increase your Wisdom or Charisma by 1.\n You have advantage on saving throws against charming effects.\n  If you are charmed, you can choose to grant yourself disadvantage on attacks, ability checks, or saving throws, or give a creature advantage on saving throws imposed by you. This reflects your ability to maintain control even when influenced by external forces.",
+        category: "Passive, Defensive",
+        type: 1
+    },
+    {
+        id: 53,
+        name: "Minor Score Increase",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "Yes",
+        description: "Increase one stat of your choice by 1.",
+        category: "Passive, Skill",
+        type: 0
+    },
+    {
+        id: 54,
+        name: "Archery",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You can make attack rolls at long range with bows without disadvantage.\n You ignore half and three-quarters cover when making ranged attacks with bows.",
+        category: "Passive, Offensive",
+        type: 0
+    },
+    {
+        id: 55,
+        name: "Crossbow Expert",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You can make attack rolls at long range with crossbows without disadvantage.\n You ignore the loading property of crossbows.",
+        category: "Passive, Offensive",
+        type: 0
+    },
+    {
+        id: 56,
+        name: "Gunner",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You can make attack rolls at long range with firearms without disadvantage.\n You ignore the loading property of firearms.",
+        category: "Passive, Offensive",
+        type: 0
+    },
+    {
+        id: 57,
+        name: "Close Quarters Shooter",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "When making a ranged attack while you are within 5 feet of a hostile creature, you do not have disadvantage on the attack roll. Your ranged attacks ignore half cover and three-quarters cover against targets within 30 feet of you.",
+        category: "Passive, Offensive",
+        type: 0
+    },
+    {
+        id: 58,
+        name: "Low Magic Tolarence",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "All magical effects from spells, potions and features last twice as long on you.",
+        category: "Passive, Double Edge",
+        type: 0
+    },
+    {
+        id: 59,
+        name: "Expert Driver",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Gain proficiency with land vehicles, expertise if you already have it.\n Travel speed with land vehicles is doubled.\n As a bonus action, you can 'Dash' with a vehicle you are driving, showcasing your expert control and swift handling.",
+        category: "Active, Passive, Movement, Skill",
+        type: 0
+    },
+    {
+        id: 60,
+        name: "Lingering Magic",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "When your concentration on a spell is broken, the spell still remains for an additional round.",
+        category: "Passive, Utility",
+        type: 0
+    },
+    {
+        id: 61,
+        name: "Telepathic Link",
+        source: "Homebrew",
+        requirement: "Intelligence 13 or higher",
+        repeatable: "No",
+        description: "You can establish a telepathic link with a willing creature you can see within 30 feet. This link allows silent communication, sharing thoughts and feelings effortlessly. The telepathic connection doesn't require a shared language.",
+        category: "Active, Spellcasting, Utility",
+        type: 0
+    },
+    {
+        id: 62,
+        name: "Memorized Spells",
+        source: "Homebrew",
+        requirement: "Being a spellcasting class or subclass",
+        repeatable: "Yes",
+        description: "Choose two spells from your available spell list. You always have these spells prepared, and they don't count toward the number of spells you know or have prepared. This reflects your character's ability to effortlessly call upon these particular spells without the need for preparation.",
+        category: "Passive, Spellcasting, Utility",
+        type: 0
+    },
+    {
+        id: 63,
+        name: "Reactive",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Increase your Dexterity or Wisdom score by 1.\n Once per round, you can take one additional reaction. You can use this feature a number of times equal to your proficiency bonus before a long rest.",
+        category: "Active, Utility",
+        type: 1
+    },
+    {
+        id: 64,
+        name: "Sacred Missiles",
+        source: "Homebrew",
+        requirement: "2nd level paladin",
+        repeatable: "No",
+        description: "You can use Divine Smite on ranged attack rolls. However, you must decide to use Divine Smite before the attack is made. This reflects your ability to infuse your ranged attacks with divine power for added impact.",
+        category: "Active, Class Feature, Offensive",
+        type: 0
+    },
+    {
+        id: 65,
+        name: "Thuggish",
+        source: "Homebrew",
+        requirement: "2nd level rogue",
+        repeatable: "No",
+        description: "You can deal sneak attack damage with weapons that lack the finesse property, as long as they are not heavy.",
+        category: "Passive, Class Feature, Offensive",
+        type: 0
+    },
+    {
+        id: 66,
+        name: "Faithful",
+        source: "Homebrew",
+        requirement: "Having channel divinity feature",
+        repeatable: "No",
+        description: "You gain one additional use of Channel Divinity.",
+        category: "Active, Class Feature, Utility",
+        type: 0
+    },
+    {
+        id: 67,
+        name: "Medium",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You can feel the presence of nearby undead, fiends, and celestials within 30 feet of you. However, you can't determine the origin or exact location of these creatures.",
+        category: "Passive, Utility",
+        type: 0
+    },
+    {
+        id: 68,
+        name: "Whispers from Beyond",
+        source: "Homebrew",
+        requirement: "The minor feat 'Medium'",
+        repeatable: "No",
+        description: "Increase your Intelligence, Wisdom or Charisma score by 1.\n You can cast Speak with Dead once per long rest without expending material components.\n You can see into the Ethereal Plane up to 30 feet.",
+        category: "Active, Passive, Utility, Spellcasting",
+        type: 1
+    },
+    {
+        id: 69,
+        name: "Ethereal Walker",
+        source: "Homebrew",
+        requirement: "The feat 'Whispers from Beyond'",
+        repeatable: "No",
+        description: "Increase your Intelligence, Wisdom or Charisma score by 1.\n You can cast Astral Projection on yourself once per long rest without expending material components.\n The range you can see into the Ethereal Plane increases by 30ft.",
+        category: "Active, Passive, Utility, Spellcasting",
+        type: 1
+    },
+    {
+        id: 70,
+        name: "Relentless",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Increase your Constitution score by 1.\n Once per long rest, when you would drop to 0 hit points but not be killed outright, you drop to 1 hit point instead.",
+        category: "Passive, Defensive",
+        type: 1
+    },
+    {
+        id: 71,
+        name: "Titanic Force",
+        source: "Homebrew",
+        requirement: "8th level character",
+        repeatable: "No",
+        description: "Increase your hit point maximum by 10.\n Increase your damage rolls on melee attacks by +1 for each 60 hit points in your maximum hit point total, with a minimum bonus of +1.",
+        category: "Passive, Offensive",
+        type: 1
+    },
+    {
+        id: 72,
+        name: "Slayer",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "Yes, choose a different creature type each time you gain this feat.",
+        description: "Choose one creature type (such as undead, fiends, or aberrations) or two types of humanoid (e.g., elves and orcs). Once per turn, attack rolls made by you against creatures of the chosen type(s) deal extra damage equal to your proficiency bonus.",
+        category: "Passive, Offensive",
+        type: 0
+    },
+    {
+        id: 73,
+        name: "Clutch Hitter",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You gain a +1 bonus to your critical hit range when your current hit points are equal to or below 25% of your maximum hit points.",
+        category: "Passive, Conditional, Offensive",
+        type: 0
+    },
+    {
+        id: 74,
+        name: "Last Gasp",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You gain a +10ft bonus to your movement when your current hit points are equal to or below 25% of your maximum hit points.",
+        category: "Passive, Conditional, Offensive",
+        type: 0
+    },
+    {
+        id: 75,
+        name: "Lurker",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Dim light conditions no longer impose disadvantage on your attack rolls, and they do not grant advantage to attack rolls against you due to sight. Your mastery of shadows allows you to navigate and strike effectively even in less-than-optimal lighting conditions.",
+        category: "Passive, Defensive, Offensive",
+        type: 0
+    },
+    {
+        id: 76,
+        name: "On Guard",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "In the first round of combat, you gain a +2 bonus to your AC and a +4 bonus to saving throws. If you are surprised, these bonuses are halved. Your heightened awareness and readiness in the opening moments of battle enhance your defenses and resilience.",
+        category: "Passive, Defensive",
+        type: 0
+    },
+    {
+        id: 77,
+        name: "Coup de Grâce",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "When you have more than one source of advantage on an attack roll, you gain a bonus to damage rolls. Each additional source of advantage grants a +2 bonus to damage rolls.",
+        category: "Passive, Offensive",
+        type: 1
+    },
+    {
+        id: 78,
+        name: "Vendetta",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "When you or an ally creature within sight takes a critical hit, is knocked unconscious, or is killed, you gain a +5 bonus to the next attack roll and +10 bonus to the next damage roll against the attacker (This effect lasts for 1 minute or until applied). This surge of retributive fury empowers your strikes in response to harm inflicted upon you or your allies.",
+        category: "Passive, Conditional, Offensive",
+        type: 0
+    },
+    {
+        id: 79,
+        name: "Tenacious",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "If an effect allows you to break free from it as an action, you can do so as a bonus action instead.\n Once per day, you can grant yourself a +5 bonus to strength and constitution saving throws for the next minute as a bonus action or reaction.",
+        category: "Active, Passive, Defensive",
+        type: 1
+    },
+    {
+        id: 80,
+        name: "Horde Slayer",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Excessive damage dealt to an enemy is transferred to a creature of your choice within 5 feet of the original target if the attack would hit that creature.\n Your attacks ignore swarm and horde enemies' resistance to singular attacks.",
+        category: "Passive, Offensive",
+        type: 0
+    },
+    {
+        id: 81,
+        name: "Musician",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Increase your Charisma score by 1.\n Gain proficiency in one instrument of your choice.\n You gain two uses of Bardic Inspiration (d6). The size of the Bardic Inspiration die may increase based on your Bard level. You regain the use of this feature after finishing a long rest.",
+        category: "Active, Passive, Utility, Skill",
+        type: 1
+    },
+    {
+        id: 82,
+        name: "Fighting Surge",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Increase your Strength or Dexterity score by 1.\n On your turn, you can take one additional action on top of your regular action and a possible bonus action. Once you use this feature, you must finish a long rest before you can use it again.",
+        category: "Active, Utility",
+        type: 1
+    },
+    {
+        id: 83,
+        name: "Wild Side",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Your Strength, Dexterity or Constitution score increases by 1.\n The size of the damage dice for natural weapons increases by 1 (i.e. d4 becomes d6, d6 becomes d8, etc...) to a maximum of d12.\n Your natural weapons now have the finesse and light properties, and can add either your Strength or Dexterity modifier to the damage of off-hand natural weapon attacks.",
+        category: "Active, Utility",
+        type: 1
+    },
+    {
+        id: 84,
+        name: "Wild Fury",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Your Strength, Dexterity or Constitution score increases by 1.\n You can enter a state of bestial fury as a reaction until the start of your next turn. While in this state, you have disadvantage on attack rolls, but you double the damage dealt by your natural weapons attacks. You can enter this state a number of times per day equal to your proficiency bonus.",
+        category: "Active, Utility",
+        type: 1
+    },
+    {
+        id: 85,
+        name: "Aberrant Dragonmark",
+        source: "Eberron",
+        requirement: "No other dragonmark",
+        repeatable: "No",
+        description: "You have manifested an aberrant dragonmark. Determine its appearance and the flaw associated with it. You gain the following benefits:\n Increase your Constitution score by 1.\n You learn a cantrip of your choice from the sorcerer spell list. In addition, choose a 1st-level spell from the sorcerer spell list. You learn that spell and can cast it through your mark. Once you cast it, you must finish a short or long rest before you can cast it again through the mark. Constitution is your spellcasting ability for these spells.\n When you cast the 1st-level spell through your mark, you can expend one of your Hit Dice and roll it. If you roll an even number, you gain a number of temporary hit points equal to the number rolled. If you roll an odd number, one random creature within 30 feet of you (not including you) takes force damage equal to the number rolled. If no other creatures are in range, you take the damage.",
+        category: "Active, Spellcasting",
+        type: 1
+    },
+    {
+        id: 86,
+        name: "Actor",
+        source: "Player's Handbook",
+        requirement: "-",
+        repeatable: "No",
+        description: "Skilled at mimicry and dramatics, you gain the following benefits:\n Increase your Charisma score by 1.\n You have an advantage on Charisma (Deception) and Charisma (Performance) checks when trying to pass yourself off as a different person.\n You can mimic the speech of another person or the sounds made by other creatures. You must have heard the person speaking, or heard the creature make the sound, for at least 1 minute. A successful Wisdom (Insight) check contested by your Charisma (Deception) check allows a listener to determine that the effect is faked.",
+        category: "Passive, Utility",
+        type: 1
+    },
+    {
+        id: 87,
+        name: "Alert",
+        source: "Player's Handbook",
+        requirement: "-",
+        repeatable: "No",
+        description: "Always on the lookout for danger, you gain the following benefits:\n You can't be surprised while you are conscious.\n You gain a +5 bonus to initiative.\n Other creatures don't gain advantage on attack rolls against you as a result of being unseen by you.",
+        category: "Passive, Utility",
+        type: 1
+    },
+    {
+        id: 88,
+        name: "Artificer Initiate",
+        source: "Tasha's Cauldron of Everything",
+        requirement: "-",
+        repeatable: "Yes",
+        description: "You've learned some of an artificer's inventiveness:\n You learn one cantrip of your choice from the Artificer spell list, and you learn one 1st-level spell of your choice from that list. Intelligence is your spellcasting ability for these spells.\n You can cast this feat's 1st-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have.\n You gain proficiency with one type of artisan's tools of your choice, and you can use that type of tool as a spellcasting focus for any spell you cast that uses Intelligence as its spellcasting ability.",
+        category: "Active, Spellcasting, Skill",
+        type: 0
+    },
+    {
+        id: 89,
+        name: "Athlete",
+        source: "Player's Handbook",
+        requirement: "-",
+        repeatable: "No",
+        description: "You have undergone extensive physical training to gain the following benefits:\n Increase your Strength or Dexterity score by 1.\n When you are prone, standing up uses only 5 feet of your movement.\n Climbing doesn't cost you extra movement.\n You can make a running long jump or a running high jump after moving only 5 feet on foot, rather than 10 feet.",
+        category: "Passive, Utility, Movement",
+        type: 1
+    },
+    {
+        id: 90,
+        name: "Charger",
+        source: "Modified",
+        requirement: "-",
+        repeatable: "No",
+        description: "Increase your Strength or Constitution score by 1\n Once per turn, when you move at least 10 feet in a straight line before making a melee attack against a creature, you can apply one of the following effects on a successful hit:\n * Deal one additional damage dice.\n * Shove the creature up to 10 feet away.",
+        category: "Passive, Offensive",
+        type: 1
+    },
+    {
+        id: 91,
+        name: "Artificer Adept",
+        source: "Homebrew",
+        requirement: "You must have the 'Artifice Initiate' minor feat and be a 4th level character",
+        repeatable: "No",
+        description: "You learn one cantrip of your choice from the Artificer spell list, following the same rules as Artificer Initiate.\n You gain the 'Infuse Item' Artificer Feature, you learn two Artificer infusions, with a limit of one infused item at a time.\n Gain expertise in the chosen tool from the Artificer Initiate minor feat.",
+        category: "Active, Spellcasting, Skill",
+        type: 1
+    },
+    {
+        id: 92,
+        name: "Crusher",
+        source: "Tasha's Cauldron of Everything",
+        requirement: "4th level character",
+        repeatable: "No",
+        description: "Increase your Strength or Constitution by 1.\n Once per turn, when you hit a creature with an attack that deals bludgeoning damage, you can move it 5 feet to an unoccupied space, provided the target is no more than one size larger than you.\n When you score a critical hit that deals bludgeoning damage to a creature, attack rolls against that creature are made with advantage until the start of your next turn.",
+        category: "Passive, Offensive",
+        type: 1
+    },
+    {
+        id: 93,
+        name: "Victory Rush",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "Winning a combat encounter or defeating a powerful foe in battle (determined by the DM) allows your character to recover hit points equal to a roll of their hit dice plus their Constitution modifier.",
+        category: "Passive, Conditional, Healing",
+        type: 0
+    },
+    {
+        id: 94,
+        name: "Dual Wielder",
+        source: "Player's Handbook",
+        requirement: "-",
+        repeatable: "No",
+        description: "You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.\n You can use two-weapon fighting even when the one handed melee weapons you are wielding aren't light.\n You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.",
+        category: "Passive, Defensive, Offensive",
+        type: 1
+    },
+    {
+        id: 95,
+        name: "Dungeon Delver",
+        source: "Player's Handbook",
+        requirement: "-",
+        repeatable: "No",
+        description: "Alert to the hidden traps and secret doors found in many dungeons, you gain the following benefits:\n * You have advantage on Wisdom (Perception) and Intelligence (Investigation) checks made to detect the presence of secret doors.\n * You have advantage on saving throws made to avoid or resist traps.\n * You have resistance to the damage dealt by traps.\n * Travelling at a fast pace doesn't impose the normal -5 penalty on your passive Wisdom (Perception) score.",
+        category: "Passive, Defensive, Utility",
+        type: 1
+    },
+    {
+        id: 96,
+        name: "Eldritch Adept",
+        source: "Tasha's Cauldron of Everything",
+        requirement: "Spellcasting or Pact Magic feature",
+        repeatable: "Yes",
+        description: "Studying occult lore, you learn one Eldritch Invocation option of your choice from the warlock class. Your spellcasting ability for the invocation is Intelligence, Wisdom, or Charisma (choose when you select this feat). If the invocation has a prerequisite of any kind, you can choose that invocation only if you’re a warlock who meets the prerequisite.\n Whenever you gain a level or spend a week, you can replace the invocation with another one from the warlock class.",
+        category: "Utility",
+        type: 1
+    },
+    {
+        id: 97,
+        name: "Elemental Adept",
+        source: "Player's Handbook",
+        requirement: "The ability to cast at least one spell",
+        repeatable: "Yes, each time you do so, you must choose a different damage type.",
+        description: "When you gain this feat, choose one of the following damage types: acid, cold, fire, lightning, or thunder.\n Spells you cast ignore resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.",
+        category: "Passive, Offensive",
+        type: 1
+    },
+    {
+        id: 98,
+        name: "Fey Touched",
+        source: "Modified",
+        requirement: "-",
+        repeatable: "No",
+        description: "Your exposure to the Feywild's magic has changed you.\n You learn the Misty Step spell and can cast it without expending a spell slot a number of times equal to your proficiency bonus before completing a long rest.",
+        category: "Active, Spellcasting, Movement",
+        type: 1
+    },
+    {
+        id: 99,
+        name: "Fighting Initiate",
+        source: "Modified",
+        requirement: "-",
+        repeatable: "Yes",
+        description: "Your martial training has helped you develop a particular style of fighting. As a result, you learn one Fighting Style option of your choice from the fighter class. If you already have a style, the one you choose must be different.\n You also gain proficiency in three weapons of your choice.",
+        category: "Passive, Skill, Utility",
+        type: 1
+    },
+    {
+        id: 100,
+        name: "Heavy Weapon Master",
+        source: "Modified",
+        requirement: "4th level character",
+        repeatable: "No",
+        description: "You've mastered leveraging the weight of heavy weapons to enhance your combat prowess. You gain the following benefits:\n * When you score a critical hit with a heavy melee weapon on your turn, you can choose to either move the target 15 feet away in any direction or shove them prone.\n * Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage.",
+        category: "Active, Passive, Offensive",
+        type: 1
+    },
+    {
+        id: 101,
+        name: "Sharpshooter",
+        source: "Modified",
+        requirement: "4th level character",
+        repeatable: "No",
+        description: "Increase your Dexterity score by 1.\n If you haven't expended any movement at the beginning of your turn, you gain a +2 bonus to attack and +5 bonus to damage on ranged attacks made during that turn.\n You can also spend a bonus action to gain the same benefits.",
+        category: "Conditional, Offensive",
+        type: 1
+    },
+    {
+        id: 102,
+        name: "Physician",
+        source: "Homebrew",
+        requirement: "-",
+        repeatable: "No",
+        description: "You are an able physician, allowing you to mend wounds quickly and get your allies back in the fight. You gain the following benefits:\n * When you use a healer's kit to stabilize a dying creature, you can also make that creature regain 1 hit point.\n As an action. you can spend one use of a healer's kit to tend to a creature and restore 1d6 + 4 hit points to it, plus additional hit points equal to the creature's maximum number of Hit Dice. The creature can't regain hit points from this feat again until it finishes a short or long rest.",
+        category: "Active, Healing",
+        type: 1
+    },
+]
+
+export default featsData;

@@ -1,0 +1,9 @@
+.specie-book-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+    background-color: var(--specie-book-content-wrapper-background-color);
+}

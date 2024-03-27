@@ -1,6 +1,4 @@
-:root {
-    --checkbox-color: #f0f0f0;
-}
+/* Este css é para os inputs de pesquisa (checkboxes, searchs e selects) */
 
 .search-input {
     width: 220px;

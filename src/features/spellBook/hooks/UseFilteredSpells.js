@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import data from "../../../data/spells_data.js";
+import data from "../../../data/SpellsData.js";
 
 const UseFilteredSpells = (
     searchByName,
